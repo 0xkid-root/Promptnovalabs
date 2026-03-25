@@ -47,9 +47,9 @@ export function Header() {
               className="rounded-full bg-secondary px-10 py-2 text-sm text-foreground placeholder:text-foreground/50"
             />
           </div>
-          <Button variant="default" className="rounded-full bg-primary hover:bg-primary/90">
+          {/* <Button variant="default" className="rounded-full bg-primary hover:bg-primary/90">
             Sign In
-          </Button>
+          </Button> */}
         </div>
 
         {/* Mobile Menu Button */}
