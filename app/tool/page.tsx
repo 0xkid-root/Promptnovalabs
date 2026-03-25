@@ -10,6 +10,7 @@ import { Star, ArrowLeft, ExternalLink, Check } from 'lucide-react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import { Suspense } from 'react'
 
 // Tool data - same as tools page
 const aiTools = [
@@ -404,7 +405,7 @@ const aiTools = [
   },
 ]
 
-export default function ToolDetailPage() {
+function ToolDetailContent() {
   const searchParams = useSearchParams()
   const toolId = searchParams.get('id')
   const [tool, setTool] = useState(null)
@@ -666,5 +667,13 @@ export default function ToolDetailPage() {
 
       <Footer />
     </div>
+  )
+}
+
+export default function ToolDetailPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background"><Header /><div className="container mx-auto max-w-7xl py-12 px-4">Loading tool...</div></div>}>
+      <ToolDetailContent />
+    </Suspense>
   )
 }

@@ -9,6 +9,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 import { ArrowLeft, Share2, Bookmark } from 'lucide-react'
 
 const articleDatabase = {
@@ -98,7 +99,7 @@ async function generateResponse(prompt: string) {
   }
 }
 
-export default function ArticlePage() {
+function ArticleContent() {
   const searchParams = useSearchParams()
   const articleId = parseInt(searchParams.get('id') || '1', 10)
   const article = articleDatabase[articleId as keyof typeof articleDatabase] || articleDatabase[1]
@@ -283,5 +284,13 @@ export default function ArticlePage() {
 
       <Footer />
     </div>
+  )
+}
+
+export default function ArticlePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background"><Header /><div className="container mx-auto max-w-3xl py-12 px-4">Loading article...</div></div>}>
+      <ArticleContent />
+    </Suspense>
   )
 }
