@@ -8,8 +8,9 @@ export function Footer() {
     {
       title: 'PromptNovaLabs',
       links: [
+        'Home',
         'About Us',
-        'Careers',
+        'Technology',
         'Blog',
         'Contact',
       ],
@@ -18,18 +19,19 @@ export function Footer() {
       title: 'Platform',
       links: [
         'AI Tools Directory',
+        'Advertise with us',
         'Prompt Library',
         'Community',
-        'Pricing',
+        
       ],
     },
     {
       title: 'Resources',
       links: [
-        'Documentation',
-        'API Reference',
+        'Blog',
+        'Tag',
         'Guides',
-        'Support',
+        'Amazing Newsletters',
       ],
     },
   ]
