@@ -21,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <PromptOfTheDay />
         <FeaturedTools />
-        <TailoredWorkflow />
         <LatestNews />
       </motion.main>
       <Footer />
