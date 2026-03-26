@@ -9,26 +9,9 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'PromptNovaLabs - AI Tools, Prompts & Resources',
   description: 'Discover the best AI tools, copy high-converting prompts, and stay updated with the latest AI news. Built for developers and creators.',
-  generator: 'v0.app',
   keywords: ['AI', 'prompts', 'tools', 'GPT-4', 'machine learning', 'artificial intelligence'],
   authors: [{ name: 'PromptNovaLabs' }],
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  
 }
 
 export const viewport: Viewport = {
