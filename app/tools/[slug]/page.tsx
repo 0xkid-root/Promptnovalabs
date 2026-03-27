@@ -42,17 +42,105 @@ const fadeUp = {
   }),
 }
 
+// All responsive breakpoints injected as a <style> tag — no Tailwind needed
+const CSS = `
+  .td-main {
+    flex: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+  .td-hero-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .td-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .td-stat-val {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    word-break: break-word;
+  }
+  .td-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .td-card {
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: #111111;
+    overflow: hidden;
+  }
+  .td-card-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .td-card-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 1.5px;
+  }
+  .td-list {
+    padding: 14px 18px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .td-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.55;
+  }
+
+  /* Tablet */
+  @media (max-width: 768px) {
+    .td-main { padding: 28px 14px; }
+    .td-hero-row { flex-direction: column; gap: 16px; }
+    .td-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .td-stat-val { font-size: 16px; }
+    .td-two { grid-template-columns: 1fr; }
+  }
+
+  /* Mobile */
+  @media (max-width: 480px) {
+    .td-main { padding: 20px 12px; }
+    .td-stats { grid-template-columns: 1fr; gap: 8px; }
+    .td-stat-val { font-size: 20px; }
+    .td-two { grid-template-columns: 1fr; }
+  }
+`
+
 export default function ToolDetailPage() {
   const params = useParams() as { slug: string }
   const slug = params.slug
   const [tool, setTool] = useState<ToolType | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [descExpanded, setDescExpanded] = useState(false)
+  const [expanded, setExpanded] = useState(false)
 
   useEffect(() => {
     if (slug) {
-      const foundTool = aiTools.find((t) => t.slug === slug) || null
-      setTool(foundTool)
+      const found = aiTools.find((t) => t.slug === slug) || null
+      setTool(found)
       setIsLoading(false)
     }
   }, [slug])
@@ -60,6 +148,7 @@ export default function ToolDetailPage() {
   if (isLoading) {
     return (
       <div style={{ minHeight: '100vh', background: '#0a0a0a' }}>
+        <style>{CSS}</style>
         <Header />
         <main style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 0' }}>
           <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: 14 }}>Loading...</p>
@@ -72,13 +161,10 @@ export default function ToolDetailPage() {
   if (!tool) {
     return (
       <div style={{ minHeight: '100vh', background: '#0a0a0a' }}>
+        <style>{CSS}</style>
         <Header />
-        <main style={{ maxWidth: 960, margin: '0 auto', padding: '80px 16px' }}>
-          <Link href="/tools">
-            <button style={ghostBtn}>
-              <ArrowLeft style={{ width: 14, height: 14 }} /> Back to Tools
-            </button>
-          </Link>
+        <main className="td-main">
+          <Link href="/tools"><GhostBtn><ArrowLeft style={{ width: 14, height: 14 }} /> Back to Tools</GhostBtn></Link>
           <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 24 }}>Tool not found</p>
         </main>
         <Footer />
@@ -92,17 +178,15 @@ export default function ToolDetailPage() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0a', display: 'flex', flexDirection: 'column' }}>
+      <style>{CSS}</style>
       <Header />
 
-      <main style={{ flex: 1, maxWidth: 960, margin: '0 auto', width: '100%', padding: '40px 16px' }}>
+      <main className="td-main">
 
         {/* Back */}
-        <motion.div initial="hidden" animate="show" variants={fadeUp} custom={0}>
+        <motion.div initial="hidden" animate="show" variants={fadeUp} custom={0} style={{ marginBottom: 24 }}>
           <Link href="/tools">
-            <button style={{ ...ghostBtn, marginBottom: 28 }}>
-              <ArrowLeft style={{ width: 14, height: 14 }} />
-              Back to Tools
-            </button>
+            <GhostBtn><ArrowLeft style={{ width: 14, height: 14 }} /> Back to Tools</GhostBtn>
           </Link>
         </motion.div>
 
@@ -112,62 +196,72 @@ export default function ToolDetailPage() {
           style={{
             position: 'relative', borderRadius: 20,
             border: '1px solid rgba(255,255,255,0.07)',
-            background: '#111111', overflow: 'hidden', marginBottom: 12, padding: 32
+            background: '#111111', overflow: 'hidden',
+            marginBottom: 12,
+            padding: 'clamp(18px, 4vw, 32px)'
           }}
         >
+          {/* glow */}
           <div style={{
-            position: 'absolute', top: -60, right: -60, width: 240, height: 240,
-            background: 'radial-gradient(circle, rgba(147,51,234,0.12) 0%, transparent 70%)',
+            position: 'absolute', top: -60, right: -60, width: 260, height: 260,
+            background: 'radial-gradient(circle, rgba(147,51,234,0.13) 0%, transparent 70%)',
             pointerEvents: 'none'
           }} />
 
-          <div style={{ display: 'flex', gap: 20, alignItems: 'flex-start', position: 'relative' }}>
+          <div className="td-hero-row" style={{ position: 'relative' }}>
+            {/* Icon */}
             <div style={{
-              flexShrink: 0, width: 64, height: 64, borderRadius: 16,
+              flexShrink: 0, width: 60, height: 60, borderRadius: 16,
               background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 30
+              display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28
             }}>
               {tool.icon}
             </div>
 
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', marginBottom: 10 }}>
-                <h1 style={{ fontSize: 26, fontWeight: 700, color: '#fff', margin: 0, letterSpacing: '-0.4px' }}>
+            <div style={{ flex: 1, minWidth: 0, width: '100%' }}>
+              {/* Title row */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <h1 style={{
+                  fontSize: 'clamp(20px, 5vw, 26px)', fontWeight: 700, color: '#fff',
+                  margin: 0, letterSpacing: '-0.4px', lineHeight: 1.2
+                }}>
                   {tool.name}
                 </h1>
                 <span style={{
-                  padding: '3px 10px', borderRadius: 999, fontSize: 11,
-                  fontWeight: 600, background: '#9333ea', color: '#fff', letterSpacing: '0.3px'
+                  padding: '4px 12px', borderRadius: 999, fontSize: 11,
+                  fontWeight: 600, background: '#9333ea', color: '#fff',
+                  letterSpacing: '0.3px', whiteSpace: 'nowrap'
                 }}>
                   {tool.category}
                 </span>
               </div>
 
+              {/* Tags */}
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 14 }}>
                 {tool.tags.map(tag => (
                   <span key={tag} style={{
                     padding: '3px 10px', borderRadius: 999, fontSize: 11,
-                    background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)',
+                    background: 'rgba(255,255,255,0.06)',
+                    border: '1px solid rgba(255,255,255,0.1)',
                     color: 'rgba(255,255,255,0.55)'
-                  }}>
-                    {tag}
-                  </span>
+                  }}>{tag}</span>
                 ))}
               </div>
 
+              {/* Description */}
               <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
-                {descExpanded ? tool.description : shortDesc}
+                {expanded ? tool.description : shortDesc}
               </p>
               {isLong && (
                 <button
-                  onClick={() => setDescExpanded(!descExpanded)}
+                  onClick={() => setExpanded(!expanded)}
                   style={{
                     marginTop: 8, display: 'inline-flex', alignItems: 'center', gap: 4,
                     fontSize: 12, color: '#a855f7', background: 'none', border: 'none',
                     cursor: 'pointer', padding: 0
                   }}
                 >
-                  {descExpanded
+                  {expanded
                     ? <><ChevronUp style={{ width: 12, height: 12 }} /> Show less</>
                     : <><ChevronDown style={{ width: 12, height: 12 }} /> Read more</>}
                 </button>
@@ -176,32 +270,24 @@ export default function ToolDetailPage() {
           </div>
         </motion.div>
 
-        {/* ── Stats 3-col grid ── */}
-        <motion.div
-          initial="hidden" animate="show" variants={fadeUp} custom={2}
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: 12,
-            marginBottom: 12
-          }}
-        >
+        {/* ── Stats ── */}
+        <motion.div initial="hidden" animate="show" variants={fadeUp} custom={2} className="td-stats">
           {[
-            { icon: <Star style={{ width: 15, height: 15, color: '#facc15' }} />, label: 'RATING', value: String(tool.rating) },
-            { icon: <Users style={{ width: 15, height: 15, color: '#60a5fa' }} />, label: 'USERS', value: tool.users },
-            { icon: <DollarSign style={{ width: 15, height: 15, color: '#4ade80' }} />, label: 'PRICING', value: tool.pricing },
+            { icon: <Star style={{ width: 14, height: 14, color: '#facc15' }} />, label: 'RATING', value: String(tool.rating) },
+            { icon: <Users style={{ width: 14, height: 14, color: '#60a5fa' }} />, label: 'USERS', value: tool.users },
+            { icon: <DollarSign style={{ width: 14, height: 14, color: '#4ade80' }} />, label: 'PRICING', value: tool.pricing },
           ].map(({ icon, label, value }) => (
             <div key={label} style={{
               borderRadius: 16, border: '1px solid rgba(255,255,255,0.07)',
-              background: '#111111', padding: '20px 22px'
+              background: '#111111', padding: 'clamp(14px, 3vw, 20px) clamp(14px, 3vw, 22px)'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 10 }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 7, marginBottom: 8 }}>
                 {icon}
                 <span style={{ fontSize: 10, fontWeight: 600, color: 'rgba(255,255,255,0.35)', letterSpacing: '1.2px' }}>
                   {label}
                 </span>
               </div>
-              <p style={{ fontSize: 22, fontWeight: 700, color: '#fff', margin: 0 }}>{value}</p>
+              <p className="td-stat-val">{value}</p>
             </div>
           ))}
         </motion.div>
@@ -222,19 +308,13 @@ export default function ToolDetailPage() {
         </motion.div>
 
         {/* ── Features + Use Cases ── */}
-        <motion.div
-          initial="hidden" animate="show" variants={fadeUp} custom={4}
-          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 12 }}
-        >
+        <motion.div initial="hidden" animate="show" variants={fadeUp} custom={4} className="td-two">
           <InfoCard icon={<Zap style={{ width: 14, height: 14, color: '#a855f7' }} />} title="Features" items={tool.features} dot="#a855f7" />
           <InfoCard icon={<Target style={{ width: 14, height: 14, color: '#60a5fa' }} />} title="Use Cases" items={tool.useCases} dot="#60a5fa" />
         </motion.div>
 
         {/* ── Pros + Cons ── */}
-        <motion.div
-          initial="hidden" animate="show" variants={fadeUp} custom={5}
-          style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 12 }}
-        >
+        <motion.div initial="hidden" animate="show" variants={fadeUp} custom={5} className="td-two">
           <ProsConsCard title="Pros" items={tool.pros} type="pro" />
           <ProsConsCard title="Cons" items={tool.cons} type="con" />
         </motion.div>
@@ -242,28 +322,20 @@ export default function ToolDetailPage() {
         {/* ── Specifications ── */}
         <motion.div
           initial="hidden" animate="show" variants={fadeUp} custom={6}
-          style={{
-            borderRadius: 20, border: '1px solid rgba(255,255,255,0.07)',
-            background: '#111111', overflow: 'hidden', marginBottom: 40
-          }}
+          className="td-card" style={{ marginBottom: 40 }}
         >
-          <div style={{
-            display: 'flex', alignItems: 'center', gap: 8,
-            padding: '16px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)'
-          }}>
+          <div className="td-card-head">
             <Settings style={{ width: 14, height: 14, color: 'rgba(255,255,255,0.35)' }} />
-            <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.35)', letterSpacing: '1.5px' }}>
-              SPECIFICATIONS
-            </span>
+            <span className="td-card-label">SPECIFICATIONS</span>
           </div>
           {Object.entries(tool.specifications).map(([key, value], i, arr) => (
             <div key={key} style={{
               display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-              padding: '14px 24px',
+              gap: 12, padding: '13px 20px', flexWrap: 'wrap',
               borderBottom: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.04)' : 'none'
             }}>
               <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)' }}>{key}</span>
-              <span style={{ fontSize: 13, fontWeight: 500, color: '#fff' }}>{value}</span>
+              <span style={{ fontSize: 13, fontWeight: 500, color: '#fff', textAlign: 'right' }}>{value}</span>
             </div>
           ))}
         </motion.div>
@@ -276,29 +348,32 @@ export default function ToolDetailPage() {
   )
 }
 
-// ── Shared styles ──
-const ghostBtn: React.CSSProperties = {
-  display: 'inline-flex', alignItems: 'center', gap: 8,
-  background: 'transparent', border: '1px solid rgba(255,255,255,0.08)',
-  color: 'rgba(255,255,255,0.5)', borderRadius: 999, padding: '8px 16px',
-  fontSize: 13, cursor: 'pointer'
+// ── Shared ──
+function GhostBtn({ children }: { children: React.ReactNode }) {
+  return (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center', gap: 8,
+      background: 'transparent', border: '1px solid rgba(255,255,255,0.08)',
+      color: 'rgba(255,255,255,0.5)', borderRadius: 999, padding: '8px 16px',
+      fontSize: 13, cursor: 'pointer'
+    }}>
+      {children}
+    </span>
+  )
 }
 
-// ── Sub-components ──
 function InfoCard({ icon, title, items, dot }: {
   icon: React.ReactNode; title: string; items: string[]; dot: string
 }) {
   return (
-    <div style={{ borderRadius: 20, border: '1px solid rgba(255,255,255,0.07)', background: '#111111', overflow: 'hidden' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '16px 24px', borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+    <div className="td-card">
+      <div className="td-card-head">
         {icon}
-        <span style={{ fontSize: 10, fontWeight: 700, color: 'rgba(255,255,255,0.35)', letterSpacing: '1.5px' }}>
-          {title.toUpperCase()}
-        </span>
+        <span className="td-card-label">{title.toUpperCase()}</span>
       </div>
-      <ul style={{ padding: '16px 20px', margin: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <ul className="td-list">
         {items.map((item, i) => (
-          <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'rgba(255,255,255,0.6)', lineHeight: 1.55 }}>
+          <li key={i}>
             <span style={{ marginTop: 5, width: 6, height: 6, borderRadius: '50%', background: dot, flexShrink: 0 }} />
             {item}
           </li>
@@ -311,10 +386,9 @@ function InfoCard({ icon, title, items, dot }: {
 function ProsConsCard({ title, items, type }: { title: string; items: string[]; type: 'pro' | 'con' }) {
   const isPro = type === 'pro'
   const color = isPro ? '#4ade80' : '#f87171'
-  const borderColor = isPro ? 'rgba(74,222,128,0.12)' : 'rgba(248,113,113,0.12)'
   return (
-    <div style={{ borderRadius: 20, border: '1px solid rgba(255,255,255,0.07)', background: '#111111', overflow: 'hidden' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '16px 24px', borderBottom: `1px solid ${borderColor}` }}>
+    <div className="td-card">
+      <div className="td-card-head" style={{ borderBottom: `1px solid ${isPro ? 'rgba(74,222,128,0.12)' : 'rgba(248,113,113,0.12)'}` }}>
         {isPro
           ? <ThumbsUp style={{ width: 14, height: 14, color }} />
           : <ThumbsDown style={{ width: 14, height: 14, color }} />}
@@ -322,9 +396,9 @@ function ProsConsCard({ title, items, type }: { title: string; items: string[]; 
           {title.toUpperCase()}
         </span>
       </div>
-      <ul style={{ padding: '16px 20px', margin: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <ul className="td-list">
         {items.map((item, i) => (
-          <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'rgba(255,255,255,0.6)', lineHeight: 1.55 }}>
+          <li key={i}>
             {isPro
               ? <Check style={{ width: 14, height: 14, color, flexShrink: 0, marginTop: 1 }} />
               : <X style={{ width: 14, height: 14, color, flexShrink: 0, marginTop: 1 }} />}
