@@ -207,25 +207,6 @@ export function FAQ() {
           })}
         </motion.div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="mt-12 text-center rounded-2xl border border-primary/15 bg-card px-8 py-8"
-        >
-          <p className="text-sm text-foreground/50 mb-1">Still have questions?</p>
-          <p className="text-base font-semibold text-foreground mb-4">
-            We&apos;re here to help you get started.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-background hover:bg-primary/85 transition-colors"
-          >
-            Contact Us →
-          </a>
-        </motion.div>
 
       </div>
     </section>
