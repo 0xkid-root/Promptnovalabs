@@ -8,6 +8,7 @@ import { FeaturedTools } from '@/components/featured-tools'
 import { TailoredWorkflow } from '@/components/tailored-workflow'
 import { LatestNews } from '@/components/latest-news'
 import { Footer } from '@/components/footer'
+import { FAQ } from '@/components/faq'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <PromptOfTheDay />
         <FeaturedTools />
         <LatestNews />
+        <FAQ/>
       </motion.main>
       <Footer />
     </div>
