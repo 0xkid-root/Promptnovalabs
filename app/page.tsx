@@ -10,7 +10,7 @@ import { FeaturedTools } from '@/components/featured-tools'
 import { LatestNews } from '@/components/latest-news'
 import { Footer } from '@/components/footer'
 import { FAQ } from '@/components/faq'
-import { faqs } from '@/components/faq' 
+import { faqs } from '@/data/faqs' 
 
 
 export default function Home() {
