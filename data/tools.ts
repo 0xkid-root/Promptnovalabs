@@ -3,86 +3,135 @@ export const aiTools = [
     id: 1,
     name: 'ChatGPT (GPT-4o)',
     slug: 'chatgpt',
-    description: "OpenAI's most advanced multimodal AI for reasoning, coding, and content.",
+    description: `ChatGPT powered by GPT-4o is one of the most advanced AI platforms available today, designed to assist users across a wide range of domains including software development, content creation, research, and business automation. Developed by OpenAI, it combines cutting-edge natural language processing with multimodal capabilities, allowing users to interact using text, images, documents, and structured data.
+
+One of the standout strengths of ChatGPT is its ability to understand complex queries and provide highly contextual responses. Whether you're debugging code, writing long-form content, or analyzing data, it delivers fast and reliable outputs. Developers benefit from its ability to generate full applications, fix bugs, and explain logic step-by-step.
+
+Its multimodal functionality allows users to upload screenshots, PDFs, and images for analysis, making it incredibly useful for real-world workflows. From marketing teams generating campaigns to students learning new concepts, ChatGPT adapts to multiple use cases.
+
+The platform also supports custom GPT creation, enabling users to build specialized AI assistants tailored to their needs. With strong API support, it integrates seamlessly into modern applications and business systems.
+
+Overall, ChatGPT is a powerful all-in-one AI tool that boosts productivity, reduces manual effort, and enhances creativity across industries.`,
     category: 'LLM',
-    tags: ['Text', 'Vision', 'Reasoning'],
+    tags: ['AI Chat', 'Multimodal', 'Productivity'],
     rating: 4.9,
     users: '2.5M+',
     icon: '🤖',
     color: 'from-green-400 to-green-600',
     website: 'https://openai.com/chatgpt',
     pricing: 'Free / $20/month',
+
     features: [
-      'Advanced reasoning',
-      'Image + file input',
-      'Code generation',
-      'Custom GPTs',
-      'Fast responses',
+      'Advanced reasoning and problem solving',
+      'Multimodal input (text, images, documents)',
+      'Code generation and debugging',
+      'Custom GPT creation',
+      'Real-time conversational memory',
+      'Content generation for blogs, emails, ads',
+      'Data analysis and summarization',
+      'API integration support',
     ],
+
     specifications: {
       Model: 'GPT-4o',
       'Context Window': '128K tokens',
-      Speed: 'Very Fast',
-      Accuracy: 'High',
+      Speed: 'Ultra-fast',
+      Accuracy: 'Very High',
       Multimodal: 'Yes',
     },
-    useCases: ['Coding', 'Writing', 'Research'],
-    pros: ['Very powerful', 'Fast', 'Multimodal'],
-    cons: ['Paid features locked'],
+
+    useCases: [
+      'Content writing',
+      'Software development',
+      'Education and learning',
+      'Customer support automation',
+      'Business productivity',
+    ],
+
+    pros: [
+      'Highly versatile and powerful',
+      'Supports multimodal inputs',
+      'Fast and accurate responses',
+      'Easy for beginners',
+      'Custom GPT flexibility',
+    ],
+
+    cons: [
+      'Paid features locked behind subscription',
+      'Occasional hallucinations',
+      'Rate limits in free plan',
+    ],
   },
 
   {
     id: 2,
-    name: 'Claude 3',
+    name: 'Claude AI',
     slug: 'claude',
-    description: 'Safe and powerful AI with long context understanding.',
+    description: `Claude AI, developed by Anthropic, is a powerful large language model focused on safety, long-context understanding, and enterprise use cases. It is particularly known for handling extremely large documents and maintaining context over extended conversations, making it ideal for research, legal analysis, and documentation tasks.
+
+Claude excels in producing human-like, well-structured responses with a strong emphasis on safety and alignment. It is widely used by businesses that require reliable AI outputs without harmful or misleading content. Its ability to process long documents makes it superior for use cases such as contract review, report generation, and summarization.
+
+Another key advantage of Claude is its conversational quality. It maintains a natural tone while delivering detailed and thoughtful responses. This makes it suitable for writing, brainstorming, and collaborative work.
+
+While it may not be as fast as some competitors, its depth of understanding and contextual accuracy make it a preferred choice for professional environments.
+
+Overall, Claude is a strong alternative to ChatGPT, especially for users who prioritize safety, long-form content handling, and high-quality reasoning.`,
     category: 'LLM',
-    tags: ['Text', 'Safe'],
+    tags: ['Safe AI', 'Long Context'],
     rating: 4.8,
     users: '800K+',
     icon: '💡',
     color: 'from-orange-400 to-orange-600',
     website: 'https://claude.ai',
-    pricing: 'Free / $20',
-    features: ['Long context', 'Safe responses', 'Document analysis'],
+    pricing: 'Free / $20/month',
+
+    features: [
+      'Long context processing (200K+ tokens)',
+      'Safe and aligned AI responses',
+      'Document analysis and summarization',
+      'Natural conversational style',
+      'High-quality writing assistance',
+    ],
+
     specifications: {
+      Model: 'Claude 3',
       Context: '200K tokens',
+      Speed: 'Moderate',
       Safety: 'High',
-      Speed: 'Medium',
     },
-    useCases: ['Docs', 'Research'],
-    pros: ['Very safe', 'Huge context'],
-    cons: ['Slower than GPT'],
+
+    useCases: [
+      'Legal document analysis',
+      'Research',
+      'Content writing',
+      'Business reports',
+    ],
+
+    pros: [
+      'Excellent for long documents',
+      'Safer outputs',
+      'High-quality writing',
+    ],
+
+    cons: [
+      'Slower than competitors',
+      'Limited integrations',
+    ],
   },
 
   {
     id: 3,
-    name: 'Gemini',
-    slug: 'gemini',
-    description: 'Google AI model integrated with search and ecosystem.',
-    category: 'LLM',
-    tags: ['Search', 'AI'],
-    rating: 4.7,
-    users: '1M+',
-    icon: '✨',
-    color: 'from-blue-400 to-indigo-600',
-    website: 'https://gemini.google.com',
-    pricing: 'Free / Paid',
-    features: ['Search integration', 'Docs integration'],
-    specifications: {
-      Speed: 'Fast',
-      Integration: 'Google Apps',
-    },
-    useCases: ['Research', 'Productivity'],
-    pros: ['Google ecosystem'],
-    cons: ['Less creative'],
-  },
-
-  {
-    id: 4,
-    name: 'Midjourney v6',
+    name: 'Midjourney',
     slug: 'midjourney',
-    description: 'Top-tier AI image generation for artists and designers.',
+    description: `Midjourney is one of the most advanced AI image generation tools, widely known for producing highly artistic and visually stunning images. It is primarily used by designers, artists, and creators who want to generate unique visuals from text prompts.
+
+The platform operates through Discord, which may feel unconventional at first, but provides a collaborative environment where users can explore and refine prompts together. Midjourney excels in generating detailed, cinematic, and stylized images that often surpass competitors in artistic quality.
+
+Users can control style, lighting, composition, and creativity levels through prompt engineering. This makes it a favorite among professionals in design and marketing industries.
+
+Despite its strengths, it lacks a traditional UI and requires a subscription, which can be a barrier for some users.
+
+Overall, Midjourney is the best choice for high-quality AI art and creative visual generation.`,
     category: 'Image Generation',
     tags: ['Art', 'Design'],
     rating: 4.8,
@@ -90,279 +139,86 @@ export const aiTools = [
     icon: '🎨',
     color: 'from-purple-400 to-purple-600',
     website: 'https://midjourney.com',
-    pricing: '$10-$120',
-    features: ['Photorealistic images', 'Creative control'],
+    pricing: '$10-$120/month',
+
+    features: [
+      'High-quality artistic image generation',
+      'Prompt-based customization',
+      'Stylized and cinematic outputs',
+      'Fast rendering',
+    ],
+
     specifications: {
-      Resolution: '2K+',
-      Render: 'Fast',
+      Resolution: 'Up to 2K',
+      Speed: 'Fast',
     },
-    useCases: ['Design', 'Marketing'],
-    pros: ['Best quality'],
-    cons: ['Discord only'],
+
+    useCases: [
+      'Graphic design',
+      'Marketing creatives',
+      'Digital art',
+    ],
+
+    pros: [
+      'Best artistic quality',
+      'Highly creative outputs',
+    ],
+
+    cons: [
+      'No traditional UI',
+      'Paid only',
+    ],
   },
 
   {
-    id: 5,
-    name: 'DALL·E 3',
-    slug: 'dall-e-3',
-    description: 'Text-to-image AI by OpenAI.',
-    category: 'Image Generation',
-    tags: ['Vision'],
-    rating: 4.6,
-    users: '600K+',
-    icon: '🖼️',
-    color: 'from-pink-400 to-pink-600',
-    website: 'https://openai.com/dall-e-3',
-    pricing: '$15+',
-    features: ['Prompt accuracy', 'High quality'],
-    specifications: {
-      Resolution: '1024+',
-    },
-    useCases: ['Social media'],
-    pros: ['Easy to use'],
-    cons: ['Paid'],
-  },
-
-  {
-    id: 6,
-    name: 'Stable Diffusion',
-    slug: 'stable-diffusion',
-    description: 'Open-source image generation model.',
-    category: 'Image Generation',
-    tags: ['Open Source'],
-    rating: 4.5,
-    users: '900K+',
-    icon: '🧪',
-    color: 'from-gray-400 to-gray-600',
-    website: 'https://stability.ai',
-    pricing: 'Free',
-    features: ['Custom models', 'Local install'],
-    specifications: {
-      OpenSource: 'Yes',
-    },
-    useCases: ['Developers'],
-    pros: ['Free', 'Flexible'],
-    cons: ['Setup required'],
-  },
-
-  {
-    id: 7,
+    id: 4,
     name: 'GitHub Copilot',
     slug: 'github-copilot',
-    description: 'AI coding assistant inside IDE.',
+    description: `GitHub Copilot is an AI-powered coding assistant that helps developers write code faster and more efficiently. Integrated directly into popular IDEs like VS Code, it provides real-time code suggestions, auto-completions, and even generates entire functions based on context.
+
+It is powered by advanced AI models and trained on large datasets of code, enabling it to understand programming patterns and best practices. Developers use Copilot to speed up repetitive tasks, learn new frameworks, and improve productivity.
+
+Copilot supports multiple programming languages and works seamlessly within existing workflows. It is especially useful for beginners who need guidance, as well as experienced developers who want to optimize their coding process.
+
+However, it requires careful validation since AI-generated code may not always be perfect.
+
+Overall, GitHub Copilot is a must-have tool for modern developers.`,
     category: 'Coding',
-    tags: ['Code'],
+    tags: ['Developer', 'AI Code'],
     rating: 4.7,
     users: '1.8M+',
     icon: '⚙️',
     color: 'from-blue-400 to-blue-600',
     website: 'https://github.com/features/copilot',
     pricing: '$10/month',
-    features: ['Autocomplete', 'AI code'],
+
+    features: [
+      'Real-time code suggestions',
+      'Full function generation',
+      'Multi-language support',
+      'IDE integration',
+    ],
+
     specifications: {
       Languages: '90+',
+      Speed: '<200ms',
     },
-    useCases: ['Coding'],
-    pros: ['Fast'],
-    cons: ['Needs review'],
-  },
 
-  {
-    id: 8,
-    name: 'Codeium',
-    slug: 'codeium',
-    description: 'Free AI coding assistant.',
-    category: 'Coding',
-    tags: ['Free'],
-    rating: 4.6,
-    users: '700K+',
-    icon: '💻',
-    color: 'from-indigo-400 to-indigo-600',
-    website: 'https://codeium.com',
-    pricing: 'Free',
-    features: ['Autocomplete'],
-    specifications: {
-      Speed: 'Fast',
-    },
-    useCases: ['Coding'],
-    pros: ['Free'],
-    cons: ['Less accurate'],
-  },
+    useCases: [
+      'Software development',
+      'Learning coding',
+      'Debugging',
+    ],
 
-  {
-    id: 9,
-    name: 'Runway ML',
-    slug: 'runway-ml',
-    description: 'AI video creation platform.',
-    category: 'Video',
-    tags: ['Video'],
-    rating: 4.5,
-    users: '450K+',
-    icon: '🎬',
-    color: 'from-red-400 to-red-600',
-    website: 'https://runwayml.com',
-    pricing: '$7-$30',
-    features: ['Video gen'],
-    specifications: {
-      Resolution: '1080p',
-    },
-    useCases: ['Content'],
-    pros: ['Powerful'],
-    cons: ['Learning curve'],
-  },
+    pros: [
+      'Boosts productivity',
+      'Easy integration',
+    ],
 
-  {
-    id: 10,
-    name: 'Pika Labs',
-    slug: 'pika-labs',
-    description: 'AI video generation tool.',
-    category: 'Video',
-    tags: ['Video'],
-    rating: 4.4,
-    users: '300K+',
-    icon: '📽️',
-    color: 'from-purple-500 to-pink-500',
-    website: 'https://pika.art',
-    pricing: 'Free / Paid',
-    features: ['Text to video'],
-    specifications: {
-      Speed: 'Fast',
-    },
-    useCases: ['Short videos'],
-    pros: ['Easy'],
-    cons: ['Limited control'],
-  },
-
-  {
-    id: 11,
-    name: 'Perplexity AI',
-    slug: 'perplexity-ai',
-    description: 'AI search engine with sources.',
-    category: 'Search',
-    tags: ['Research'],
-    rating: 4.7,
-    users: '500K+',
-    icon: '🔍',
-    color: 'from-cyan-400 to-cyan-600',
-    website: 'https://perplexity.ai',
-    pricing: 'Free / $20',
-    features: ['Live search'],
-    specifications: {
-      Speed: 'Fast',
-    },
-    useCases: ['Research'],
-    pros: ['Accurate'],
-    cons: ['Limited creativity'],
-  },
-
-  {
-    id: 12,
-    name: 'You.com',
-    slug: 'you-com',
-    description: 'AI-powered search engine.',
-    category: 'Search',
-    tags: ['Search'],
-    rating: 4.3,
-    users: '200K+',
-    icon: '🌐',
-    color: 'from-blue-500 to-cyan-500',
-    website: 'https://you.com',
-    pricing: 'Free',
-    features: ['AI search'],
-    specifications: {
-      Speed: 'Fast',
-    },
-    useCases: ['Search'],
-    pros: ['Free'],
-    cons: ['Less data'],
-  },
-
-  {
-    id: 13,
-    name: 'Notion AI',
-    slug: 'notion-ai',
-    description: 'AI inside Notion workspace.',
-    category: 'Productivity',
-    tags: ['Docs'],
-    rating: 4.6,
-    users: '1M+',
-    icon: '📝',
-    color: 'from-black to-gray-700',
-    website: 'https://notion.so',
-    pricing: '$10',
-    features: ['Writing', 'Notes'],
-    specifications: {
-      Integration: 'Notion',
-    },
-    useCases: ['Notes'],
-    pros: ['Integrated'],
-    cons: ['Paid'],
-  },
-
-  {
-    id: 14,
-    name: 'Grammarly AI',
-    slug: 'grammarly',
-    description: 'AI writing assistant.',
-    category: 'Writing',
-    tags: ['Grammar'],
-    rating: 4.5,
-    users: '2M+',
-    icon: '✍️',
-    color: 'from-green-500 to-teal-500',
-    website: 'https://grammarly.com',
-    pricing: 'Free / Paid',
-    features: ['Grammar check'],
-    specifications: {
-      Accuracy: 'High',
-    },
-    useCases: ['Writing'],
-    pros: ['Accurate'],
-    cons: ['Limited free'],
-  },
-
-  {
-    id: 15,
-    name: 'Jasper AI',
-    slug: 'jasper',
-    description: 'AI content writing tool.',
-    category: 'Writing',
-    tags: ['Marketing'],
-    rating: 4.4,
-    users: '300K+',
-    icon: '📢',
-    color: 'from-yellow-400 to-orange-500',
-    website: 'https://jasper.ai',
-    pricing: '$39',
-    features: ['Blog writing'],
-    specifications: {
-      Speed: 'Fast',
-    },
-    useCases: ['Marketing'],
-    pros: ['Templates'],
-    cons: ['Expensive'],
-  },
-
-  {
-    id: 16,
-    name: 'ElevenLabs',
-    slug: 'elevenlabs',
-    description: 'AI voice generation tool.',
-    category: 'Audio',
-    tags: ['Voice'],
-    rating: 4.7,
-    users: '400K+',
-    icon: '🎤',
-    color: 'from-indigo-500 to-purple-500',
-    website: 'https://elevenlabs.io',
-    pricing: 'Free / Paid',
-    features: ['Voice cloning'],
-    specifications: {
-      Quality: 'Ultra realistic',
-    },
-    useCases: ['Voiceover'],
-    pros: ['Realistic'],
-    cons: ['Ethical concerns'],
+    cons: [
+      'Needs validation',
+      'Subscription required',
+    ],
   },
 ]
 
