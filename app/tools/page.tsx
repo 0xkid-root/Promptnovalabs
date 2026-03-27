@@ -9,99 +9,10 @@ import { Button } from '@/components/ui/button'
 import { Search, Star } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
+import { FAQ } from '@/components/faq'
+import { aiTools } from '@/data/tools'
+import { categories } from '@/data/tools'
 
-const aiTools = [
-  {
-    id: 1,
-    name: 'ChatGPT (GPT-4o)',
-    description: 'OpenAI\'s most advanced multimodal model with superior reasoning capabilities.',
-    category: 'LLM',
-    tags: ['Text', 'Vision', 'Reasoning'],
-    rating: 4.9,
-    users: '2.5M+',
-    icon: '🤖',
-    color: 'from-green-400 to-green-600',
-  },
-  {
-    id: 2,
-    name: 'Midjourney v6',
-    description: 'State-of-the-art AI image generation with artistic control and high quality output.',
-    category: 'Image Generation',
-    tags: ['Generative', 'Art', 'Design'],
-    rating: 4.8,
-    users: '1.2M+',
-    icon: '🎨',
-    color: 'from-purple-400 to-purple-600',
-  },
-  {
-    id: 3,
-    name: 'GitHub Copilot',
-    description: 'Your AI pair programmer. Suggests code and helps you code faster and better.',
-    category: 'Coding',
-    tags: ['IDE', 'DevTools', 'Code'],
-    rating: 4.7,
-    users: '1.8M+',
-    icon: '⚙️',
-    color: 'from-blue-400 to-blue-600',
-  },
-  {
-    id: 4,
-    name: 'Claude (Anthropic)',
-    description: 'Constitutional AI model focused on safety and helpfulness with extended context.',
-    category: 'LLM',
-    tags: ['Text', 'Conversational', 'Safe'],
-    rating: 4.8,
-    users: '800K+',
-    icon: '💡',
-    color: 'from-orange-400 to-orange-600',
-  },
-  {
-    id: 5,
-    name: 'DALL-E 3',
-    description: 'Generate images from text descriptions with improved quality and prompt adherence.',
-    category: 'Image Generation',
-    tags: ['Generative', 'OpenAI', 'Vision'],
-    rating: 4.6,
-    users: '600K+',
-    icon: '🖼️',
-    color: 'from-pink-400 to-pink-600',
-  },
-  {
-    id: 6,
-    name: 'Runway ML',
-    description: 'AI-powered video generation, editing, and creative tools for content creators.',
-    category: 'Video',
-    tags: ['Video', 'Editing', 'Creative'],
-    rating: 4.5,
-    users: '450K+',
-    icon: '🎬',
-    color: 'from-red-400 to-red-600',
-  },
-  {
-    id: 7,
-    name: 'Perplexity AI',
-    description: 'Ask anything with real-time web access and verified sources.',
-    category: 'Search',
-    tags: ['Research', 'Web', 'Sources'],
-    rating: 4.7,
-    users: '500K+',
-    icon: '🔍',
-    color: 'from-cyan-400 to-cyan-600',
-  },
-  {
-    id: 8,
-    name: 'NotebookLM',
-    description: 'Create interactive notebooks with AI-powered insights from your documents.',
-    category: 'Research',
-    tags: ['Notebooks', 'Research', 'Notes'],
-    rating: 4.4,
-    users: '300K+',
-    icon: '📓',
-    color: 'from-yellow-400 to-yellow-600',
-  },
-]
-
-const categories = ['All Tools', 'LLM', 'Image Generation', 'Coding', 'Video', 'Search', 'Research']
 
 export default function ToolsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All Tools')
@@ -258,8 +169,9 @@ export default function ToolsPage() {
                   </CardContent>
 
                   <div className="p-4 border-t border-border">
-                    <Link href={`/tool?id=${tool.id}`}>
+                    <Link href={`/tools/${tool.slug}`}>
                       <Button
+
                         variant="outline"
                         size="sm"
                         className="w-full rounded-full border-primary/50 text-foreground hover:bg-primary/10"
@@ -283,6 +195,7 @@ export default function ToolsPage() {
             </motion.div>
           )}
         </div>
+        <FAQ />
       </main>
 
       <Footer />
