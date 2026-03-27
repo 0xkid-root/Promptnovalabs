@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const faqs = [
+export const faqs = [
   {
     id: 1,
     question: 'What is AINovaLab?',

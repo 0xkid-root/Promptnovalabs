@@ -10,6 +10,8 @@ import { FeaturedTools } from '@/components/featured-tools'
 import { LatestNews } from '@/components/latest-news'
 import { Footer } from '@/components/footer'
 import { FAQ } from '@/components/faq'
+import { faqs } from '@/components/faq' 
+
 
 export default function Home() {
   return (
@@ -17,34 +19,23 @@ export default function Home() {
       
       {/* ✅ SEO FAQ Schema */}
       <Script
-        id="faq-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What is AINovaLab?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AINovaLab is a platform to discover AI tools, prompts, and AI news."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are the AI tools free?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Many AI tools are free or offer trials. Some require a subscription."
-                }
-              }
-            ]
-          })
-        }}
-      />
-
+  id="faq-schema"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.slice(0, 4).map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    }),
+  }}
+/>
       <Header />
 
       <motion.main

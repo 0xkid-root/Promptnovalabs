@@ -11,6 +11,7 @@ import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { Suspense } from 'react'
+import { FAQ } from '@/components/faq'
 
 // Tool data - same as tools page
 const aiTools = [
@@ -663,9 +664,11 @@ function ToolDetailContent() {
             </Button>
           </a>
         </motion.div>
+        
       </main>
 
       <Footer />
+      <FAQ/>
     </div>
   )
 }
@@ -674,6 +677,7 @@ export default function ToolDetailPage() {
   return (
     <Suspense fallback={<div className="min-h-screen bg-background"><Header /><div className="container mx-auto max-w-7xl py-12 px-4">Loading tool...</div></div>}>
       <ToolDetailContent />
+      
     </Suspense>
   )
 }
