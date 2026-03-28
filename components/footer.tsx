@@ -6,7 +6,7 @@ import { Github, Twitter, Linkedin } from 'lucide-react'
 export function Footer() {
   const footerSections = [
     {
-      title: 'PromptNovaLabs',
+      title: 'AINovaLab',
       links: [
         'Home',
         'About Us',
@@ -45,7 +45,7 @@ export function Footer() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <h3 className="gradient-text text-lg font-bold mb-4">PromptHub</h3>
+            <h3 className="gradient-text text-lg font-bold mb-4">AINovaLab</h3>
             <p className="text-sm text-foreground/60">
               The premier destination for AI tools, prompts, and resources. Elevate your productivity with next-generation artificial intelligence.
             </p>
@@ -75,7 +75,7 @@ export function Footer() {
 
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-foreground/60">
-            © 2024 PromptNovaLabs Inc. All rights reserved.
+            © 2024 AINovaLab Inc. All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <a href="#" className="text-foreground/60 hover:text-primary transition-colors">

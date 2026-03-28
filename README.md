@@ -1,4 +1,4 @@
-# PromptNovaLabs - AI Tools & Resources Platform
+# AINovaLab - AI Tools & Resources Platform
 
 A modern, feature-rich Next.js application showcasing AI tools, prompts, and news. Built with Next.js 16, Tailwind CSS, shadcn/ui, Lucide icons, and Framer Motion animations.
 
