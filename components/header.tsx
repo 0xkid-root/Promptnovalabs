@@ -18,7 +18,7 @@ export function Header() {
           animate={{ opacity: 1, x: 0 }}
           className="text-xl font-bold"
         >
-          <span className="gradient-text text-2xl font-bold">PromptNovaLabs</span>
+          <span className="gradient-text text-2xl font-bold">AINovaLab</span>
         </motion.div>
 
         {/* Desktop Navigation */}

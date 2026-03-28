@@ -7,10 +7,10 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'PromptNovaLabs - AI Tools, Prompts & Resources',
+  title: 'AINovaLab - AI Tools, Prompts & Resources',
   description: 'Discover the best AI tools, copy high-converting prompts, and stay updated with the latest AI news. Built for developers and creators.',
   keywords: ['AI', 'prompts', 'tools', 'GPT-4', 'machine learning', 'artificial intelligence'],
-  authors: [{ name: 'PromptNovaLabs' }],
+  authors: [{ name: 'AINovaLab' }],
   
 }
 
