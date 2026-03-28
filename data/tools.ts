@@ -220,6 +220,258 @@ Overall, GitHub Copilot is a must-have tool for modern developers.`,
       'Subscription required',
     ],
   },
+  {
+  id: 5,
+  name: 'Perplexity AI',
+  slug: 'perplexity-ai',
+  description: `Perplexity AI is an advanced AI-powered search engine that combines conversational AI with real-time web results. Unlike traditional search engines, it provides direct answers with sources, making it ideal for research and quick information discovery.
+
+It excels in delivering concise and accurate responses backed by citations, helping users verify information easily. It supports follow-up questions, making the experience interactive and dynamic.
+
+Perplexity is widely used by students, researchers, and professionals for fast and reliable insights.`,
+  category: 'Search',
+  tags: ['AI Search', 'Research'],
+  rating: 4.7,
+  users: '1M+',
+  icon: '🔍',
+  color: 'from-indigo-400 to-indigo-600',
+  website: 'https://perplexity.ai',
+  pricing: 'Free / Pro Plan',
+
+  features: [
+    'Real-time AI search',
+    'Source-based answers',
+    'Conversational queries',
+    'Fast responses',
+  ],
+
+  specifications: {
+    Model: 'Custom LLM',
+    Speed: 'Fast',
+    Accuracy: 'High',
+  },
+
+  useCases: [
+    'Research',
+    'Quick answers',
+    'Learning',
+  ],
+
+  pros: [
+    'Accurate with sources',
+    'Fast results',
+  ],
+
+  cons: [
+    'Limited deep customization',
+  ],
+},
+
+{
+  id: 6,
+  name: 'Runway ML',
+  slug: 'runway-ml',
+  description: `Runway ML is a powerful AI video generation and editing platform used by creators, filmmakers, and designers. It allows users to generate videos, remove backgrounds, and create visual effects using AI.
+
+The platform is known for its intuitive interface and advanced generative tools, making it accessible even for beginners.`,
+  category: 'Video',
+  tags: ['Video AI', 'Editing'],
+  rating: 4.8,
+  users: '900K+',
+  icon: '🎬',
+  color: 'from-pink-400 to-pink-600',
+  website: 'https://runwayml.com',
+  pricing: 'Free / Paid Plans',
+
+  features: [
+    'AI video generation',
+    'Background removal',
+    'Text-to-video',
+    'Real-time editing',
+  ],
+
+  specifications: {
+    Resolution: 'HD',
+    Speed: 'Fast',
+  },
+
+  useCases: [
+    'Video creation',
+    'Content production',
+  ],
+
+  pros: [
+    'Powerful video tools',
+    'Easy to use',
+  ],
+
+  cons: [
+    'Limited free credits',
+  ],
+},
+
+{
+  id: 7,
+  name: 'Jasper AI',
+  slug: 'jasper-ai',
+  description: `Jasper AI is a popular AI content writing tool designed for marketers and businesses. It helps generate blog posts, ads, emails, and marketing copy quickly and efficiently.
+
+It is widely used for creating SEO-optimized content and scaling content production.`,
+  category: 'Writing',
+  tags: ['Content', 'Marketing'],
+  rating: 4.6,
+  users: '1M+',
+  icon: '✍️',
+  color: 'from-yellow-400 to-yellow-600',
+  website: 'https://jasper.ai',
+  pricing: '$39/month',
+
+  features: [
+    'Blog writing',
+    'Marketing copy generation',
+    'SEO optimization',
+  ],
+
+  specifications: {
+    Speed: 'Fast',
+    Accuracy: 'High',
+  },
+
+  useCases: [
+    'Content marketing',
+    'Blogging',
+  ],
+
+  pros: [
+    'Great for marketing',
+    'Easy templates',
+  ],
+
+  cons: [
+    'Expensive',
+  ],
+},
+
+{
+  id: 8,
+  name: 'Copy.ai',
+  slug: 'copy-ai',
+  description: `Copy.ai is an AI writing assistant focused on generating marketing copy, social media posts, and sales content. It simplifies content creation with ready-made templates.
+
+It is ideal for startups and marketers looking to scale content quickly.`,
+  category: 'Writing',
+  tags: ['Copywriting'],
+  rating: 4.6,
+  users: '800K+',
+  icon: '📝',
+  color: 'from-red-400 to-red-600',
+  website: 'https://copy.ai',
+  pricing: 'Free / Paid',
+
+  features: [
+    'Marketing templates',
+    'Social media content',
+    'Sales copy',
+  ],
+
+  specifications: {
+    Speed: 'Fast',
+  },
+
+  useCases: [
+    'Marketing',
+    'Ads',
+  ],
+
+  pros: [
+    'Easy to use',
+    'Fast output',
+  ],
+
+  cons: [
+    'Generic content sometimes',
+  ],
+},
+
+{
+  id: 9,
+  name: 'Pictory AI',
+  slug: 'pictory-ai',
+  description: `Pictory AI converts long-form content into engaging short videos automatically. It is widely used for YouTube automation and social media marketing.
+
+Users can create videos from blogs, scripts, or articles.`,
+  category: 'Video',
+  tags: ['Video', 'Automation'],
+  rating: 4.5,
+  users: '500K+',
+  icon: '📹',
+  color: 'from-teal-400 to-teal-600',
+  website: 'https://pictory.ai',
+  pricing: '$19/month',
+
+  features: [
+    'Text-to-video',
+    'Auto captions',
+    'Stock footage',
+  ],
+
+  specifications: {
+    Speed: 'Fast',
+  },
+
+  useCases: [
+    'YouTube videos',
+    'Short content',
+  ],
+
+  pros: [
+    'Easy automation',
+  ],
+
+  cons: [
+    'Limited customization',
+  ],
+},
+
+{
+  id: 10,
+  name: 'ElevenLabs',
+  slug: 'elevenlabs',
+  description: `ElevenLabs is a leading AI voice generation platform known for realistic text-to-speech. It is used for voiceovers, audiobooks, and content creation.
+
+It supports multiple languages and high-quality voice cloning.`,
+  category: 'Audio',
+  tags: ['Voice AI'],
+  rating: 4.8,
+  users: '700K+',
+  icon: '🎤',
+  color: 'from-gray-400 to-gray-600',
+  website: 'https://elevenlabs.io',
+  pricing: 'Free / Paid',
+
+  features: [
+    'Realistic voice generation',
+    'Voice cloning',
+    'Multi-language support',
+  ],
+
+  specifications: {
+    Quality: 'Very High',
+  },
+
+  useCases: [
+    'Voiceovers',
+    'Audiobooks',
+  ],
+
+  pros: [
+    'Best voice quality',
+  ],
+
+  cons: [
+    'Paid features',
+  ],
+},
 ]
 
 export const categories = [
@@ -233,3 +485,208 @@ export const categories = [
   'Writing',
   'Audio',
 ]
+
+
+{/**
+  
+  {
+  id: 11,
+  name: 'DALL·E',
+  slug: 'dalle',
+  description: `DALL·E is an advanced AI image generation model developed by OpenAI. It creates highly detailed images from text prompts and is widely used for design, marketing, and creative projects.`,
+  category: 'Image Generation',
+  tags: ['AI Art', 'Design'],
+  rating: 4.7,
+  users: '1.5M+',
+  icon: '🖼️',
+  color: 'from-blue-400 to-purple-600',
+  website: 'https://openai.com/dall-e',
+  pricing: 'Free / Credits',
+  features: ['Text-to-image', 'High-quality visuals', 'Creative generation'],
+  specifications: { Resolution: 'HD', Speed: 'Fast' },
+  useCases: ['Design', 'Marketing', 'Art'],
+  pros: ['High quality', 'Creative'],
+  cons: ['Credit system'],
+},
+
+{
+  id: 12,
+  name: 'Stable Diffusion',
+  slug: 'stable-diffusion',
+  description: `Stable Diffusion is an open-source AI model for generating images from text prompts. It allows customization and local deployment.`,
+  category: 'Image Generation',
+  tags: ['Open Source'],
+  rating: 4.6,
+  users: '2M+',
+  icon: '🎨',
+  color: 'from-purple-500 to-indigo-600',
+  website: 'https://stability.ai',
+  pricing: 'Free / Paid',
+  features: ['Open-source', 'Custom models', 'High flexibility'],
+  specifications: { Resolution: 'HD' },
+  useCases: ['Art', 'Design'],
+  pros: ['Free', 'Customizable'],
+  cons: ['Setup required'],
+},
+
+{
+  id: 13,
+  name: 'Leonardo AI',
+  slug: 'leonardo-ai',
+  description: `Leonardo AI is a powerful image generation platform focused on game assets, concept art, and creative design.`,
+  category: 'Image Generation',
+  tags: ['Design'],
+  rating: 4.7,
+  users: '600K+',
+  icon: '🧠',
+  color: 'from-pink-400 to-purple-600',
+  website: 'https://leonardo.ai',
+  pricing: 'Free / Paid',
+  features: ['Game assets', 'High detail', 'Custom models'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Game design', 'Art'],
+  pros: ['High detail'],
+  cons: ['Limited free usage'],
+},
+
+{
+  id: 14,
+  name: 'Canva AI',
+  slug: 'canva-ai',
+  description: `Canva AI integrates generative AI tools into design workflows, enabling users to create graphics, presentations, and content easily.`,
+  category: 'Productivity',
+  tags: ['Design'],
+  rating: 4.8,
+  users: '10M+',
+  icon: '🖌️',
+  color: 'from-cyan-400 to-blue-600',
+  website: 'https://canva.com',
+  pricing: 'Free / Pro',
+  features: ['Design automation', 'Templates', 'AI tools'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Design', 'Marketing'],
+  pros: ['Easy to use'],
+  cons: ['Limited advanced control'],
+},
+
+{
+  id: 15,
+  name: 'Notion AI',
+  slug: 'notion-ai',
+  description: `Notion AI enhances productivity by adding AI writing and automation features within the Notion workspace.`,
+  category: 'Productivity',
+  tags: ['Workspace'],
+  rating: 4.7,
+  users: '2M+',
+  icon: '📒',
+  color: 'from-gray-400 to-black',
+  website: 'https://notion.so',
+  pricing: '$10/month',
+  features: ['Writing', 'Summaries', 'Automation'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Notes', 'Docs'],
+  pros: ['Integrated workflow'],
+  cons: ['Paid'],
+},
+
+// ---- Continue Pattern ----
+
+{
+  id: 16,
+  name: 'Grammarly AI',
+  slug: 'grammarly-ai',
+  description: `Grammarly AI improves writing quality with grammar correction, tone adjustment, and AI suggestions.`,
+  category: 'Writing',
+  tags: ['Grammar'],
+  rating: 4.8,
+  users: '20M+',
+  icon: '📝',
+  color: 'from-green-400 to-green-700',
+  website: 'https://grammarly.com',
+  pricing: 'Free / Premium',
+  features: ['Grammar correction', 'Tone suggestions'],
+  specifications: { Accuracy: 'High' },
+  useCases: ['Writing'],
+  pros: ['Accurate'],
+  cons: ['Premium features'],
+},
+
+{
+  id: 17,
+  name: 'Writesonic',
+  slug: 'writesonic',
+  description: `Writesonic is an AI content generation tool for blogs, ads, and SEO writing.`,
+  category: 'Writing',
+  tags: ['SEO'],
+  rating: 4.6,
+  users: '1M+',
+  icon: '✍️',
+  color: 'from-orange-400 to-red-600',
+  website: 'https://writesonic.com',
+  pricing: 'Free / Paid',
+  features: ['Blog writing', 'SEO content'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Marketing'],
+  pros: ['SEO focused'],
+  cons: ['Limited free'],
+},
+
+{
+  id: 18,
+  name: 'Tome AI',
+  slug: 'tome-ai',
+  description: `Tome AI helps create presentations and storytelling content using AI.`,
+  category: 'Productivity',
+  tags: ['Presentations'],
+  rating: 4.6,
+  users: '500K+',
+  icon: '📊',
+  color: 'from-purple-400 to-blue-600',
+  website: 'https://tome.app',
+  pricing: 'Free / Paid',
+  features: ['Slides generation', 'Storytelling'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Presentations'],
+  pros: ['Creative'],
+  cons: ['Limited export'],
+},
+
+{
+  id: 19,
+  name: 'Gamma AI',
+  slug: 'gamma-ai',
+  description: `Gamma AI generates presentations, documents, and web pages instantly using AI.`,
+  category: 'Productivity',
+  tags: ['Docs'],
+  rating: 4.7,
+  users: '400K+',
+  icon: '📑',
+  color: 'from-indigo-400 to-purple-600',
+  website: 'https://gamma.app',
+  pricing: 'Free / Paid',
+  features: ['Auto docs', 'Slides'],
+  specifications: { Speed: 'Fast' },
+  useCases: ['Docs'],
+  pros: ['Fast'],
+  cons: ['Limited customization'],
+},
+
+{
+  id: 20,
+  name: 'Synthesia',
+  slug: 'synthesia',
+  description: `Synthesia creates AI-generated videos using virtual avatars and voiceovers.`,
+  category: 'Video',
+  tags: ['Avatars'],
+  rating: 4.7,
+  users: '1M+',
+  icon: '🎥',
+  color: 'from-yellow-400 to-orange-600',
+  website: 'https://synthesia.io',
+  pricing: '$30/month',
+  features: ['AI avatars', 'Text-to-video'],
+  specifications: { Quality: 'High' },
+  useCases: ['Training videos'],
+  pros: ['Professional'],
+  cons: ['Paid'],
+},*/}
