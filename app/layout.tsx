@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import Script from 'next/script';
+
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
@@ -28,6 +30,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        {/* ✅ Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JXJ7GEHMXL"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JXJ7GEHMXL');
+          `}
+        </Script>
+
         <script suppressHydrationWarning>
           {`
             if (typeof window !== 'undefined') {
