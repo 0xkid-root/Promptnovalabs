@@ -5,7 +5,9 @@ import ToolDetailPageClient from './tool-detail-page-client'
 
 // Generate metadata for each tool page
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const tool = aiTools.find((t) => t.slug === params.slug)
+    const { slug } = await params  // ✅ IMPORTANT FIX
+
+  const tool = aiTools.find((t) => t.slug === slug)
   
   if (!tool) {
     return {
@@ -67,6 +69,10 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ToolDetailPage() {
-  return <ToolDetailPageClient />
+export default async function ToolDetailPage(
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params
+
+  return <ToolDetailPageClient slug={slug} />
 }
