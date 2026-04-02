@@ -6,26 +6,39 @@ import './globals.css'
 
 const geist = Geist({ subsets: ['latin'] })
 const geistMono = Geist_Mono({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
   title: 'AINovaLab - AI Tools, Prompts & Resources',
   description:
-    'Discover the best AI tools, copy high-converting prompts, and stay updated with the latest AI news. Built for developers and creators.',
-  keywords: [
-    'AI',
-    'prompts',
-    'tools',
-    'GPT-4',
-    'machine learning',
-    'artificial intelligence',
-  ],
-  authors: [{ name: 'AINovaLab' }],
+    'Discover the best AI tools, copy high-converting prompts, and stay updated with the latest AI news.',
+  
+  metadataBase: new URL("https://ainovalab.vercel.app/"),
 
-  // ✅ Google Search Console Verification
+  openGraph: {
+    title: "AINovaLab",
+    description: "Best AI tools & prompts platform",
+    url: "https://ainovalab.vercel.app/",
+    siteName: "AINovaLab",
+    images: [
+      {
+        url: "/og-image.png", // add this in public folder
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AINovaLab",
+    description: "Explore AI tools and prompts",
+    images: ["/og-image.png"],
+  },
+
   verification: {
     google: 'xL9ERgARNeG8bJ7OvR0D4eYPoLtOkCQcwNrn8YDI2Lk',
   },
-}
+};
 
 export const viewport: Viewport = {
   themeColor: '#0d0d0d',
