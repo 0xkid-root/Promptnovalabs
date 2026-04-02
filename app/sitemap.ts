@@ -1,35 +1,45 @@
 import { MetadataRoute } from "next";
-import { aiTools } from "@/data/tools"; // ✅ import your tools data
-// import { blogs } from "@/data/blogs"; // (if you have blog data separate)
+import { aiTools } from "@/data/tools";
+import { articles } from "@/data/newsArticles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://ainovalab.vercel.app";
 
-  // Static pages
-  const staticRoutes = [
-    "",
-    "/tools",
-    "/article",
-    "/news",
-  ];
-
-  // Tool pages
-  const toolRoutes = aiTools.map((tool) => ({
-    url: `${baseUrl}/tools/${tool.slug}`,
-    lastModified: new Date(),
-  }));
-
-  // Blog pages (if using)
-//   const blogRoutes = blogs.map((blog) => ({
-//     url: `${baseUrl}/article/${blog.slug}`,
-//     lastModified: new Date(),
-//   }));
-
   return [
-    ...staticRoutes.map((route) => ({
-      url: `${baseUrl}${route}`,
+    // Static pages
+    {
+      url: `${baseUrl}`,
       lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/tools`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/news`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    },
+
+    // Tool pages
+    ...aiTools.map((tool) => ({
+      url: `${baseUrl}/tools/${tool.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.8,
     })),
-    ...toolRoutes,
+
+    // News pages
+    ...articles.map((news) => ({
+      url: `${baseUrl}/news/${news.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.8,
+    })),
   ];
 }
