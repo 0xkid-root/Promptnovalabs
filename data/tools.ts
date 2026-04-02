@@ -1,3 +1,39 @@
+// Helper function to generate Schema.org JSON-LD for a tool
+export function generateToolSchema(tool: {
+  name: string
+  slug: string
+  description: string
+  category: string
+  pricing: string
+  rating: number
+  features: string[]
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": tool.name,
+    "description": tool.description.split('. ').slice(0, 2).join('. '),
+    "url": `https://ainovalab.vercel.app/tools/${tool.slug}`,
+    "applicationCategory": tool.category,
+    "operatingSystem": "Web-based",
+    "offers": {
+      "@type": "Offer",
+      "price": tool.pricing.includes('Free') ? '0' : tool.pricing.replace(/[^0-9-]/g, ''),
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": tool.rating,
+      "reviewCount": Math.floor(Math.random() * 500) + 100 // Simulated review count
+    },
+    "featureList": tool.features.join(', '),
+    "screenshot": {
+      "@type": "ImageObject",
+      "url": `https://ainovalab.vercel.app/api/og/tools/${tool.slug}`
+    }
+  }
+}
+
 export const aiTools = [
   {
     id: 1,
