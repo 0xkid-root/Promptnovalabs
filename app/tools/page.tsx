@@ -13,6 +13,12 @@ import { FAQ } from '@/components/faq'
 import { aiTools } from '@/data/tools'
 import { categories } from '@/data/tools'
 
+export const metadata = {
+  title: 'Best AI Tools Directory | AINovaLab',
+  description:
+    'Explore the best AI tools for developers, creators, and businesses. Updated daily with latest AI tools.',
+}
+
 
 export default function ToolsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All Tools')
