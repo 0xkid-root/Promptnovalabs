@@ -132,20 +132,17 @@ const CSS = `
   }
 `
 
-export default function ToolDetailPageClient() {
-  const params = useParams() as { slug: string }
-  const slug = params.slug
+export default function ToolDetailPageClient({ slug }: { slug: string }){
+  
   const [tool, setTool] = useState<ToolType | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [expanded, setExpanded] = useState(false)
 
-  useEffect(() => {
-    if (slug) {
-      const found = aiTools.find((t) => t.slug === slug) || null
-      setTool(found)
-      setIsLoading(false)
-    }
-  }, [slug])
+useEffect(() => {
+  const found = aiTools.find((t) => t.slug === slug) || null
+  setTool(found)
+  setIsLoading(false)
+}, [slug])
 
   if (isLoading) {
     return (
