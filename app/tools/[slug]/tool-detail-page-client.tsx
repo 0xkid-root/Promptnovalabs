@@ -11,7 +11,6 @@ import {
   ThumbsDown, Settings
 } from 'lucide-react'
 import Link from 'next/link'
-import { useParams } from 'next/navigation'
 import { FAQ } from '@/components/faq'
 import { aiTools, generateToolSchema } from '@/data/tools'
 import { SchemaMarkup } from '@/components/schema-markup'
@@ -85,6 +84,69 @@ const CSS = `
     background: #111111;
     overflow: hidden;
   }
+  .td-related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    padding: 18px;
+  }
+  .td-related-card {
+    display: flex;
+    flex-direction: column;
+    background: #0e0e0e;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .td-related-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(147,51,234,0.25);
+  }
+  .td-related-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+  }
+  .td-related-card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .td-related-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.55);
+  }
+  .td-related-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .td-related-description {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.6);
+    min-height: 42px;
+  }
+  .td-related-button {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(147,51,234,0.12);
+    color: #d8b4fe;
+    font-size: 12px;
+    font-weight: 700;
+  }
   .td-card-head {
     display: flex;
     align-items: center;
@@ -122,6 +184,7 @@ const CSS = `
     .td-stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .td-stat-val { font-size: 16px; }
     .td-two { grid-template-columns: 1fr; }
+    .td-related-grid { grid-template-columns: 1fr 1fr; }
   }
 
   /* Mobile */
@@ -130,6 +193,7 @@ const CSS = `
     .td-stats { grid-template-columns: 1fr; gap: 8px; }
     .td-stat-val { font-size: 20px; }
     .td-two { grid-template-columns: 1fr; }
+    .td-related-grid { grid-template-columns: 1fr; }
   }
 `
 
@@ -175,6 +239,11 @@ useEffect(() => {
   const sentences = tool.description.split('. ')
   const shortDesc = sentences.slice(0, 2).join('. ') + '.'
   const isLong = sentences.length > 2
+
+  const categoryMatches = aiTools.filter((other) => other.slug !== tool.slug && other.category === tool.category)
+  const relatedTools = categoryMatches.length > 0
+    ? categoryMatches.slice(0, 3)
+    : aiTools.filter((other) => other.slug !== tool.slug).slice(0, 3)
 
   return (
     <div style={{ minHeight: '100vh', background: '#0a0a0a', display: 'flex', flexDirection: 'column' }}>
@@ -348,6 +417,34 @@ useEffect(() => {
             </div>
           ))}
         </motion.div>
+
+        {relatedTools.length > 0 && (
+          <motion.div initial="hidden" animate="show" variants={fadeUp} custom={7} style={{ marginBottom: 40 }}>
+            <div className="td-card">
+              <div className="td-card-head">
+                <span className="td-card-label">MORE TOOLS</span>
+              </div>
+              <div className="td-related-grid">
+                {relatedTools.map((related) => (
+                  <Link key={related.slug} href={`/tools/${related.slug}`}>
+                    <motion.div whileHover={{ y: -4 }} className="td-related-card">
+                      <img src={related.image} alt={related.name} className="td-related-image" />
+                      <div className="td-related-card-body">
+                        <div className="td-related-meta">
+                          <span>{related.category}</span>
+                          <span>⭐ {related.rating}</span>
+                        </div>
+                        <h3 className="td-related-title">{related.name}</h3>
+                        <p className="td-related-description">{related.description.split('. ').slice(0, 1).join('. ')}.</p>
+                        <span className="td-related-button">View tool</span>
+                      </div>
+                    </motion.div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
 
         <FAQ />
       </main>

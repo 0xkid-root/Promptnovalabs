@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkles } from 'lucide-react'
 import { useEffect, useRef } from 'react'
+import Link from 'next/link'
 
 const FLOATING_ORBS = [
   { size: 480, top: '-10%', left: '-8%', delay: 0, duration: 12 },
@@ -146,15 +147,17 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-3 justify-center items-center"
           >
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
+              <Link href="/tools">
+
               <Button
                 size="lg"
                 className="group relative rounded-full bg-primary hover:bg-primary/90 text-foreground px-8 h-12 shadow-lg shadow-primary/20 overflow-hidden"
               >
-                {/* Shimmer effect */}
                 <span className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
                 Explore Tools
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
+              </Link>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
