@@ -122,10 +122,11 @@ export default function ToolsPageClient() {
           >
             {filteredTools.map((tool) => (
               <motion.div key={tool.id} variants={itemVariants}>
-                <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group">
-                  <CardHeader>
-                    <div className="flex items-start justify-between mb-4">
-                      <div className={`p-3 rounded-lg text-2xl`}>
+                <Link href={`/tools/${tool.slug}`}>
+                  <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group">
+                    <CardHeader>
+                      <div className="flex items-start justify-between mb-4">
+                        <div className={`p-3 rounded-lg text-2xl`}>
                         {tool.icon}
                       </div>
                       <Badge variant="outline" className="text-xs">{tool.category}</Badge>
@@ -178,6 +179,9 @@ export default function ToolsPageClient() {
                     </Link>
                   </div>
                 </Card>
+                </Link>
+
+
               </motion.div>
             ))}
           </motion.div>

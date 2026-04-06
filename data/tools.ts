@@ -39,6 +39,7 @@ export const aiTools = [
     id: 1,
     name: 'ChatGPT (GPT-4o)',
     slug: 'chatgpt',
+    image: '/images/chatgpt.png',
     description: `ChatGPT powered by GPT-4o is one of the most advanced AI platforms available today, designed to assist users across a wide range of domains including software development, content creation, research, and business automation. Developed by OpenAI, it combines cutting-edge natural language processing with multimodal capabilities, allowing users to interact using text, images, documents, and structured data.
 
 One of the standout strengths of ChatGPT is its ability to understand complex queries and provide highly contextual responses. Whether you're debugging code, writing long-form content, or analyzing data, it delivers fast and reliable outputs. Developers benefit from its ability to generate full applications, fix bugs, and explain logic step-by-step.
@@ -103,6 +104,7 @@ Overall, ChatGPT is a powerful all-in-one AI tool that boosts productivity, redu
     id: 2,
     name: 'Claude AI',
     slug: 'claude',
+    image: '/images/claude.png',
     description: `Claude AI, developed by Anthropic, is a powerful large language model focused on safety, long-context understanding, and enterprise use cases. It is particularly known for handling extremely large documents and maintaining context over extended conversations, making it ideal for research, legal analysis, and documentation tasks.
 
 Claude excels in producing human-like, well-structured responses with a strong emphasis on safety and alignment. It is widely used by businesses that require reliable AI outputs without harmful or misleading content. Its ability to process long documents makes it superior for use cases such as contract review, report generation, and summarization.
@@ -506,6 +508,76 @@ It supports multiple languages and high-quality voice cloning.`,
 
   cons: [
     'Paid features',
+  ],
+},
+{
+  id: 11,
+  name: 'ThumbnailCreator',
+  slug: 'thumbnailcreator',
+  image: '/images/thumbnailcreator.png',
+
+  description: `ThumbnailCreator is an AI-powered thumbnail generation tool designed to help YouTubers and content creators create high-converting thumbnails in seconds. It eliminates the need for manual design tools like Photoshop or Canva by allowing users to generate thumbnails using simple text prompts or image uploads.
+
+The platform uses AI trained on high-performing YouTube thumbnails to optimize designs for better click-through rates (CTR). Users can create multiple variations, test different styles, and improve their content performance without needing any design experience.
+
+One of the standout features of ThumbnailCreator is its face optimization technology, which allows users to swap faces, adjust expressions, and maintain consistent personal branding across thumbnails. It also offers smart text placement and color optimization to ensure thumbnails are visually appealing and readable on all devices.
+
+With built-in A/B testing capabilities and YouTube integration, creators can experiment with different thumbnail versions and choose the best-performing one. This makes it a powerful growth tool rather than just a design tool.
+
+Overall, ThumbnailCreator is ideal for creators who want to save time, increase views, and scale their content production using AI.`,
+  
+  category: 'Design',
+  tags: ['Thumbnail', 'YouTube', 'AI Design', 'Content Creation'],
+  rating: 4.7,
+  users: '150K+',
+  icon: '🖼️',
+  color: 'from-purple-500 to-pink-500',
+  website: 'https://www.thumbnailcreator.com',
+  pricing: 'Free Trial / $29-$99/month',
+
+  features: [
+    'AI thumbnail generation from text prompts',
+    'Face swap and expression editing',
+    'Multiple thumbnail variations',
+    'CTR optimization using AI',
+    'Smart text placement and readability enhancement',
+    'Color and contrast auto-adjustment',
+    'YouTube thumbnail extraction from URLs',
+    'A/B testing for performance comparison',
+    'Download in YouTube-ready format (1280x720)',
+    'Brand consistency with face training',
+  ],
+
+  specifications: {
+    Platform: 'Web-based',
+    Resolution: '1280x720 (YouTube standard)',
+    AI: 'Generative AI + Computer Vision',
+    Speed: 'Very Fast (seconds)',
+    Editing: 'Prompt-based + visual tweaks',
+  },
+
+  useCases: [
+    'YouTube thumbnail creation',
+    'Content creator branding',
+    'Social media marketing',
+    'YouTube automation channels',
+    'Agency content production',
+  ],
+
+  pros: [
+    'Extremely fast thumbnail creation',
+    'No design skills required',
+    'Optimized for higher CTR',
+    'Face branding features',
+    'Multiple variations for testing',
+    'Saves time and cost vs designers',
+  ],
+
+  cons: [
+    'Credit-based system can get expensive',
+    'Limited manual customization',
+    'AI output may feel repetitive',
+    'Not as flexible as Photoshop',
   ],
 },
 ]
