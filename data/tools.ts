@@ -589,6 +589,92 @@ Overall, ThumbnailCreator is ideal for creators who want to save time, increase 
     'Not as flexible as Photoshop',
   ],
 },
+{
+  id: 12,
+  name: 'Banani AI',
+  slug: 'banani-ai',
+  image: '/images/bananiAi.png',
+
+  description: `Banani AI is an advanced AI-powered UI/UX design platform that transforms simple text prompts, images, and ideas into fully functional user interfaces within seconds. Designed for developers, startup founders, and product teams, Banani eliminates the need for traditional design tools by automating the entire UI creation process.
+
+With Banani, users can generate landing pages, dashboards, mobile apps, and complete product flows just by describing what they want. It also supports image-to-design conversion, allowing users to upload screenshots or references and instantly convert them into editable UI layouts.
+
+One of its biggest strengths is multi-screen generation, enabling full product flows like authentication, dashboards, and settings pages in a single click. Banani also offers seamless export to Figma and front-end code, making it extremely useful for rapid prototyping and development workflows.
+
+The platform includes AI-powered styling, layout optimization, and design suggestions, ensuring modern, clean, and conversion-focused interfaces. Whether you're building an MVP, designing a SaaS product, or creating wireframes, Banani dramatically speeds up the design process.
+
+Overall, Banani AI is a powerful Figma alternative focused on speed, automation, and accessibility, making UI/UX design easier and faster for everyone.`,
+
+  category: 'Design AI',
+
+  tags: [
+    'UI Design',
+    'Wireframe',
+    'Figma Alternative',
+    'No Code',
+    'AI Design',
+    'Prototyping'
+  ],
+
+  rating: 4.7,
+  users: '100K+',
+
+  icon: '🎨',
+  color: 'from-blue-500 to-indigo-600',
+
+  website: 'https://www.banani.co',
+
+  pricing: 'Freemium',
+
+  features: [
+    'Text-to-UI generation from prompts',
+    'Image and screenshot to UI conversion',
+    'Multi-screen app and website generation',
+    'Export designs to Figma',
+    'Export to front-end code (HTML/CSS)',
+    'AI-powered layout and design suggestions',
+    'Wireframe to high-fidelity UI transformation',
+    'Custom styling and theme adjustments',
+    'Rapid prototyping for MVPs',
+    'Real-time editing and iteration'
+  ],
+
+  specifications: {
+    Platform: 'Web-based',
+    AI: 'Generative AI + UI Layout Models',
+    Output: 'UI Screens, Wireframes, Prototypes',
+    Export: 'Figma, HTML/CSS, Images',
+    Speed: 'Very Fast (seconds)',
+    DesignLevel: 'Wireframe to High-Fidelity',
+    Collaboration: 'Limited',
+  },
+
+  useCases: [
+    'Startup MVP design',
+    'SaaS dashboard creation',
+    'Landing page generation',
+    'Mobile app UI design',
+    'Wireframing and prototyping',
+    'Rapid product iteration',
+    'Design automation for developers'
+  ],
+
+  pros: [
+    'Extremely fast UI generation',
+    'No design skills required',
+    'Great for developers and founders',
+    'Supports full product flows',
+    'Export to Figma and code',
+    'Saves time compared to manual design tools'
+  ],
+
+  cons: [
+    'Limited deep customization compared to Figma',
+    'AI-generated designs may need refinement',
+    'Not ideal for pixel-perfect design control',
+    'Some advanced features locked behind paid plans'
+  ]
+}
 ]
 
 export const categories = [
@@ -601,6 +687,8 @@ export const categories = [
   'Productivity',
   'Writing',
   'Audio',
+  'Design AI' // ✅ ADD THIS
+
 ]
 
 

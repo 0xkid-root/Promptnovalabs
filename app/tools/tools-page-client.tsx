@@ -15,7 +15,7 @@ import { aiTools, categories } from '@/data/tools'
 export default function ToolsPageClient() {
   const [selectedCategory, setSelectedCategory] = useState('All Tools')
   const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState('popular')
+  const [sortBy, setSortBy] = useState('latest')
 
   const filteredTools = aiTools
     .filter(
@@ -24,9 +24,12 @@ export default function ToolsPageClient() {
         tool.name.toLowerCase().includes(searchQuery.toLowerCase())
     )
     .sort((a, b) => {
-      if (sortBy === 'rating') return b.rating - a.rating
-      return b.users.localeCompare(a.users)
-    })
+  if (sortBy === 'rating') return b.rating - a.rating
+
+  if (sortBy === 'latest') return b.id - a.id  // ✅ NEW
+
+  return b.users.localeCompare(a.users)
+})
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -104,10 +107,13 @@ export default function ToolsPageClient() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
+
                 className="rounded-full bg-secondary px-4 py-2 text-sm text-foreground border border-primary/20 focus:border-primary/50 focus:outline-none"
               >
-                <option value="popular">Most Popular</option>
-                <option value="rating">Highest Rated</option>
+                  <option value="latest">Latest</option> {/* ✅ ADD THIS */}
+                  <option value="popular">Most Popular</option>
+                  <option value="rating">Highest Rated</option>
+
               </select>
             </div>
           </motion.div>
