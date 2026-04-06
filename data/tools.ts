@@ -104,7 +104,7 @@ Overall, ChatGPT is a powerful all-in-one AI tool that boosts productivity, redu
     id: 2,
     name: 'Claude AI',
     slug: 'claude',
-    image: '/images/claude.png',
+    image: '/images/cloude.png',
     description: `Claude AI, developed by Anthropic, is a powerful large language model focused on safety, long-context understanding, and enterprise use cases. It is particularly known for handling extremely large documents and maintaining context over extended conversations, making it ideal for research, legal analysis, and documentation tasks.
 
 Claude excels in producing human-like, well-structured responses with a strong emphasis on safety and alignment. It is widely used by businesses that require reliable AI outputs without harmful or misleading content. Its ability to process long documents makes it superior for use cases such as contract review, report generation, and summarization.
@@ -357,6 +357,7 @@ The platform is known for its intuitive interface and advanced generative tools,
   id: 7,
   name: 'Jasper AI',
   slug: 'jasper-ai',
+  image: '/images/jasper.png',
   description: `Jasper AI is a popular AI content writing tool designed for marketers and businesses. It helps generate blog posts, ads, emails, and marketing copy quickly and efficiently.
 
 It is widely used for creating SEO-optimized content and scaling content production.`,
@@ -399,6 +400,7 @@ It is widely used for creating SEO-optimized content and scaling content product
   id: 8,
   name: 'Copy.ai',
   slug: 'copy-ai',
+  image: '/images/copyai.png',
   description: `Copy.ai is an AI writing assistant focused on generating marketing copy, social media posts, and sales content. It simplifies content creation with ready-made templates.
 
 It is ideal for startups and marketers looking to scale content quickly.`,
@@ -440,6 +442,7 @@ It is ideal for startups and marketers looking to scale content quickly.`,
   id: 9,
   name: 'Pictory AI',
   slug: 'pictory-ai',
+  image: '/images/pictory.png',
   description: `Pictory AI converts long-form content into engaging short videos automatically. It is widely used for YouTube automation and social media marketing.
 
 Users can create videos from blogs, scripts, or articles.`,
@@ -480,6 +483,7 @@ Users can create videos from blogs, scripts, or articles.`,
   id: 10,
   name: 'ElevenLabs',
   slug: 'elevenlabs',
+  image: '/images/iielevenlabs.png',
   description: `ElevenLabs is a leading AI voice generation platform known for realistic text-to-speech. It is used for voiceovers, audiobooks, and content creation.
 
 It supports multiple languages and high-quality voice cloning.`,
