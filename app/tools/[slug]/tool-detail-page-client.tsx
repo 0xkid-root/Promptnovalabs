@@ -19,6 +19,7 @@ import { SchemaMarkup } from '@/components/schema-markup'
 type ToolType = {
   id: number
   name: string
+  image: string
   slug: string
   description: string
   category: string
@@ -249,6 +250,12 @@ useEffect(() => {
                   }}>{tag}</span>
                 ))}
               </div>
+
+               <img
+                        src={tool.image}
+                        alt={tool.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
 
               {/* Description */}
               <p style={{ fontSize: 14, lineHeight: 1.75, color: 'rgba(255,255,255,0.55)', margin: 0 }}>

@@ -15,7 +15,7 @@ import { aiTools, categories } from '@/data/tools'
 export default function ToolsPageClient() {
   const [selectedCategory, setSelectedCategory] = useState('All Tools')
   const [searchQuery, setSearchQuery] = useState('')
-  const [sortBy, setSortBy] = useState('popular')
+  const [sortBy, setSortBy] = useState('latest')
 
   const filteredTools = aiTools
     .filter(
@@ -24,9 +24,12 @@ export default function ToolsPageClient() {
         tool.name.toLowerCase().includes(searchQuery.toLowerCase())
     )
     .sort((a, b) => {
-      if (sortBy === 'rating') return b.rating - a.rating
-      return b.users.localeCompare(a.users)
-    })
+  if (sortBy === 'rating') return b.rating - a.rating
+
+  if (sortBy === 'latest') return b.id - a.id  // ✅ NEW
+
+  return b.users.localeCompare(a.users)
+})
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -91,11 +94,10 @@ export default function ToolsPageClient() {
                   <button
                     key={category}
                     onClick={() => setSelectedCategory(category)}
-                    className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                      selectedCategory === category
+                    className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors ${selectedCategory === category
                         ? 'bg-primary text-foreground'
                         : 'bg-secondary text-foreground/70 hover:text-foreground'
-                    }`}
+                      }`}
                   >
                     {category}
                   </button>
@@ -105,10 +107,13 @@ export default function ToolsPageClient() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
+
                 className="rounded-full bg-secondary px-4 py-2 text-sm text-foreground border border-primary/20 focus:border-primary/50 focus:outline-none"
               >
-                <option value="popular">Most Popular</option>
-                <option value="rating">Highest Rated</option>
+                  <option value="latest">Latest</option> {/* ✅ ADD THIS */}
+                  <option value="popular">Most Popular</option>
+                  <option value="rating">Highest Rated</option>
+
               </select>
             </div>
           </motion.div>
@@ -123,62 +128,80 @@ export default function ToolsPageClient() {
             {filteredTools.map((tool) => (
               <motion.div key={tool.id} variants={itemVariants}>
                 <Link href={`/tools/${tool.slug}`}>
-                  <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group">
+                  <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group overflow-hidden">
+
+                    {/* 🔥 IMAGE SECTION */}
+                    <div className="relative w-full h-40 overflow-hidden">
+                      <img
+                        src={tool.image}
+                        alt={tool.name}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+
+                      {/* ✅ CATEGORY ON IMAGE */}
+                      <div className="absolute top-3 right-3">
+                        <Badge className="bg-black/60 backdrop-blur text-white text-xs border-none">
+                          {tool.category}
+                        </Badge>
+                      </div>
+
+                      {/* ✅ GRADIENT OVERLAY (VERY IMPORTANT) */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                    </div>
+
+                    {/* 🔥 CONTENT */}
                     <CardHeader>
-                      <div className="flex items-start justify-between mb-4">
-                        <div className={`p-3 rounded-lg text-2xl`}>
-                        {tool.icon}
-                      </div>
-                      <Badge variant="outline" className="text-xs">{tool.category}</Badge>
-                    </div>
-                    <CardTitle className="text-foreground text-lg">{tool.name}</CardTitle>
-                    <CardDescription className="text-foreground/70 line-clamp-2">
-                      {tool.description}
-                    </CardDescription>
-                  </CardHeader>
+                      <CardTitle className="text-foreground text-lg">
+                        {tool.name}
+                      </CardTitle>
 
-                  <CardContent className="flex-1 flex flex-col">
-                    <div className="mb-4 flex-1">
-                      <div className="flex gap-2 flex-wrap">
-                        {tool.tags.map((tag) => (
-                          <Badge
-                            key={tag}
-                            variant="secondary"
-                            className="bg-secondary text-foreground/80 text-xs"
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
+                      <CardDescription className="text-foreground/70 line-clamp-2">
+                        {tool.description}
+                      </CardDescription>
+                    </CardHeader>
 
-                    <div className="space-y-3 border-t border-border pt-3">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-foreground/60">Rating</span>
-                        <div className="flex items-center gap-1">
-                          <Star className="h-4 w-4 fill-primary text-primary" />
-                          <span className="font-semibold text-foreground">{tool.rating}</span>
+                    <CardContent className="flex-1 flex flex-col">
+                      <div className="mb-4 flex-1">
+                        <div className="flex gap-2 flex-wrap">
+                          {tool.tags.map((tag) => (
+                            <Badge
+                              key={tag}
+                              variant="secondary"
+                              className="bg-secondary text-foreground/80 text-xs"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
                         </div>
                       </div>
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-foreground/60">Users</span>
-                        <span className="font-semibold text-foreground">{tool.users}</span>
-                      </div>
-                    </div>
-                  </CardContent>
 
-                  <div className="p-4 border-t border-border">
-                    <Link href={`/tools/${tool.slug}`}>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="w-full rounded-full border-primary/50 text-foreground hover:bg-primary/10"
-                      >
-                        Explore
-                      </Button>
-                    </Link>
-                  </div>
-                </Card>
+                      <div className="space-y-3 border-t border-border pt-3">
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-foreground/60">Rating</span>
+                          <div className="flex items-center gap-1">
+                            <Star className="h-4 w-4 fill-primary text-primary" />
+                            <span className="font-semibold text-foreground">{tool.rating}</span>
+                          </div>
+                        </div>
+                        <div className="flex items-center justify-between text-sm">
+                          <span className="text-foreground/60">Users</span>
+                          <span className="font-semibold text-foreground">{tool.users}</span>
+                        </div>
+                      </div>
+                    </CardContent>
+
+                    <div className="p-4 border-t border-border">
+                      <Link href={`/tools/${tool.slug}`}>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="w-full rounded-full border-primary/50 text-foreground hover:bg-primary/10"
+                        >
+                          Explore
+                        </Button>
+                      </Link>
+                    </div>
+                  </Card>
                 </Link>
 
 
