@@ -161,6 +161,7 @@ Overall, Claude is a strong alternative to ChatGPT, especially for users who pri
     id: 3,
     name: 'Midjourney',
     slug: 'midjourney',
+    image: '/images/midjourney.png',
     description: `Midjourney is one of the most advanced AI image generation tools, widely known for producing highly artistic and visually stunning images. It is primarily used by designers, artists, and creators who want to generate unique visuals from text prompts.
 
 The platform operates through Discord, which may feel unconventional at first, but provides a collaborative environment where users can explore and refine prompts together. Midjourney excels in generating detailed, cinematic, and stylized images that often surpass competitors in artistic quality.
@@ -212,6 +213,8 @@ Overall, Midjourney is the best choice for high-quality AI art and creative visu
     id: 4,
     name: 'GitHub Copilot',
     slug: 'github-copilot',
+    image: '/images/githubcopilot.png',
+
     description: `GitHub Copilot is an AI-powered coding assistant that helps developers write code faster and more efficiently. Integrated directly into popular IDEs like VS Code, it provides real-time code suggestions, auto-completions, and even generates entire functions based on context.
 
 It is powered by advanced AI models and trained on large datasets of code, enabling it to understand programming patterns and best practices. Developers use Copilot to speed up repetitive tasks, learn new frameworks, and improve productivity.
@@ -262,6 +265,7 @@ Overall, GitHub Copilot is a must-have tool for modern developers.`,
   id: 5,
   name: 'Perplexity AI',
   slug: 'perplexity-ai',
+  image: '/images/perplexity.png',
   description: `Perplexity AI is an advanced AI-powered search engine that combines conversational AI with real-time web results. Unlike traditional search engines, it provides direct answers with sources, making it ideal for research and quick information discovery.
 
 It excels in delivering concise and accurate responses backed by citations, helping users verify information easily. It supports follow-up questions, making the experience interactive and dynamic.
@@ -309,6 +313,7 @@ Perplexity is widely used by students, researchers, and professionals for fast a
   id: 6,
   name: 'Runway ML',
   slug: 'runway-ml',
+  image: '/images/runway.png',
   description: `Runway ML is a powerful AI video generation and editing platform used by creators, filmmakers, and designers. It allows users to generate videos, remove backgrounds, and create visual effects using AI.
 
 The platform is known for its intuitive interface and advanced generative tools, making it accessible even for beginners.`,
