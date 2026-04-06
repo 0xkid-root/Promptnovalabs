@@ -603,7 +603,7 @@ One of its biggest strengths is multi-screen generation, enabling full product f
 
 The platform includes AI-powered styling, layout optimization, and design suggestions, ensuring modern, clean, and conversion-focused interfaces. Whether you're building an MVP, designing a SaaS product, or creating wireframes, Banani dramatically speeds up the design process.
 
-Overall, Banani AI is a powerful Figma alternative focused on speed, automation, and accessibility, making UI/UX design easier and faster for everyone.`,
+  Overall, Banani AI is a powerful Figma alternative focused on speed, automation, and accessibility, making UI/UX design easier and faster for everyone.`,
 
   category: 'Design AI',
 
@@ -674,7 +674,177 @@ Overall, Banani AI is a powerful Figma alternative focused on speed, automation,
     'Not ideal for pixel-perfect design control',
     'Some advanced features locked behind paid plans'
   ]
-}
+},
+{
+  id: 13,
+  name: 'Recraft AI',
+  slug: 'recraft-ai',
+  image: '/images/recraft.png',
+
+  description: `Recraft AI is an advanced AI-powered design tool that specializes in generating high-quality vector graphics, icons, illustrations, and brand assets. Unlike traditional image generators, Recraft focuses on structured design output, making it ideal for UI designers, startups, and marketers.
+
+With Recraft AI, users can create scalable vector illustrations, logos, and icons from simple text prompts. It provides precise control over style, color palettes, and composition, ensuring consistent brand identity across projects.
+
+One of its standout features is its ability to generate editable vector assets instead of static images, allowing designers to directly use outputs in design tools like Figma and Adobe Illustrator.
+
+The platform also includes tools for mockups, brand kits, and design systems, making it a complete AI-powered design solution for modern workflows.
+
+Overall, Recraft AI is perfect for teams and creators who need fast, scalable, and production-ready design assets.`,
+
+  category: 'Design AI',
+  tags: ['AI Design', 'Vector', 'Icons', 'Branding', 'UI/UX'],
+
+  rating: 4.7,
+  users: '250K+',
+
+  icon: '🎨',
+  color: 'from-indigo-400 to-purple-600',
+
+  website: 'https://www.recraft.ai',
+  pricing: 'Free / Paid Plans',
+
+  features: [
+    'Text-to-vector generation',
+    'AI icon and logo creation',
+    'Editable vector output (SVG)',
+    'Brand style consistency',
+    'Color palette control',
+    'Design system generation',
+    'Mockup creation',
+    'Export to Figma & Illustrator',
+  ],
+
+  specifications: {
+    Output: 'Vector (SVG) + Raster',
+    Platform: 'Web-based',
+    Speed: 'Fast',
+    AI: 'Generative Design Model',
+    Editing: 'Fully editable vectors',
+  },
+
+  useCases: [
+    'Logo design',
+    'UI/UX design',
+    'Brand identity creation',
+    'Marketing assets',
+    'Startup design systems',
+  ],
+
+  pros: [
+    'Generates editable vector graphics',
+    'Great for branding and UI design',
+    'Fast and scalable outputs',
+    'Better than image-only AI tools',
+  ],
+
+  cons: [
+    'Limited free credits',
+    'Less known than competitors',
+    'Learning curve for advanced features',
+  ],
+},
+{
+  id: 14,
+  name: 'Topaz Labs',
+  slug: 'topaz-labs',
+  image: '/images/topazlabs.png',
+
+  description: `Topaz Labs is a premium AI-powered photo and video enhancement platform designed for professionals who demand the highest visual quality. It leverages advanced deep learning models to upscale images, reduce noise, sharpen details, and stabilize video footage with exceptional precision.
+
+Unlike many cloud-based tools, Topaz Labs processes all files locally on your machine, ensuring faster performance and complete data privacy. Its suite includes specialized tools like Photo AI, Video AI, and Gigapixel AI, each optimized for specific enhancement tasks.
+
+Whether you're a photographer restoring old images, a videographer fixing shaky footage, or a content creator improving visual quality, Topaz Labs delivers studio-grade results with minimal manual effort.`,
+
+  category: 'Photo & Video Editing',
+  tags: ['AI Editing', 'Upscaling', 'Video Stabilization', 'Enhancement', 'Professional Tools'],
+
+  rating: 4.6,
+  users: '500K+',
+
+  icon: '🎥',
+  color: 'from-blue-500 to-indigo-600',
+
+  website: 'https://www.topazlabs.com',
+  pricing: 'Paid (One-time purchase)',
+
+  features: [
+    'AI-powered image and video enhancement',
+    'Advanced video stabilization',
+    'High-quality image upscaling (Gigapixel AI)',
+    'Noise reduction and sharpening',
+    'Batch processing support',
+    'Local processing for privacy and speed',
+    'Face recovery and detail enhancement',
+    'Optimized for high-end GPUs'
+  ],
+
+  specifications: {
+    Platform: 'Windows / macOS',
+    Processing: 'Local (Offline)',
+    GPU: 'Nvidia / AMD / Apple Silicon optimized',
+    Speed: 'Very Fast (hardware dependent)',
+    Output: 'High-resolution images & videos'
+  },
+
+  useCases: [
+    'Professional photo editing',
+    'Video stabilization and enhancement',
+    'Restoring old or low-quality images',
+    'YouTube and content creation',
+    'Film and production workflows',
+    'Real estate image enhancement'
+  ],
+
+  pros: [
+    'Industry-leading AI enhancement quality',
+    'Works offline (100% privacy)',
+    'Excellent for both photo and video',
+    'Batch processing saves time',
+    'High-end professional output'
+  ],
+
+  cons: [
+    'Requires powerful hardware',
+    'Expensive for beginners',
+    'Some features have a learning curve'
+  ],
+
+  pricingDetails: {
+    PhotoAI: '$199 (one-time)',
+    VideoAI: '$299 (one-time)',
+    GigapixelAI: '$99 (one-time)'
+  },
+
+  integrations: [
+    'Adobe Photoshop',
+    'After Effects',
+    'DaVinci Resolve'
+  ],
+
+  compatibility: [
+    'Windows',
+    'macOS',
+    'Apple Silicon',
+    'Nvidia GPU',
+    'AMD GPU'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.8,
+    easeOfUse: 4.2,
+    features: 4.7,
+    performance: 4.9,
+    customization: 4.3,
+    security: 5.0,
+    support: 4.5,
+    costEfficiency: 4.0,
+    integrations: 4.6
+  },
+
+  overallScore: 4.6,
+
+  conclusion: `Topaz Labs is one of the best AI tools for high-quality image and video enhancement. It is especially suited for professionals and serious creators who need powerful, reliable, and privacy-focused editing tools.`
+},
 ]
 
 export const categories = [
@@ -691,207 +861,3 @@ export const categories = [
 
 ]
 
-
-{/**
-  
-  {
-  id: 11,
-  name: 'DALL·E',
-  slug: 'dalle',
-  description: `DALL·E is an advanced AI image generation model developed by OpenAI. It creates highly detailed images from text prompts and is widely used for design, marketing, and creative projects.`,
-  category: 'Image Generation',
-  tags: ['AI Art', 'Design'],
-  rating: 4.7,
-  users: '1.5M+',
-  icon: '🖼️',
-  color: 'from-blue-400 to-purple-600',
-  website: 'https://openai.com/dall-e',
-  pricing: 'Free / Credits',
-  features: ['Text-to-image', 'High-quality visuals', 'Creative generation'],
-  specifications: { Resolution: 'HD', Speed: 'Fast' },
-  useCases: ['Design', 'Marketing', 'Art'],
-  pros: ['High quality', 'Creative'],
-  cons: ['Credit system'],
-},
-
-{
-  id: 12,
-  name: 'Stable Diffusion',
-  slug: 'stable-diffusion',
-  description: `Stable Diffusion is an open-source AI model for generating images from text prompts. It allows customization and local deployment.`,
-  category: 'Image Generation',
-  tags: ['Open Source'],
-  rating: 4.6,
-  users: '2M+',
-  icon: '🎨',
-  color: 'from-purple-500 to-indigo-600',
-  website: 'https://stability.ai',
-  pricing: 'Free / Paid',
-  features: ['Open-source', 'Custom models', 'High flexibility'],
-  specifications: { Resolution: 'HD' },
-  useCases: ['Art', 'Design'],
-  pros: ['Free', 'Customizable'],
-  cons: ['Setup required'],
-},
-
-{
-  id: 13,
-  name: 'Leonardo AI',
-  slug: 'leonardo-ai',
-  description: `Leonardo AI is a powerful image generation platform focused on game assets, concept art, and creative design.`,
-  category: 'Image Generation',
-  tags: ['Design'],
-  rating: 4.7,
-  users: '600K+',
-  icon: '🧠',
-  color: 'from-pink-400 to-purple-600',
-  website: 'https://leonardo.ai',
-  pricing: 'Free / Paid',
-  features: ['Game assets', 'High detail', 'Custom models'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Game design', 'Art'],
-  pros: ['High detail'],
-  cons: ['Limited free usage'],
-},
-
-{
-  id: 14,
-  name: 'Canva AI',
-  slug: 'canva-ai',
-  description: `Canva AI integrates generative AI tools into design workflows, enabling users to create graphics, presentations, and content easily.`,
-  category: 'Productivity',
-  tags: ['Design'],
-  rating: 4.8,
-  users: '10M+',
-  icon: '🖌️',
-  color: 'from-cyan-400 to-blue-600',
-  website: 'https://canva.com',
-  pricing: 'Free / Pro',
-  features: ['Design automation', 'Templates', 'AI tools'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Design', 'Marketing'],
-  pros: ['Easy to use'],
-  cons: ['Limited advanced control'],
-},
-
-{
-  id: 15,
-  name: 'Notion AI',
-  slug: 'notion-ai',
-  description: `Notion AI enhances productivity by adding AI writing and automation features within the Notion workspace.`,
-  category: 'Productivity',
-  tags: ['Workspace'],
-  rating: 4.7,
-  users: '2M+',
-  icon: '📒',
-  color: 'from-gray-400 to-black',
-  website: 'https://notion.so',
-  pricing: '$10/month',
-  features: ['Writing', 'Summaries', 'Automation'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Notes', 'Docs'],
-  pros: ['Integrated workflow'],
-  cons: ['Paid'],
-},
-
-// ---- Continue Pattern ----
-
-{
-  id: 16,
-  name: 'Grammarly AI',
-  slug: 'grammarly-ai',
-  description: `Grammarly AI improves writing quality with grammar correction, tone adjustment, and AI suggestions.`,
-  category: 'Writing',
-  tags: ['Grammar'],
-  rating: 4.8,
-  users: '20M+',
-  icon: '📝',
-  color: 'from-green-400 to-green-700',
-  website: 'https://grammarly.com',
-  pricing: 'Free / Premium',
-  features: ['Grammar correction', 'Tone suggestions'],
-  specifications: { Accuracy: 'High' },
-  useCases: ['Writing'],
-  pros: ['Accurate'],
-  cons: ['Premium features'],
-},
-
-{
-  id: 17,
-  name: 'Writesonic',
-  slug: 'writesonic',
-  description: `Writesonic is an AI content generation tool for blogs, ads, and SEO writing.`,
-  category: 'Writing',
-  tags: ['SEO'],
-  rating: 4.6,
-  users: '1M+',
-  icon: '✍️',
-  color: 'from-orange-400 to-red-600',
-  website: 'https://writesonic.com',
-  pricing: 'Free / Paid',
-  features: ['Blog writing', 'SEO content'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Marketing'],
-  pros: ['SEO focused'],
-  cons: ['Limited free'],
-},
-
-{
-  id: 18,
-  name: 'Tome AI',
-  slug: 'tome-ai',
-  description: `Tome AI helps create presentations and storytelling content using AI.`,
-  category: 'Productivity',
-  tags: ['Presentations'],
-  rating: 4.6,
-  users: '500K+',
-  icon: '📊',
-  color: 'from-purple-400 to-blue-600',
-  website: 'https://tome.app',
-  pricing: 'Free / Paid',
-  features: ['Slides generation', 'Storytelling'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Presentations'],
-  pros: ['Creative'],
-  cons: ['Limited export'],
-},
-
-{
-  id: 19,
-  name: 'Gamma AI',
-  slug: 'gamma-ai',
-  description: `Gamma AI generates presentations, documents, and web pages instantly using AI.`,
-  category: 'Productivity',
-  tags: ['Docs'],
-  rating: 4.7,
-  users: '400K+',
-  icon: '📑',
-  color: 'from-indigo-400 to-purple-600',
-  website: 'https://gamma.app',
-  pricing: 'Free / Paid',
-  features: ['Auto docs', 'Slides'],
-  specifications: { Speed: 'Fast' },
-  useCases: ['Docs'],
-  pros: ['Fast'],
-  cons: ['Limited customization'],
-},
-
-{
-  id: 20,
-  name: 'Synthesia',
-  slug: 'synthesia',
-  description: `Synthesia creates AI-generated videos using virtual avatars and voiceovers.`,
-  category: 'Video',
-  tags: ['Avatars'],
-  rating: 4.7,
-  users: '1M+',
-  icon: '🎥',
-  color: 'from-yellow-400 to-orange-600',
-  website: 'https://synthesia.io',
-  pricing: '$30/month',
-  features: ['AI avatars', 'Text-to-video'],
-  specifications: { Quality: 'High' },
-  useCases: ['Training videos'],
-  pros: ['Professional'],
-  cons: ['Paid'],
-},*/}
