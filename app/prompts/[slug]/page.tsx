@@ -119,11 +119,7 @@ export default function PromptDetailPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                   {prompt.title}
                 </h1>
-                <p className="text-gray-400 text-sm">
-                  Shared by{" "}
-                  <span className="text-gray-200 font-medium">{prompt.author}</span>
-                  {" · "}Posted on {prompt.date}
-                </p>
+                
               </div>
 
               {/* Prompt description */}

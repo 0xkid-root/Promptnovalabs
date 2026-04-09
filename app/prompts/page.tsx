@@ -15,6 +15,7 @@ const CATEGORIES = [
   "Abstract",
   "Nature",
   "Fantasy",
+  "Realistic",
 ];
 
 function CopyButton({ text }: { text: string }) {
@@ -53,9 +54,7 @@ export default function PromptsPage() {
     const q = search.toLowerCase();
 
     const matchSearch =
-      p.title.toLowerCase().includes(q) ||
-      p.prompt.toLowerCase().includes(q) ||
-      p.author.toLowerCase().includes(q);
+      p.title.toLowerCase().includes(q) || p.prompt.toLowerCase().includes(q) || p.tag.toLowerCase().includes(q);
 
     return matchCat && matchSearch;
   });
@@ -84,7 +83,7 @@ export default function PromptsPage() {
 
   <input
     type="text"
-    placeholder="Search prompts, authors, tags…"
+    placeholder="Search prompts,  tags…"
     value={search}
     onChange={(e) => setSearch(e.target.value)}
     className="w-full h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl pl-12 pr-4 text-sm text-white placeholder-gray-500 outline-none focus:border-purple-600 transition-colors"
@@ -135,15 +134,12 @@ export default function PromptsPage() {
                   {/* Content */}
                   <div className="p-5 flex flex-col flex-1">
                     
-                    {/* Tag + Author */}
                     <div className="flex items-center justify-between mb-3">
                       <span className="text-[11px] font-semibold uppercase tracking-widest text-purple-400">
-                        {p.tag}
+                        {p.title}
                       </span>
 
-                      <span className="text-[11px] text-gray-500">
-                        by {p.author}
-                      </span>
+                    
                     </div>
 
                     {/* Prompt */}
