@@ -143,7 +143,14 @@ export default function PromptsPage() {
                     </div>
 
                     {/* Prompt */}
-                    <p className="text-gray-300 text-sm leading-relaxed line-clamp-4 mb-4 flex-1">
+                    <p
+                      className="text-gray-300 text-sm leading-relaxed mb-4 flex-1 overflow-hidden"
+                      style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 4,
+                        WebkitBoxOrient: 'vertical',
+                      }}
+                    >
                       {p.prompt}
                     </p>
 
