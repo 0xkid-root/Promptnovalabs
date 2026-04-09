@@ -26,7 +26,7 @@ export function Header() {
           {[
             { label: 'Home', href: '/' },
             { label: 'Tools', href: '/tools' },
-            { label: 'Prompts', href: '/#prompts' },
+            { label: 'Prompts', href: '/prompts' },
             { label: 'News', href: '/news' },
           ].map((item) => (
             <Link key={item.label} href={item.href}>
