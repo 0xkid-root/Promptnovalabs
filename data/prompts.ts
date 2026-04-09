@@ -9,8 +9,51 @@ export type Prompt = {
   isPremium: boolean;
   image: string;
   prompt: string;
-  website:string;
+  website: string;
 };
+
+// Helper function to generate Schema.org JSON-LD for a prompt
+export function generatePromptSchema(prompt: {
+  title: string;
+  slug: string;
+  prompt: string;
+  model: string;
+  likes: number;
+  date: string;
+  image: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": prompt.title,
+    "description": prompt.prompt.substring(0, 160),
+    "url": `https://ainovalab.vercel.app/prompts/${prompt.slug}`,
+    "creator": {
+      "@type": "Organization",
+      "name": "AINovaLab"
+    },
+    "datePublished": prompt.date,
+    "image": prompt.image,
+    "applicationCategory": "AI Prompt",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.5,
+      "ratingCount": prompt.likes
+    },
+    "keywords": `${prompt.title}, ${prompt.model}, AI prompt, prompt engineering`
+  };
+}
+
+export const CATEGORIES = [
+  "All",
+  "Portrait",
+  "Cinematic",
+  "Architecture",
+  "Abstract",
+  "Nature",
+  "Fantasy",
+  "Realistic",
+];
 
 export const prompts: Prompt[] = [
   {
