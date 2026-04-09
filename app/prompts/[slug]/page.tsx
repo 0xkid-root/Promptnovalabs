@@ -33,8 +33,13 @@ export default function PromptDetailPage() {
 
   // Single source of truth — imported from lib/prompts
   const prompt = prompts.find((p) => p.slug === slug);
+  const promptTags = prompt?.tag.split(",").map((tag) => tag.trim()).filter(Boolean) ?? [];
   const related = prompts
-    .filter((p) => p.slug !== slug && p.tag === prompt?.tag)
+    .filter((p) => {
+      if (p.slug === slug) return false;
+      const tags = p.tag.split(",").map((tag) => tag.trim());
+      return promptTags.some((tag) => tags.includes(tag));
+    })
     .slice(0, 3);
 
   const [copied, setCopied] = useState(false);
@@ -142,8 +147,11 @@ export default function PromptDetailPage() {
                   {copied ? "Copied!" : "Copy"}
                 </button>
 
+
                 <button className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 font-medium text-sm transition-all">
-                  <ExternalLink size={16} />
+                <Link href={prompt.website} target="_blank" rel="noopener noreferrer">
+                    <ExternalLink size={16} />
+                  </Link>
                   Try this
                 </button>
               </div>
@@ -163,10 +171,15 @@ export default function PromptDetailPage() {
             <div className="bg-white/5 border border-white/10 rounded-xl p-6">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Tags</p>
               <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-purple-600/20 border border-purple-600/50 px-3 py-1.5 rounded-lg text-purple-300 font-medium">
-                  {prompt.tag}
-                </span>
-                {prompt.tag === "Portrait" && (
+                {promptTags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs bg-purple-600/20 border border-purple-600/50 px-3 py-1.5 rounded-lg text-purple-300 font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+                {promptTags.includes("Portrait") && (
                   <span className="text-xs bg-purple-600/20 border border-purple-600/50 px-3 py-1.5 rounded-lg text-purple-300 font-medium">
                     Cinematic
                   </span>

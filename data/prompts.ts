@@ -29,7 +29,7 @@ export const prompts: Prompt[] = [
   },
   {
     id: "2",
-    slug: "Gini",
+    slug: "gini",
     title: "Gini",
     tag: "Portrait,Realistic,Photography,Fashion,Minimalist,Elegant",
     date: "October 8, 2025",
@@ -43,15 +43,15 @@ export const prompts: Prompt[] = [
   },
   {
     id: "3",
-    slug: "Propt moto esportiva",
+    slug: "propt-moto-esportiva",
     title: "Propt moto esportiva",
     tag: "Realistic,Photography",
     date: "October 5, 2025",
     likes: 573,
-    model: "DALL-E 3",
+    model: "Gemini",
     isPremium: false,
     image: '/images/prompts/propt-moto.png',
-    website: "https://openai.com/dall-e-3",
+    website: "https://gemini.google.com/app",
     prompt:
     "An ultra-realistic, 8k cinematic portrait based on the reference image. The woman is seated confidently on a powerful, modern, glossy black sport motorcycle in a natural outdoor setting with a background of lush green trees and soft, dappled natural light. She maintains direct eye contact with the camera with a calm and confident expression. Her natural dark hair falls around her shoulders. She is dressed in a loose-fitting black crewneck t-shirt and dark, loose-fit jeans with visible cuffs at the bottom. On her feet are classic black and white Nike Dunk Low sneakers. A black tactical-style watch is visible on her left wrist. Her left hand rests casually on her left thigh. Her right hand rests on the motorcycle's fuel tank, holding a glossy black full-face helmet with a clear, reflective visor. The motorcycle itself is highly detailed, showcasing a large engine, a sturdy visible frame, and various brightly polished chrome components that gleam in the soft daylight, emphasizing its robust and modern build. The background is composed of tall trees creating a deep, natural backdrop with balanced shadow and light, adding to the cinematic depth. The image has an editorial fotorrealista style with rich colors and sharp focus on the user and the bike's textures."
   },
@@ -128,7 +128,7 @@ export const prompts: Prompt[] = [
   },
   {
     id: "9",
-    slug: "Instinct and Spirit",
+    slug: "instinct-and-spirit",
     title: "Instinct and Spirit",
     tag: "Abstract",
     date: "September 10, 2025",
@@ -143,7 +143,7 @@ export const prompts: Prompt[] = [
 
   {
     id: "10",
-    slug: "Black tie photo",
+    slug: "black-tie-photo",
     title: "Black tie photo",
     tag: "Abstract,Realistic,Cinematic,Portrait,Minimalist",
     date: "September 10, 2025",
@@ -155,6 +155,7 @@ export const prompts: Prompt[] = [
     prompt:
     "A monochromatic (black and white) hyper-realistic portrait of a confident, mature man with styled dark hair and a well-kept beard, dressed in a formal black suit, white shirt, and a neatly tied black tie. He is looking directly at the camera with an intense, focused gaze. The background is a modern, slightly industrial architectural space with exposed concrete pillars and walls, and large glass partitions, softly blurred. The lighting is high-contrast, dramatic chiaroscuro, highlighting his features and the texture of his suit. This is a central, medium close-up shot."
   },
+
 
   
 ];

@@ -18,6 +18,12 @@ const CATEGORIES = [
   "Realistic",
 ];
 
+const getPromptTags = (tagString: string) =>
+  tagString
+    .split(",")
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+
 function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
 
@@ -50,11 +56,14 @@ export default function PromptsPage() {
   const [search, setSearch] = useState("");
 
   const filtered = prompts.filter((p) => {
-    const matchCat = activeCategory === "All" || p.tag === activeCategory;
+    const tags = getPromptTags(p.tag);
+    const matchCat = activeCategory === "All" || tags.includes(activeCategory);
     const q = search.toLowerCase();
 
     const matchSearch =
-      p.title.toLowerCase().includes(q) || p.prompt.toLowerCase().includes(q) || p.tag.toLowerCase().includes(q);
+      p.title.toLowerCase().includes(q) ||
+      p.prompt.toLowerCase().includes(q) ||
+      tags.some((tag) => tag.toLowerCase().includes(q));
 
     return matchCat && matchSearch;
   });
@@ -119,7 +128,7 @@ export default function PromptsPage() {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
             {filtered.map((p) => (
-              <Link key={p.id} href={`/prompts/${p.slug}`} className="group block">
+              <Link key={p.id} href={`/prompts/${encodeURIComponent(p.slug)}`} className="group block">
                 <div className="h-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl overflow-hidden hover:border-[#2a2a2a] transition-all duration-300 flex flex-col">
 
                   {/* Image */}
@@ -134,12 +143,20 @@ export default function PromptsPage() {
                   {/* Content */}
                   <div className="p-5 flex flex-col flex-1">
                     
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="text-[11px] font-semibold uppercase tracking-widest text-purple-400">
+                    <div className="mb-3">
+                      <div className="flex flex-wrap gap-2 mb-3">
+                        {getPromptTags(p.tag).map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-[10px] uppercase tracking-widest bg-purple-600/10 border border-purple-600/20 text-purple-200 px-2.5 py-1 rounded-full"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <span className="text-[11px] font-semibold uppercase tracking-widest text-white">
                         {p.title}
                       </span>
-
-                    
                     </div>
 
                     {/* Prompt */}
