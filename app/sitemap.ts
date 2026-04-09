@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 import { aiTools } from "@/data/tools";
 import { articles } from "@/data/newsArticles";
+import { prompts } from "@/data/prompts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://ainovalab.vercel.app";
@@ -20,6 +21,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/prompts`,
+      lastModified: new Date(),
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/news`,
       lastModified: new Date(),
       changeFrequency: "daily" as const,
@@ -32,6 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "daily" as const,
       priority: 0.8,
+    })),
+
+    // Prompt pages
+    ...prompts.map((prompt) => ({
+      url: `${baseUrl}/prompts/${prompt.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
     })),
 
     // News pages
