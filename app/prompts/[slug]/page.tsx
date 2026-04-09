@@ -1,0 +1,239 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { motion } from 'framer-motion'
+import { useParams } from "next/navigation";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { prompts } from "@/data/prompts";
+import {
+  ArrowLeft,
+  Heart,
+  Copy,
+  Check,
+  Bookmark,
+  ExternalLink,
+  Share2,
+} from "lucide-react";
+
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: (i = 0) => ({
+    opacity: 1, y: 0,
+    transition: { delay: i * 0.07, duration: 0.45, ease: [0.25, 0.46, 0.45, 0.94] }
+  }),
+}
+
+/* ── Page ───────────────────────────────────────────────────────── */
+export default function PromptDetailPage() {
+  const params = useParams();
+  const slug = params?.slug as string;
+
+  // Single source of truth — imported from lib/prompts
+  const prompt = prompts.find((p) => p.slug === slug);
+  const related = prompts
+    .filter((p) => p.slug !== slug && p.tag === prompt?.tag)
+    .slice(0, 3);
+
+  const [copied, setCopied] = useState(false);
+  const [liked, setLiked] = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [likeCount, setLikeCount] = useState(prompt?.likes ?? 0);
+
+  /* ── Not found ── */
+  if (!prompt) {
+    return (
+      <div className="min-h-screen bg-[#111] flex flex-col text-white">
+        <Header />
+        <div className="flex-1 flex flex-col items-center justify-center gap-4">
+          <p className="text-xl font-semibold">Prompt not found</p>
+          <Link
+            href="/prompts"
+            className="text-purple-400 hover:underline text-sm flex items-center gap-1"
+          >
+            <ArrowLeft size={14} /> Back to prompts
+          </Link>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(prompt.prompt);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
+
+  const handleLike = () => {
+    setLiked((prev) => !prev);
+    setLikeCount((prev) => (liked ? prev - 1 : prev + 1));
+  };
+
+  return (
+    <div className="min-h-screen bg-[#111] text-white flex flex-col">
+      <Header />
+
+      {/* ── Sticky sub-nav ── */}
+      
+      {/* ── Main content ── */}
+      <div className="flex-1 py-12">
+        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+
+          <motion.div initial="hidden" animate="show" variants={fadeUp} custom={0} style={{ marginBottom: 24 }}>
+          <Link href="/prompts">
+            <GhostBtn><ArrowLeft style={{ width: 14, height: 14 }} /> Back to prompts</GhostBtn>
+          </Link>
+        </motion.div>
+          
+          {/* Hero section */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+            
+            {/* Left - Image */}
+            <div className="flex items-center">
+              <div className="relative rounded-2xl overflow-hidden bg-[#0a0a0a] w-full">
+                <img
+                  src={prompt.image}
+                  alt={prompt.title}
+                  className="w-full aspect-square object-cover"
+                />
+                
+              </div>
+            </div>
+
+            {/* Right - Content */}
+            <div className="flex flex-col justify-center gap-6 ml-4">
+              {/* Badge */}
+              <div className="inline-block w-fit">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-white bg-black px-3.5 py-2 rounded-lg">
+                  Prompt Detail
+                </span>
+              </div>
+
+              {/* Title */}
+              <div>
+                <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
+                  {prompt.title}
+                </h1>
+                <p className="text-gray-400 text-sm">
+                  Shared by{" "}
+                  <span className="text-gray-200 font-medium">{prompt.author}</span>
+                  {" · "}Posted on {prompt.date}
+                </p>
+              </div>
+
+              {/* Prompt description */}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+                <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Prompt</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{prompt.prompt}</p>
+              </div>
+
+              {/* Action buttons */}
+              <div className="flex gap-3">
+                <button
+                  onClick={handleCopy}
+                  className={`flex items-center gap-2 px-5 py-2.5 rounded-lg font-medium text-sm transition-all
+                    ${copied
+                      ? "bg-green-600/20 text-green-400 border border-green-600/50"
+                      : "bg-black text-white border border-white/20 hover:bg-white/10"
+                    }`}
+                >
+                  {copied ? <Check size={16} /> : <Copy size={16} />}
+                  {copied ? "Copied!" : "Copy"}
+                </button>
+
+                <button className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-gray-300 hover:bg-white/10 font-medium text-sm transition-all">
+                  <ExternalLink size={16} />
+                  Try this
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Metadata section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            
+            {/* Model card */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Model or Tool</p>
+              <p className="text-lg font-semibold text-white">{prompt.model}</p>
+            </div>
+
+            {/* Tags card */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+              <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Tags</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-purple-600/20 border border-purple-600/50 px-3 py-1.5 rounded-lg text-purple-300 font-medium">
+                  {prompt.tag}
+                </span>
+                {prompt.tag === "Portrait" && (
+                  <span className="text-xs bg-purple-600/20 border border-purple-600/50 px-3 py-1.5 rounded-lg text-purple-300 font-medium">
+                    Cinematic
+                  </span>
+                )}
+              </div>
+            </div>
+
+            {/* Likes card */}
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center">
+              <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-2">Engagement</p>
+              <button
+                onClick={handleLike}
+                className="flex items-center gap-2 text-white hover:text-pink-400 transition-colors"
+              >
+                <Heart size={18} fill={liked ? "currentColor" : "none"} className={liked ? "text-pink-400" : ""} />
+                <span className="text-lg font-semibold">{likeCount} Likes</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Related prompts */}
+          {/* {related.length > 0 && (
+            <div className="pt-12 mt-4 border-t border-white/10">
+              <p className="text-xl font-bold mb-8">
+                More in{" "}
+                <span className="text-purple-400">{prompt.tag}</span>
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {related.map((r) => (
+                  <Link key={r.id} href={`/prompts/${r.slug}`} className="group">
+                    <div className="relative overflow-hidden rounded-xl bg-white/5 border border-white/10 hover:border-purple-600/50 transition-all">
+                      <img
+                        src={r.image}
+                        alt={r.title}
+                        className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span className="text-white font-medium">View prompt</span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )} */}
+        </div>
+      </div>
+
+      <Footer />
+    </div>
+  );
+}
+
+// ── Shared ──
+function GhostBtn({ children }: { children: React.ReactNode }) {
+  return (
+    <span style={{
+      display: 'inline-flex', alignItems: 'center', gap: 8,
+      background: 'transparent', border: '1px solid rgba(255,255,255,0.08)',
+      color: 'rgba(255,255,255,0.5)', borderRadius: 999, padding: '8px 16px',
+      fontSize: 13, cursor: 'pointer'
+    }}>
+      {children}
+    </span>
+  )
+}
