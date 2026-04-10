@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Search, Copy, ChevronRight, Check } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -74,16 +75,26 @@ export default function PromptsPageClient() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        {/* ── Search ── */}
-        <div className="relative mb-5 flex items-center">
-          <input
-            type="text"
-            placeholder="Search prompts, tags…"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full h-12 bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl pl-12 pr-4 text-sm text-white placeholder-gray-500 outline-none focus:border-purple-600 transition-colors"
-          />
-        </div>
+    {/* ── Search ── */}
+        
+
+
+        {/* Search */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="mb-8 relative"
+          >
+            <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-foreground/50" />
+            <input
+              type="text"
+              placeholder="Search prompts..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full rounded-full bg-secondary px-12 py-3 text-foreground placeholder:text-foreground/50 border border-primary/20 focus:border-primary/50 focus:outline-none transition-colors"
+            />
+          </motion.div>
 
         {/* ── Categories ── */}
         <div className="flex gap-2 flex-wrap mb-7">

@@ -99,20 +99,18 @@ export const prompts: Prompt[] = [
     "An ultra-realistic, 8k cinematic portrait based on the reference image. The woman is seated confidently on a powerful, modern, glossy black sport motorcycle in a natural outdoor setting with a background of lush green trees and soft, dappled natural light. She maintains direct eye contact with the camera with a calm and confident expression. Her natural dark hair falls around her shoulders. She is dressed in a loose-fitting black crewneck t-shirt and dark, loose-fit jeans with visible cuffs at the bottom. On her feet are classic black and white Nike Dunk Low sneakers. A black tactical-style watch is visible on her left wrist. Her left hand rests casually on her left thigh. Her right hand rests on the motorcycle's fuel tank, holding a glossy black full-face helmet with a clear, reflective visor. The motorcycle itself is highly detailed, showcasing a large engine, a sturdy visible frame, and various brightly polished chrome components that gleam in the soft daylight, emphasizing its robust and modern build. The background is composed of tall trees creating a deep, natural backdrop with balanced shadow and light, adding to the cinematic depth. The image has an editorial fotorrealista style with rich colors and sharp focus on the user and the bike's textures."
   },
   {
-    id: "4",
-    slug: "blue-dreams-morocco",
-    title: "Blue Dreams of Morocco",
-    tag: "Architecture",
-    date: "October 1, 2025",
-    likes: 563,
-    model: "Stable Diffusion",
-    isPremium: true,
-    image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=90",
-        website: "https://stablediffusionweb.com/",
-
-    prompt:
-      "A woman in a white off-shoulder top and black skirt walks through a narrow blue-painted alley in Chefchaouen, Morocco. Colorful flower pots on walls, morning golden light, travel photography, dreamy atmosphere, wide angle, vibrant colors, ultra detailed.",
-  },
+  "id": "4",
+  "slug": "miniature-man-in-hand-cinematic-prompt",
+  "title": "Miniature Man in Hand Cinematic Photo Prompt",
+  "tag": "Cinematic,Photorealistic,Miniature,Surreal,Portrait,DSLR",
+  "date": "April 10, 2026",
+  "likes": 0,
+  "model": "GPT Image / Midjourney / Gemini",
+  "isPremium": false,
+  "image": "/images/prompts/miniature-man-in-hand-cinematic-prompt.png",
+  "website": "https://chatgpt.com/",
+  "prompt": "A highly realistic close-up cinematic photo of a large human hand gently holding a tiny miniature man sitting in the palm. The miniature figure is a young South Asian male wearing a black hoodie, blue jeans, and white sneakers, with a natural relaxed pose and soft confident expression. The scale difference is surreal but believable, like a real miniature figurine placed in the hand. The lighting is warm natural sunlight with soft shadows, shallow depth of field, and strong focus on the hand and miniature subject. Background is softly blurred and neutral, creating a bokeh effect. Ultra-detailed skin texture on the hand, realistic fabric details on clothing, DSLR photography style, 85mm lens, f/1.8, high resolution, cinematic tone, photorealistic, depth and perspective perfectly matched."
+},
   {
     id: "5",
     slug: "cinematic-urban-portrait",
@@ -198,6 +196,137 @@ export const prompts: Prompt[] = [
     prompt:
     "A monochromatic (black and white) hyper-realistic portrait of a confident, mature man with styled dark hair and a well-kept beard, dressed in a formal black suit, white shirt, and a neatly tied black tie. He is looking directly at the camera with an intense, focused gaze. The background is a modern, slightly industrial architectural space with exposed concrete pillars and walls, and large glass partitions, softly blurred. The lighting is high-contrast, dramatic chiaroscuro, highlighting his features and the texture of his suit. This is a central, medium close-up shot."
   },
+
+  {
+    "id": "11",
+    "slug": "tiny-city-in-coffee-cup",
+    "title": "Tiny City Inside Coffee Cup",
+    "tag": "Miniature,Creative,Surreal,Cinematic,Photography",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/tiny-city-coffee.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic miniature city inside a coffee cup placed on a wooden table. The city should include tiny buildings, roads, cars, and street lights. Add soft morning sunlight and steam rising from the coffee. Use shallow depth of field and realistic lighting with a cinematic feel."
+  },
+  {
+    "id": "12",
+    "slug": "man-walking-on-clouds",
+    "title": "Man Walking on Clouds",
+    "tag": "Fantasy,Cinematic,Surreal,Realistic,Photography",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/man-clouds.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Generate a realistic cinematic image of a man walking on soft clouds high in the sky. The clouds should look fluffy and detailed. Add golden hour lighting with soft shadows and a dreamy atmosphere. Maintain realistic proportions and perspective."
+  },
+  {
+    "id": "13",
+    "slug": "giant-cat-in-city",
+    "title": "Giant Cat in City",
+    "tag": "Surreal,Funny,Creative,Realistic,Cinematic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/giant-cat.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a photorealistic image of a giant cat sitting calmly in the middle of a modern city. The buildings should appear small compared to the cat. Use natural lighting and realistic shadows. Maintain accurate scale and perspective."
+  },
+  {
+    "id": "14",
+    "slug": "man-reflection-galaxy",
+    "title": "Man Reflecting Galaxy in Eyes",
+    "tag": "Portrait,Cinematic,Galaxy,Creative,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/galaxy-eyes.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a close-up portrait of a man with a galaxy reflected in his eyes. The face should be highly detailed with natural skin texture. Use soft lighting and shallow depth of field. The galaxy reflection should look realistic and vibrant."
+  },
+  {
+    "id": "15",
+    "slug": "floating-island-house",
+    "title": "Floating Island House",
+    "tag": "Fantasy,Landscape,Cinematic,Creative,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/floating-island.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Generate a realistic floating island in the sky with a small house, trees, and a waterfall flowing down. Use cinematic lighting and a soft cloudy background. Maintain realistic textures and perspective."
+  },
+  {
+    "id": "16",
+    "slug": "robot-reading-book",
+    "title": "Robot Reading a Book",
+    "tag": "AI,Creative,Technology,Realistic,Cinematic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/robot-book.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic image of a humanoid robot sitting in a cozy room reading a book. Add warm lighting, soft shadows, and detailed textures on the robot. The environment should feel calm and cinematic."
+  },
+  {
+    "id": "17",
+    "slug": "miniature-construction-workers-phone",
+    "title": "Mini Workers Repairing Phone",
+    "tag": "Miniature,Creative,Surreal,Technology,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/mini-workers-phone.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic miniature scene of tiny construction workers repairing a smartphone. Include cranes, tools, and safety gear. Use natural lighting and detailed textures. Maintain believable scale and perspective."
+  },
+  // {
+  //   "id": "18",
+  //   "slug": "man-standing-inside-lightbulb",
+  //   "title": "Man Inside Lightbulb",
+  //   "tag": "Creative,Surreal,Cinematic,Concept,Realistic",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/lightbulb-man.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Generate a creative photorealistic image of a man standing inside a glowing lightbulb. The lighting should reflect realistically on the glass surface. Use a dark background for contrast and cinematic effect."
+  // },
+  // {
+  //   "id": "19",
+  //   "slug": "giant-hand-holding-earth",
+  //   "title": "Giant Hand Holding Earth",
+  //   "tag": "Cinematic,Concept,Surreal,Realistic,Creative",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/hand-earth.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Create a realistic cinematic image of a giant human hand holding the Earth. The planet should look detailed and vibrant. Use dramatic lighting and realistic shadows. Maintain proper scale and depth."
+  // },
+  // {
+  //   "id": "20",
+  //   "slug": "rainy-window-portrait",
+  //   "title": "Rainy Window Portrait",
+  //   "tag": "Portrait,Moody,Realistic,Cinematic,Photography",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/rainy-window.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Create a cinematic portrait of a person sitting near a rainy window. Water droplets should be visible on the glass. Use soft natural lighting and a moody atmosphere. Keep the background blurred with realistic depth of field."
+  // }
 
 
   

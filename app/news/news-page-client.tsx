@@ -28,8 +28,8 @@ export default function NewsPageClient() {
     <div className="min-h-screen bg-background">
       <Header />
 
-      <main className="py-16 px-4">
-        <div className="container mx-auto">
+      <main className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Page Header */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
