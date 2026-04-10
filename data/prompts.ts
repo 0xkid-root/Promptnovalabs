@@ -99,20 +99,18 @@ export const prompts: Prompt[] = [
     "An ultra-realistic, 8k cinematic portrait based on the reference image. The woman is seated confidently on a powerful, modern, glossy black sport motorcycle in a natural outdoor setting with a background of lush green trees and soft, dappled natural light. She maintains direct eye contact with the camera with a calm and confident expression. Her natural dark hair falls around her shoulders. She is dressed in a loose-fitting black crewneck t-shirt and dark, loose-fit jeans with visible cuffs at the bottom. On her feet are classic black and white Nike Dunk Low sneakers. A black tactical-style watch is visible on her left wrist. Her left hand rests casually on her left thigh. Her right hand rests on the motorcycle's fuel tank, holding a glossy black full-face helmet with a clear, reflective visor. The motorcycle itself is highly detailed, showcasing a large engine, a sturdy visible frame, and various brightly polished chrome components that gleam in the soft daylight, emphasizing its robust and modern build. The background is composed of tall trees creating a deep, natural backdrop with balanced shadow and light, adding to the cinematic depth. The image has an editorial fotorrealista style with rich colors and sharp focus on the user and the bike's textures."
   },
   {
-    id: "4",
-    slug: "blue-dreams-morocco",
-    title: "Blue Dreams of Morocco",
-    tag: "Architecture",
-    date: "October 1, 2025",
-    likes: 563,
-    model: "Stable Diffusion",
-    isPremium: true,
-    image: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=800&q=90",
-        website: "https://stablediffusionweb.com/",
-
-    prompt:
-      "A woman in a white off-shoulder top and black skirt walks through a narrow blue-painted alley in Chefchaouen, Morocco. Colorful flower pots on walls, morning golden light, travel photography, dreamy atmosphere, wide angle, vibrant colors, ultra detailed.",
-  },
+  "id": "4",
+  "slug": "miniature-man-in-hand-cinematic-prompt",
+  "title": "Miniature Man in Hand Cinematic Photo Prompt",
+  "tag": "Cinematic,Photorealistic,Miniature,Surreal,Portrait,DSLR",
+  "date": "April 10, 2026",
+  "likes": 0,
+  "model": "GPT Image / Midjourney / Gemini",
+  "isPremium": false,
+  "image": "/images/prompts/miniature-man-in-hand-cinematic-prompt.png",
+  "website": "https://chatgpt.com/",
+  "prompt": "A highly realistic close-up cinematic photo of a large human hand gently holding a tiny miniature man sitting in the palm. The miniature figure is a young South Asian male wearing a black hoodie, blue jeans, and white sneakers, with a natural relaxed pose and soft confident expression. The scale difference is surreal but believable, like a real miniature figurine placed in the hand. The lighting is warm natural sunlight with soft shadows, shallow depth of field, and strong focus on the hand and miniature subject. Background is softly blurred and neutral, creating a bokeh effect. Ultra-detailed skin texture on the hand, realistic fabric details on clothing, DSLR photography style, 85mm lens, f/1.8, high resolution, cinematic tone, photorealistic, depth and perspective perfectly matched."
+},
   {
     id: "5",
     slug: "cinematic-urban-portrait",
