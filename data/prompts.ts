@@ -197,6 +197,137 @@ export const prompts: Prompt[] = [
     "A monochromatic (black and white) hyper-realistic portrait of a confident, mature man with styled dark hair and a well-kept beard, dressed in a formal black suit, white shirt, and a neatly tied black tie. He is looking directly at the camera with an intense, focused gaze. The background is a modern, slightly industrial architectural space with exposed concrete pillars and walls, and large glass partitions, softly blurred. The lighting is high-contrast, dramatic chiaroscuro, highlighting his features and the texture of his suit. This is a central, medium close-up shot."
   },
 
+  {
+    "id": "11",
+    "slug": "tiny-city-in-coffee-cup",
+    "title": "Tiny City Inside Coffee Cup",
+    "tag": "Miniature,Creative,Surreal,Cinematic,Photography",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/tiny-city-coffee.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic miniature city inside a coffee cup placed on a wooden table. The city should include tiny buildings, roads, cars, and street lights. Add soft morning sunlight and steam rising from the coffee. Use shallow depth of field and realistic lighting with a cinematic feel."
+  },
+  {
+    "id": "12",
+    "slug": "man-walking-on-clouds",
+    "title": "Man Walking on Clouds",
+    "tag": "Fantasy,Cinematic,Surreal,Realistic,Photography",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/man-clouds.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Generate a realistic cinematic image of a man walking on soft clouds high in the sky. The clouds should look fluffy and detailed. Add golden hour lighting with soft shadows and a dreamy atmosphere. Maintain realistic proportions and perspective."
+  },
+  {
+    "id": "13",
+    "slug": "giant-cat-in-city",
+    "title": "Giant Cat in City",
+    "tag": "Surreal,Funny,Creative,Realistic,Cinematic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/giant-cat.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a photorealistic image of a giant cat sitting calmly in the middle of a modern city. The buildings should appear small compared to the cat. Use natural lighting and realistic shadows. Maintain accurate scale and perspective."
+  },
+  {
+    "id": "14",
+    "slug": "man-reflection-galaxy",
+    "title": "Man Reflecting Galaxy in Eyes",
+    "tag": "Portrait,Cinematic,Galaxy,Creative,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/galaxy-eyes.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a close-up portrait of a man with a galaxy reflected in his eyes. The face should be highly detailed with natural skin texture. Use soft lighting and shallow depth of field. The galaxy reflection should look realistic and vibrant."
+  },
+  {
+    "id": "15",
+    "slug": "floating-island-house",
+    "title": "Floating Island House",
+    "tag": "Fantasy,Landscape,Cinematic,Creative,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/floating-island.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Generate a realistic floating island in the sky with a small house, trees, and a waterfall flowing down. Use cinematic lighting and a soft cloudy background. Maintain realistic textures and perspective."
+  },
+  {
+    "id": "16",
+    "slug": "robot-reading-book",
+    "title": "Robot Reading a Book",
+    "tag": "AI,Creative,Technology,Realistic,Cinematic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/robot-book.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic image of a humanoid robot sitting in a cozy room reading a book. Add warm lighting, soft shadows, and detailed textures on the robot. The environment should feel calm and cinematic."
+  },
+  {
+    "id": "17",
+    "slug": "miniature-construction-workers-phone",
+    "title": "Mini Workers Repairing Phone",
+    "tag": "Miniature,Creative,Surreal,Technology,Realistic",
+    "date": "April 10, 2026",
+    "likes": 0,
+    "model": "Gemini",
+    "isPremium": false,
+    "image": "/images/prompts/mini-workers-phone.png",
+    "website": "https://gemini.google.com/app",
+    "prompt": "Create a realistic miniature scene of tiny construction workers repairing a smartphone. Include cranes, tools, and safety gear. Use natural lighting and detailed textures. Maintain believable scale and perspective."
+  },
+  // {
+  //   "id": "18",
+  //   "slug": "man-standing-inside-lightbulb",
+  //   "title": "Man Inside Lightbulb",
+  //   "tag": "Creative,Surreal,Cinematic,Concept,Realistic",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/lightbulb-man.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Generate a creative photorealistic image of a man standing inside a glowing lightbulb. The lighting should reflect realistically on the glass surface. Use a dark background for contrast and cinematic effect."
+  // },
+  // {
+  //   "id": "19",
+  //   "slug": "giant-hand-holding-earth",
+  //   "title": "Giant Hand Holding Earth",
+  //   "tag": "Cinematic,Concept,Surreal,Realistic,Creative",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/hand-earth.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Create a realistic cinematic image of a giant human hand holding the Earth. The planet should look detailed and vibrant. Use dramatic lighting and realistic shadows. Maintain proper scale and depth."
+  // },
+  // {
+  //   "id": "20",
+  //   "slug": "rainy-window-portrait",
+  //   "title": "Rainy Window Portrait",
+  //   "tag": "Portrait,Moody,Realistic,Cinematic,Photography",
+  //   "date": "April 10, 2026",
+  //   "likes": 0,
+  //   "model": "Gemini",
+  //   "isPremium": false,
+  //   "image": "/images/prompts/rainy-window.png",
+  //   "website": "https://gemini.google.com/app",
+  //   "prompt": "Create a cinematic portrait of a person sitting near a rainy window. Water droplets should be visible on the glass. Use soft natural lighting and a moody atmosphere. Keep the background blurred with realistic depth of field."
+  // }
+
 
   
 ];
