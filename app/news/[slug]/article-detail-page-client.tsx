@@ -6,9 +6,10 @@ import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowLeft, Share2, Bookmark } from 'lucide-react'
+import { ArrowLeft, Share2, Bookmark, ExternalLink } from 'lucide-react'
 import { articles } from '@/data/newsArticles'
 
 interface Props {
@@ -78,6 +79,13 @@ export default function ArticleDetailPageClient({ slug }: Props) {
                 </div>
               </div>
               <div className="flex gap-2">
+                {article.website && (
+                  <a href={article.website} target="_blank" rel="noopener noreferrer">
+                    <Button variant="default" className="gap-2">
+                      Visit Website <ExternalLink className="h-4 w-4" />
+                    </Button>
+                  </a>
+                )}
                 <Button variant="outline" size="icon" className="rounded-full border-primary/30">
                   <Share2 className="h-4 w-4" />
                 </Button>
@@ -213,6 +221,38 @@ export default function ArticleDetailPageClient({ slug }: Props) {
                   )
                 })}
               </div>
+            </motion.div>
+          )}
+
+          {/* FAQs Section */}
+          {article.faqs && article.faqs.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="my-16 pt-12 border-t border-border"
+            >
+              <h2 className="text-2xl font-bold text-foreground mb-8">Frequently Asked Questions</h2>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                {article.faqs.map((faq, idx) => (
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: idx * 0.05 }}
+                  >
+                    <AccordionItem value={`faq-${idx}`} className="border border-primary/20 rounded-lg px-4">
+                      <AccordionTrigger className="text-foreground hover:text-primary">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-foreground/80">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))}
+              </Accordion>
             </motion.div>
           )}
         </div>
