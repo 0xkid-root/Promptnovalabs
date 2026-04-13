@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Search, Copy, ChevronRight, Check } from "lucide-react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { prompts, CATEGORIES } from "@/data/prompts";
 
 const getPromptTags = (tagString: string) =>
@@ -60,7 +58,6 @@ export default function PromptsPageClient() {
 
   return (
     <div className="min-h-screen bg-[#111] text-white">
-      <Header />
 
       {/* ── Hero ── */}
       <div className="text-center py-16 px-4">
@@ -186,8 +183,6 @@ export default function PromptsPageClient() {
           </div>
         )}
       </div>
-
-      <Footer />
     </div>
   );
 }

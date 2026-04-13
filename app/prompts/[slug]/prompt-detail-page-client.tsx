@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from 'framer-motion'
 import { useParams } from "next/navigation";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { prompts } from "@/data/prompts";
 import {
   ArrowLeft,
@@ -55,7 +53,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
   if (!prompt) {
     return (
       <div className="min-h-screen bg-[#111] flex flex-col text-white">
-        <Header />
         <div className="flex-1 flex flex-col items-center justify-center gap-4">
           <p className="text-xl font-semibold">Prompt not found</p>
           <Link
@@ -65,7 +62,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
             <ArrowLeft size={14} /> Back to prompts
           </Link>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -83,7 +79,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-screen bg-[#111] text-white flex flex-col">
-      <Header />
 
       {/* ── Main content ── */}
       <div className="flex-1 py-12">
@@ -196,8 +191,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
