@@ -35,7 +35,6 @@ export default function Home() {
     }),
   }}
 />
-      <Header />
 
       <motion.main
         initial={{ opacity: 0 }}
@@ -49,7 +48,6 @@ export default function Home() {
         <FAQ />
       </motion.main>
 
-      <Footer />
     </div>
   )
 }
