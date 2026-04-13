@@ -92,7 +92,7 @@ export default function RootLayout({
       <body className={`${geist.className} antialiased  bg-black text-white`}>
         <Header />
 
-       <main className="min-h-screen pt-24">
+       <main className="min-h-screen">
           {children}
         </main>
         <Footer />
