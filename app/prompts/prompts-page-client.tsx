@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Search, Copy, ChevronRight, Check } from "lucide-react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { prompts, CATEGORIES } from "@/data/prompts";
 
 const getPromptTags = (tagString: string) =>
@@ -60,7 +58,6 @@ export default function PromptsPageClient() {
 
   return (
     <div className="min-h-screen bg-[#111] text-white">
-      <Header />
 
       {/* ── Hero ── */}
       <div className="text-center py-16 px-4">
@@ -128,7 +125,7 @@ export default function PromptsPageClient() {
                 href={`/prompts/${encodeURIComponent(p.slug)}`}
                 className="group block"
               >
-                <div className="h-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl overflow-hidden hover:border-[#2a2a2a] transition-all duration-300 flex flex-col">
+                <div className="h-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl overflow-hidden hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] flex flex-col">
                   {/* Image */}
                   <div className="relative overflow-hidden flex-shrink-0 bg-[#0a0a0a]">
                     <img
@@ -186,8 +183,6 @@ export default function PromptsPageClient() {
           </div>
         )}
       </div>
-
-      <Footer />
     </div>
   );
 }

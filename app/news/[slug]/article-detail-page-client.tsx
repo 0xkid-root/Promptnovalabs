@@ -1,8 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -22,18 +20,17 @@ export default function ArticleDetailPageClient({ slug }: Props) {
   if (!article) {
     return (
       <div className="min-h-screen bg-background">
-        <Header />
+        
         <main className="container mx-auto max-w-3xl py-12 px-4">
           <p className="text-foreground/60">Article not found</p>
         </main>
-        <Footer />
       </div>
     )
   }
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      
 
       <main className="py-12 px-4">
         <div className="container mx-auto max-w-3xl">
@@ -257,8 +254,6 @@ export default function ArticleDetailPageClient({ slug }: Props) {
           )}
         </div>
       </main>
-
-      <Footer />
     </div>
   )
 }

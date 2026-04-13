@@ -4,6 +4,11 @@ import { Analytics } from '@vercel/analytics/next'
 import Script from 'next/script'
 import './globals.css'
 
+// IMPORT HEADER FOOTER HERE
+import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
+
+
 const geist = Geist({ subsets: ['latin'] })
 const geistMono = Geist_Mono({ subsets: ['latin'] })
 export const metadata: Metadata = {
@@ -54,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        {/* ✅ Google Analytics */}
+        {/*  Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-JXJ7GEHMXL"
           strategy="afterInteractive"
@@ -84,8 +89,14 @@ export default function RootLayout({
         </script>
       </head>
 
-      <body className={`${geist.className} antialiased`}>
-        {children}
+      <body className={`${geist.className} antialiased  bg-black text-white`}>
+        <Header />
+
+       <main className="min-h-screen pt-24">
+          {children}
+        </main>
+        <Footer />
+
         <Analytics />
       </body>
     </html>

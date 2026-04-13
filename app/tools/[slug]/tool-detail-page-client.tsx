@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import {
   ArrowLeft, ExternalLink, Check, X,
   ChevronDown, ChevronUp, Star, Users,
@@ -213,11 +211,9 @@ useEffect(() => {
     return (
       <div style={{ minHeight: '100vh', background: '#0a0a0a' }}>
         <style>{CSS}</style>
-        <Header />
         <main style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '80px 0' }}>
           <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: 14 }}>Loading...</p>
         </main>
-        <Footer />
       </div>
     )
   }
@@ -226,12 +222,10 @@ useEffect(() => {
     return (
       <div style={{ minHeight: '100vh', background: '#0a0a0a' }}>
         <style>{CSS}</style>
-        <Header />
         <main className="td-main">
           <Link href="/tools"><GhostBtn><ArrowLeft style={{ width: 14, height: 14 }} /> Back to Tools</GhostBtn></Link>
           <p style={{ color: 'rgba(255,255,255,0.4)', marginTop: 24 }}>Tool not found</p>
         </main>
-        <Footer />
       </div>
     )
   }
@@ -251,7 +245,6 @@ useEffect(() => {
       {tool && <SchemaMarkup jsonLd={generateToolSchema(tool)} />}
       
       <style>{CSS}</style>
-      <Header />
 
       <main className="td-main">
 
@@ -449,7 +442,6 @@ useEffect(() => {
         <FAQ />
       </main>
 
-      <Footer />
     </div>
   )
 }

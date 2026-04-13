@@ -4,8 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from 'framer-motion'
 import { useParams } from "next/navigation";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { prompts } from "@/data/prompts";
 import {
   ArrowLeft,
@@ -55,7 +53,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
   if (!prompt) {
     return (
       <div className="min-h-screen bg-[#111] flex flex-col text-white">
-        <Header />
         <div className="flex-1 flex flex-col items-center justify-center gap-4">
           <p className="text-xl font-semibold">Prompt not found</p>
           <Link
@@ -65,7 +62,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
             <ArrowLeft size={14} /> Back to prompts
           </Link>
         </div>
-        <Footer />
       </div>
     );
   }
@@ -83,7 +79,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
 
   return (
     <div className="min-h-screen bg-[#111] text-white flex flex-col">
-      <Header />
 
       {/* ── Main content ── */}
       <div className="flex-1 py-12">
@@ -162,13 +157,13 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
 
             {/* Model card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Model or Tool</p>
               <p className="text-lg font-semibold text-white">{prompt.model}</p>
             </div>
 
             {/* Tags card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Tags</p>
               <div className="flex flex-wrap gap-2">
                 {promptTags.map((tag) => (
@@ -183,7 +178,7 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
             </div>
 
             {/* Likes card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-2">Engagement</p>
               <button
                 onClick={handleLike}
@@ -196,8 +191,6 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
           </div>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 }

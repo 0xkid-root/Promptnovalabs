@@ -1,8 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
@@ -52,7 +50,6 @@ export default function ToolsPageClient() {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header />
 
       <main className="py-16 px-4">
         <div className="container mx-auto">
@@ -128,7 +125,7 @@ export default function ToolsPageClient() {
             {filteredTools.map((tool) => (
               <motion.div key={tool.id} variants={itemVariants}>
                 <Link href={`/tools/${tool.slug}`}>
-                  <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group overflow-hidden">
+                  <Card className="border-primary/10 bg-card hover:border-purple-500 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] cursor-pointer group overflow-hidden">
 
                     {/* 🔥 IMAGE SECTION */}
                     <div className="relative w-full h-40 overflow-hidden">
@@ -222,7 +219,6 @@ export default function ToolsPageClient() {
         <FAQ />
       </main>
 
-      <Footer />
     </div>
   )
 }
