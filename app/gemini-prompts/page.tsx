@@ -91,9 +91,11 @@ export default function GeminiPromptsPage() {
           </h1>
 
           <p className="text-[#777] max-w-xl mb-6">
-            Discover {geminiPrompts.length}+ high-quality prompts for realistic,
-            cinematic, and creative AI images.
-          </p>
+  Discover {geminiPrompts.length}+ best Gemini AI prompts for images,
+  including realistic photo prompts, cinematic image prompts, and AI prompts
+  for realistic portraits. Perfect for beginners and creators looking for
+  high-quality AI image generation prompts.
+</p>
 
         </div>
       </section>
@@ -103,8 +105,8 @@ export default function GeminiPromptsPage() {
         {/* GRID */}
         <section className="mb-16">
           <h2 className="text-lg text-[#d1d1d1] mb-6">
-            Trending Prompts
-          </h2>
+  Trending Gemini AI Prompts for Images (2026)
+</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {geminiPrompts.map((prompt) => (
@@ -157,13 +159,34 @@ export default function GeminiPromptsPage() {
           </div>
         </section>
 
+        {/* 🔥 SEO KEYWORDS SECTION */}
+<section className="max-w-3xl mt-16">
+  <h2 className="text-lg text-[#d1d1d1] mb-4">
+    Best Gemini AI Prompts for Image Generation
+  </h2>
+
+  <p className="text-[#777] text-sm leading-relaxed mb-4">
+    Explore the best Gemini AI prompts for images, including realistic photo
+    prompts, cinematic image prompts for AI, and detailed prompts for AI art.
+    These high-quality AI prompts are perfect for creating Instagram images,
+    realistic portraits, and trending AI visuals in 2026.
+  </p>
+
+  <p className="text-[#777] text-sm leading-relaxed">
+    Whether you are a beginner or advanced creator, these free AI prompts for
+    image generation help you create stunning visuals instantly. Use these
+    trending AI prompts to improve your results across Gemini, Midjourney,
+    and other AI tools.
+  </p>
+</section>
+
       </div>
 
       {/* ✅ SCHEMA (SEO BOOST) */}
       <Script
         id="faq-schema"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(generateFAQSchema(faqs)),
         }}
@@ -172,7 +195,7 @@ export default function GeminiPromptsPage() {
       <Script
         id="collection-schema"
         type="application/ld+json"
-        strategy="beforeInteractive"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(generateCollectionSchema(geminiPrompts)),
         }}
