@@ -157,13 +157,13 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
 
             {/* Model card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Model or Tool</p>
               <p className="text-lg font-semibold text-white">{prompt.model}</p>
             </div>
 
             {/* Tags card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Tags</p>
               <div className="flex flex-wrap gap-2">
                 {promptTags.map((tag) => (
@@ -178,7 +178,7 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
             </div>
 
             {/* Likes card */}
-            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center">
+            <div className="bg-white/5 border border-white/10 rounded-xl p-6 flex flex-col justify-center transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-purple-500 cursor-pointer">
               <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-2">Engagement</p>
               <button
                 onClick={handleLike}

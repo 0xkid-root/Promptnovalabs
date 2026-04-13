@@ -125,7 +125,7 @@ export default function PromptsPageClient() {
                 href={`/prompts/${encodeURIComponent(p.slug)}`}
                 className="group block"
               >
-                <div className="h-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl overflow-hidden hover:border-[#2a2a2a] transition-all duration-300 flex flex-col">
+                <div className="h-full bg-[#0a0a0a] border border-[#1a1a1a] rounded-xl overflow-hidden hover:border-purple-500 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] flex flex-col">
                   {/* Image */}
                   <div className="relative overflow-hidden flex-shrink-0 bg-[#0a0a0a]">
                     <img

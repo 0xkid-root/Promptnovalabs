@@ -125,7 +125,7 @@ export default function ToolsPageClient() {
             {filteredTools.map((tool) => (
               <motion.div key={tool.id} variants={itemVariants}>
                 <Link href={`/tools/${tool.slug}`}>
-                  <Card className="border-primary/10 bg-card hover:border-primary/30 h-full flex flex-col transition-all cursor-pointer group overflow-hidden">
+                  <Card className="border-primary/10 bg-card hover:border-purple-500 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] cursor-pointer group overflow-hidden">
 
                     {/* 🔥 IMAGE SECTION */}
                     <div className="relative w-full h-40 overflow-hidden">
