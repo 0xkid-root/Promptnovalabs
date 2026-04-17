@@ -536,4 +536,263 @@ If your focus is on quality rather than cost, Topaz Labs is a strong investment 
     "ai-image-enhancers",
   ],
 },
+
+{
+  id: 6,
+  slug: "google-gemini-neet-mock-test-2026",
+  date: "April 17, 2026",
+
+  title: "Google Gemini Launches Free NEET Mock Tests (2026) — Full Guide",
+  subtitle:
+    "Students can now take free NEET UG practice tests directly inside Gemini AI with instant results and analysis.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI News Analyst",
+
+  image: "/images/news/gemini-neet.png", // use your screenshot here
+
+  category: "AI News",
+  featured: true,
+
+  description:
+    "Google Gemini introduces free NEET mock tests for students in India. Learn how to use AI for NEET preparation with real exam-like practice tests.",
+
+  content: `
+Google has introduced a powerful new feature in Gemini — free NEET UG mock tests for students in India.
+
+This update allows students to take full-length practice tests directly inside the Gemini AI interface without using any external apps.
+
+It marks a major shift in how AI is transforming education.
+`,
+
+  sections: [
+    {
+      title: "What is Gemini NEET Mock Test Feature?",
+      content:
+        "Google Gemini now allows students to generate and attempt NEET practice tests directly inside chat by simply giving a prompt.",
+      points: [
+        "Full-length NEET mock tests",
+        "Covers Physics, Chemistry, Biology",
+        "Real exam-like questions",
+        "Instant AI-generated test",
+      ],
+    },
+
+    {
+      title: "How to Use Gemini for NEET Preparation",
+      content:
+        "Students can easily start a test using Gemini without any setup.",
+      points: [
+        "Open Gemini app",
+        "Type: 'I want to take a NEET mock test'",
+        "Start solving questions",
+        "Submit test and get results instantly",
+      ],
+    },
+
+    {
+      title: "Key Benefits of AI-Based Mock Tests",
+      content:
+        "Gemini provides advanced features that traditional mock tests cannot offer.",
+      points: [
+        "Instant performance analysis",
+        "Personalized feedback",
+        "Strength & weakness insights",
+        "Unlimited free tests",
+      ],
+    },
+
+    {
+      title: "Why This is a Big Change in Education",
+      content:
+        "This feature reduces dependency on paid coaching platforms and makes quality test preparation accessible for everyone.",
+      points: [
+        "No need for paid test series",
+        "Accessible to all students",
+        "AI-powered smart learning",
+        "Faster preparation",
+      ],
+    },
+
+    {
+      title: "Future of AI in Competitive Exams",
+      content:
+        "Google may expand this feature to other exams like JEE, UPSC, and international tests in the future.",
+    },
+  ],
+
+  quote:
+    "AI is not just assisting education anymore — it is becoming the platform itself.",
+  quoteAuthor: "AINovaLab Insight",
+
+  additionalContent: `
+This feature shows how AI tools like Gemini are evolving beyond chatbots into full learning platforms.
+
+Students who use AI-powered preparation tools will have a clear advantage in competitive exams in the coming years.
+`,
+
+  website: "https://gemini.google.com",
+
+  faqs: [
+    {
+      question: "Is Gemini NEET mock test free?",
+      answer: "Yes, Google Gemini offers NEET practice tests for free inside the app.",
+    },
+    {
+      question: "Can I use Gemini for NEET preparation?",
+      answer: "Yes, students can use Gemini to generate mock tests, practice questions, and improve performance.",
+    },
+    {
+      question: "Does Gemini give real exam-level questions?",
+      answer: "Gemini generates questions similar to NEET exam pattern, covering Physics, Chemistry, and Biology.",
+    },
+    {
+      question: "Is this better than coaching mock tests?",
+      answer: "Gemini provides instant feedback and unlimited practice, which makes it more flexible than traditional test series.",
+    },
+  ],
+
+  relatedSlugs: [
+    "topaz-labs-ai-review-2026",
+    "local-llm-rise",
+    "anthropic-claude-3-5-launch"
+  ],
+},
+{
+  id: 7,
+  slug: "how-to-use-gemini-for-neet-preparation",
+  date: "April 17, 2026",
+
+  title: "How to Use Google Gemini for NEET Preparation (2026 Guide) — Free AI Mock Tests",
+  subtitle:
+    "Step-by-step guide to using Gemini AI for NEET UG practice tests, mock exams, and smart preparation strategies.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI Tools Analyst",
+
+  image: "/images/news/gemini-neet-guide.png",
+
+  category: "AI Guides",
+  featured: true,
+
+  description:
+    "Learn how to use Google Gemini for NEET preparation with free AI mock tests. Step-by-step guide covering physics, chemistry, and biology practice using AI.",
+
+  content: `
+Google Gemini is now becoming one of the best AI tools for NEET preparation in 2026. 
+
+Students can generate AI-powered NEET mock tests, practice physics, chemistry, and biology questions, and get instant performance feedback — all for free.
+
+In this guide, we will show you how to use Gemini for NEET preparation step by step.
+`,
+
+  sections: [
+    {
+      title: "What is Gemini AI NEET Practice Test?",
+      content:
+        "Google Gemini provides AI-generated NEET UG practice tests that simulate real exam patterns.",
+      points: [
+        "AI-powered NEET mock test generator",
+        "Covers Physics, Chemistry, Biology",
+        "Real exam-level questions",
+        "Unlimited free tests",
+      ],
+    },
+
+    {
+      title: "How to Take NEET Mock Test in Gemini (Step-by-Step)",
+      content:
+        "Follow these steps to start your AI NEET mock test in Gemini.",
+      points: [
+        "Open Gemini (gemini.google.com)",
+        "Type: 'Create a NEET UG practice test'",
+        "Start solving questions instantly",
+        "Submit test for instant analysis",
+      ],
+    },
+
+    {
+      title: "Best Prompts for Gemini NEET Mock Test",
+      content:
+        "Use these prompts to generate better results in Gemini.",
+      points: [
+        "Create a full NEET mock test with 180 questions",
+        "Generate NEET physics numerical questions",
+        "Give me NEET biology MCQs with answers",
+        "Create chemistry organic reaction questions",
+      ],
+    },
+
+    {
+      title: "Why Gemini is the Best Free AI for NEET Preparation",
+      content:
+        "Gemini stands out as one of the best free AI tools for NEET UG 2026.",
+      points: [
+        "Completely free AI mock tests",
+        "Instant feedback and scoring",
+        "Personalized learning experience",
+        "Available anytime without coaching",
+      ],
+    },
+
+    {
+      title: "Can Gemini Help in NEET Exam Preparation?",
+      content:
+        "Yes, Gemini AI helps students improve accuracy, speed, and conceptual understanding.",
+      points: [
+        "Practice unlimited tests",
+        "Improve weak subjects",
+        "Learn from AI explanations",
+        "Track progress easily",
+      ],
+    },
+
+    {
+      title: "Gemini AI Physics, Chemistry & Biology Test",
+      content:
+        "Gemini can generate subject-specific NEET tests for targeted preparation.",
+      points: [
+        "Physics: Numerical & conceptual problems",
+        "Chemistry: Organic, inorganic, physical",
+        "Biology: NCERT-based MCQs",
+      ],
+    },
+  ],
+
+  quote:
+    "AI-powered preparation tools like Gemini are changing how students prepare for competitive exams.",
+  quoteAuthor: "AINovaLab",
+
+  additionalContent: `
+If you are serious about cracking NEET 2026, using AI tools like Gemini can give you a strong advantage over traditional preparation methods.
+
+The combination of free access, unlimited tests, and instant feedback makes it one of the most powerful tools available today.
+`,
+
+  website: "https://gemini.google.com",
+
+  faqs: [
+    {
+      question: "Is Google Gemini NEET mock test free?",
+      answer: "Yes, Gemini provides free AI-based NEET mock tests without any subscription."
+    },
+    {
+      question: "How to use Gemini for NEET preparation?",
+      answer: "Simply open Gemini and type a prompt like 'Create NEET mock test' to start practicing instantly."
+    },
+    {
+      question: "Is Gemini better than coaching test series?",
+      answer: "Gemini offers unlimited practice and instant feedback, making it more flexible than traditional coaching tests."
+    },
+    {
+      question: "Which is the best AI for NEET preparation?",
+      answer: "Google Gemini is currently one of the best free AI tools for NEET preparation in 2026."
+    }
+  ],
+
+  relatedSlugs: [
+    "google-gemini-neet-mock-test-2026",
+    "topaz-labs-ai-review-2026"
+  ]
+}
 ];

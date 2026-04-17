@@ -288,6 +288,19 @@ export const prompts: Prompt[] = [
     "website": "https://gemini.google.com/app",
     "prompt": "Create a realistic miniature scene of tiny construction workers repairing a smartphone. Include cranes, tools, and safety gear. Use natural lighting and detailed textures. Maintain believable scale and perspective."
   },
+  {
+  "id": "18",
+  "slug": "realistic-instagram-aesthetic-photo-prompt",
+  "title": "Realistic Instagram Aesthetic Photo (Same Face)",
+  "tag": "Realistic,Portrait,Instagram,Photography,Fashion,Lifestyle",
+  "date": "April 17, 2026",
+  "likes": 0,
+  "model": "Gemini",
+  "isPremium": false,
+  "image": "/images/prompts/instagram-aesthetic.png",
+  "website": "https://gemini.google.com/app",
+  "prompt": "Keep my face EXACTLY the same — no facial structure change, no skin reshaping, no beautification, no AI face replacement. Preserve original identity and natural skin texture. Outfit: pastel yellow puff sleeve top with ruffle details, white flowy skirt, soft feminine summer aesthetic. Accessories: black sunglasses on head, small gold necklace, polka dot shoulder bag. Scene: sunny riverside park walkway with metal railing, greenery, blue sky, natural daylight. Camera angles: selfie top view, side standing pose, feet outfit shot, shadow pavement shot, close-up sunglasses face shot. Layout: aesthetic Instagram collage grid (multi-frame). Lighting: warm natural sunlight, soft shadows, golden hour feel. Color tone: pastel, airy, soft contrast, clean highlights. Composition: balanced framing, professional Instagram travel aesthetic. Ultra high resolution, 8K DSLR clarity, realistic textures."
+}
   // {
   //   "id": "18",
   //   "slug": "man-standing-inside-lightbulb",
