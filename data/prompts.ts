@@ -1,3 +1,10 @@
+export type PromptVariation = {
+  id: string;
+  title: string;
+  prompt: string;
+  image?: string;
+};
+
 export type Prompt = {
   id: string;
   slug: string;
@@ -7,26 +14,32 @@ export type Prompt = {
   likes: number;
   model: string;
   isPremium: boolean;
-  image: string;
-  prompt: string;
   website: string;
+
+  image?: string; // fallback
+  prompt?: string; // fallback
+  variations?: PromptVariation[];
 };
 
 // Helper function to generate Schema.org JSON-LD for a prompt
 export function generatePromptSchema(prompt: {
   title: string;
   slug: string;
-  prompt: string;
+  prompt?: string;
+  variations?: PromptVariation[];
   model: string;
   likes: number;
   date: string;
-  image: string;
+  image?: string;
 }) {
+  // Use root prompt or first variation's prompt for description
+  const promptText = prompt.prompt || prompt.variations?.[0]?.prompt || 'AI prompt for content generation';
+  
   return {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     "name": prompt.title,
-    "description": prompt.prompt.substring(0, 160),
+    "description": promptText.substring(0, 160),
     "url": `https://ainovalab.vercel.app/prompts/${prompt.slug}`,
     "creator": {
       "@type": "Organization",
@@ -300,47 +313,54 @@ export const prompts: Prompt[] = [
   "image": "/images/prompts/instagram-aesthetic.png",
   "website": "https://gemini.google.com/app",
   "prompt": "Keep my face EXACTLY the same — no facial structure change, no skin reshaping, no beautification, no AI face replacement. Preserve original identity and natural skin texture. Outfit: pastel yellow puff sleeve top with ruffle details, white flowy skirt, soft feminine summer aesthetic. Accessories: black sunglasses on head, small gold necklace, polka dot shoulder bag. Scene: sunny riverside park walkway with metal railing, greenery, blue sky, natural daylight. Camera angles: selfie top view, side standing pose, feet outfit shot, shadow pavement shot, close-up sunglasses face shot. Layout: aesthetic Instagram collage grid (multi-frame). Lighting: warm natural sunlight, soft shadows, golden hour feel. Color tone: pastel, airy, soft contrast, clean highlights. Composition: balanced framing, professional Instagram travel aesthetic. Ultra high resolution, 8K DSLR clarity, realistic textures."
+},
+{
+  "id": "19",
+  "slug": "realistic-male-fashion-portrait-same-face",
+  "title": "Realistic Male Fashion Portrait (Same Face Identity Lock)",
+  "tag": "Realistic,Portrait,Fashion,Photography,DSLR,Instagram",
+  "date": "April 17, 2026",
+  "likes": 0,
+  "model": "Gemini",
+  "isPremium": false,
+  "website": "https://gemini.google.com/app",
+  "image": "/images/prompts/viratKholi.webp",
+  "prompt": "Create ultra-realistic 4K cinematic fashion portraits of a young man with locked identity (same face across all variations). Keep 100% same facial features, identity lock, no changes in face structure, skin tone, or expression. Multiple styling angles: over-shoulder cinematic look with olive denim shirt, side profile golden hour shot, over-the-shoulder natural shot outdoors, walking candid motion, and minimal editorial portrait. All shots feature messy voluminous hair, black sunglasses, premium smartwatch, DSLR quality photography with natural skin texture and cinematic color grading.",
+  "variations": [
+    {
+      "id": "v1",
+      "title": "Over Shoulder Cinematic Look",
+      "image": "/images/prompts/viratKholi.webp",
+      "prompt": "Use the uploaded reference image for the face. Keep 100% same facial features, identity lock, no changes in face structure, skin tone, or expression blending naturally with lighting. Ultrazrealistic 4K cinematic portrait of a 23-year-old young man standing with back partially toward camera, looking over shoulder with confident vibe Messy textured volume hair,. Oversizedialive denim shirt with trong fabric folds. Black sunglasses with glossy reflections, smarwatch visible. Background darkened natural environment with heavy blur Dramatic lighting with strong rim light and shadow contrast, HDR ultra-detalled, fashion magazine cover style, 85mm lens, malistic textures, no artificial look. 'photonalistic, DSLR quality, not Al generated, natural ekin texture, cinematic color grading Use aspect ratio: 4:5 Always upload your face reference Image"
+    },
+    {
+      "id": "v2",
+      "title": "Side Profile Golden Hour",
+      "image": "/images/prompts/viratKholi1.webp",
+      "prompt": "Use the uploaded reference image for the face.Keep 100% same facial features, Identity lock, no changes in face structure, skin tone, or expression blending naturally with lighting.Ultra-realistic 4K fashion portrait of a young man (23) in a dean side profile pose, looking away from camera. Messy voluminous hairstyle slightly wind-blown.Wearing oversized olive denim shirt slightly unbuttoned at top. Black sunglasses reflecting subtle environment light.smartwatch visible with metallic reflections. Background soft neutral outdoor tones (beige/green mix), blurred for depth. Golden hour cinematiclighting with warm tones and soft contrast. Shot on 50mm lens, ultra-sharp focus on subject, creamy bokeh, realistic editorial magazine vibe.'photorealistiç DSLR quality, not Al generated, natural skin texture, cinematic color grading Use aspect ratio: 4:5 Always upload your face reference image"
+    },
+    {
+      "id": "v3",
+      "title": "Over-the-Shoulder Natural Shot",
+      "image": "/images/prompts/viratKholi2.webp",
+      "prompt": "Use the uploaded refterence image for the face. Keep 100% same facial features, identity lock, no changes in face structure, skin tone, or expression blending naturally with lighting, Ultra-realistic 4K cinematic portrait of a 23-year-old young man standing outdoors, captured from an over-the-shoulder angle while he looks back slightly toward the camera. Messy voluminous hair with natural texture,wearing an oversized olive denim shirt with soft folds and fabric grain dearly visible. Black sunglass with matte finish, and a premium smart watch on wrist Backeround is minimal natural environment DSLR quality, not Al generated, natural skin texture, cinematic color from side creating rim highlights on hair and shoulders.8Smm lens,with soft greenery, heavily blurred (bokeh), Cinematic soft sunlight shallow depth of field, ultra-detailed skin textuure, editorial fashion photography, realistic shadows, HDR, no Al look photorealistic grading Use aspect ratio: 4:5 Always upload your fa"
+    },
+    {
+      "id": "v4",
+      "title": "Walking Candid Motion Shot",
+      "image": "/images/prompts/viratKholi3.webp",
+      "prompt": "Use the uploaded reference image..."
+    },
+    {
+      "id": "v5",
+      "title": "Minimal Editorial Portrait",
+      "image": "/images/prompts/viratKholi4.webp",
+      "prompt": "Use the uploaded reference image..."
+    }
+  ]
 }
-  // {
-  //   "id": "18",
-  //   "slug": "man-standing-inside-lightbulb",
-  //   "title": "Man Inside Lightbulb",
-  //   "tag": "Creative,Surreal,Cinematic,Concept,Realistic",
-  //   "date": "April 10, 2026",
-  //   "likes": 0,
-  //   "model": "Gemini",
-  //   "isPremium": false,
-  //   "image": "/images/prompts/lightbulb-man.png",
-  //   "website": "https://gemini.google.com/app",
-  //   "prompt": "Generate a creative photorealistic image of a man standing inside a glowing lightbulb. The lighting should reflect realistically on the glass surface. Use a dark background for contrast and cinematic effect."
-  // },
-  // {
-  //   "id": "19",
-  //   "slug": "giant-hand-holding-earth",
-  //   "title": "Giant Hand Holding Earth",
-  //   "tag": "Cinematic,Concept,Surreal,Realistic,Creative",
-  //   "date": "April 10, 2026",
-  //   "likes": 0,
-  //   "model": "Gemini",
-  //   "isPremium": false,
-  //   "image": "/images/prompts/hand-earth.png",
-  //   "website": "https://gemini.google.com/app",
-  //   "prompt": "Create a realistic cinematic image of a giant human hand holding the Earth. The planet should look detailed and vibrant. Use dramatic lighting and realistic shadows. Maintain proper scale and depth."
-  // },
-  // {
-  //   "id": "20",
-  //   "slug": "rainy-window-portrait",
-  //   "title": "Rainy Window Portrait",
-  //   "tag": "Portrait,Moody,Realistic,Cinematic,Photography",
-  //   "date": "April 10, 2026",
-  //   "likes": 0,
-  //   "model": "Gemini",
-  //   "isPremium": false,
-  //   "image": "/images/prompts/rainy-window.png",
-  //   "website": "https://gemini.google.com/app",
-  //   "prompt": "Create a cinematic portrait of a person sitting near a rainy window. Water droplets should be visible on the glass. Use soft natural lighting and a moody atmosphere. Keep the background blurred with realistic depth of field."
+];
   // }
 
 
   
-];

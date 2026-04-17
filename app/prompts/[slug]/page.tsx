@@ -17,7 +17,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   const title = `${prompt.title} - AI Prompt for ${prompt.model} | AINovaLab`
-  const description = `${prompt.prompt.substring(0, 155)}... Perfect for ${prompt.model}. ${prompt.isPremium ? 'Premium' : 'Free'} prompt. Copy now!`
+  
+  // Handle prompts with variations by using root prompt or first variation
+  let promptText = prompt.prompt || '';
+  if (!promptText && prompt.variations && prompt.variations.length > 0) {
+    promptText = prompt.variations[0].prompt;
+  }
+  const description = `${promptText.substring(0, 155)}... Perfect for ${prompt.model}. ${prompt.isPremium ? 'Premium' : 'Free'} prompt. Copy now!`
   const canonicalUrl = `https://ainovalab.vercel.app/prompts/${prompt.slug}`
 
   // Extract keywords from tags and content
@@ -44,20 +50,20 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       locale: 'en_US',
       siteName: 'AINovaLab',
       url: canonicalUrl,
-      images: [
+      images: prompt.image ? [
         {
           url: prompt.image,
           width: 1200,
           height: 630,
           alt: prompt.title,
         },
-      ],
+      ] : [],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: [prompt.image],
+      images: prompt.image ? [prompt.image] : [],
     },
     robots: {
       index: true,
