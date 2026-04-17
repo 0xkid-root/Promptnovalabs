@@ -4,6 +4,7 @@ import ClaudePromptsGrid from "@/components/claude-PromptsGrid-enhanced";
 import FAQ from "@/components/claude-faq";
 import { SchemaMarkup } from "@/components/schema-markup";
 import { claudePrompts } from "@/data/claude-prompts";
+import HowItWorks from "@/components/claude-howItWorks";
 
 export const metadata: Metadata = {
   title: "Claude AI Prompts - 20+ Premium ChatGPT Prompts for Marketing, Email & Sales",
@@ -72,6 +73,7 @@ export default function ClaudePromptsPage() {
       <main className="bg-[#0a0a0a] min-h-screen text-white">
         <Hero />
         <ClaudePromptsGrid />
+        <HowItWorks />
         <FAQ />
       </main>
     </>
