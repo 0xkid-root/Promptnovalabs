@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Search, Star } from 'lucide-react'
 import Link from 'next/link'
 import { useState } from 'react'
-import { FAQ } from '@/components/faq'
+import { TOOLFAQ } from '@/components/toolfaq'
 import { aiTools, categories } from '@/data/tools'
 
 export default function ToolsPageClient() {
@@ -188,15 +188,13 @@ export default function ToolsPageClient() {
                     </CardContent>
 
                     <div className="p-4 border-t border-border">
-                      <Link href={`/tools/${tool.slug}`}>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="w-full rounded-full border-primary/50 text-foreground hover:bg-primary/10"
-                        >
-                          Explore
-                        </Button>
-                      </Link>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full rounded-full border-primary/50 text-foreground hover:bg-primary/10"
+                      >
+                        Explore
+                      </Button>
                     </div>
                   </Card>
                 </Link>
@@ -216,7 +214,7 @@ export default function ToolsPageClient() {
             </motion.div>
           )}
         </div>
-        <FAQ />
+        <TOOLFAQ />
       </main>
 
     </div>
