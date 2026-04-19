@@ -60,12 +60,18 @@ export default function ToolsPageClient() {
             className="text-center mb-12"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Featured AI <span className="gradient-text">Tools</span>
-            </h1>
-            <p className="text-foreground/70 max-w-2xl mx-auto">
-              Explore our curated collection of the most powerful and innovative AI tools available today.
-            </p>
+  Best AI Tools Directory <span className="gradient-text">for 2026</span>
+</h1>
+
+<p className="text-foreground/70 max-w-2xl mx-auto">
+  Discover the best AI tools for content creation, image generation, video editing, and productivity. 
+  Explore free and paid AI tools like ChatGPT, Claude, Gemini, and more — all in one place.
+</p>
+
           </motion.div>
+
+          
+          
 
           {/* Search and Sort */}
           <motion.div
@@ -214,6 +220,53 @@ export default function ToolsPageClient() {
             </motion.div>
           )}
         </div>
+
+        <section className="max-w-5xl mx-auto mt-20 pt-12 px-6">
+  <div className="relative rounded-2xl border border-white/10 bg-white/[0.02] p-8 md:p-10 backdrop-blur">
+
+    {/* Glow effect */}
+    <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 via-transparent to-purple-500/10 rounded-2xl pointer-events-none" />
+
+    {/* Heading */}
+    <div className="text-center mb-8">
+      <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+        Explore the Best AI Tools for Every Use Case
+      </h2>
+      <p className="text-zinc-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+        Discover top AI tools for content creation, automation, and productivity. 
+        AINovaLab helps you compare features, find trending tools, and choose the right AI platform faster.
+      </p>
+    </div>
+
+    {/* Features Grid */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+
+      {[
+        "Browse AI tools by category",
+        "Compare features & pricing easily",
+        "Discover trending AI platforms",
+        "Find tools for creators & businesses",
+      ].map((item, i) => (
+        <div
+          key={i}
+          className="flex items-center gap-3 p-4 rounded-lg border border-white/10 bg-white/[0.03] hover:border-violet-500/30 transition"
+        >
+          <div className="w-8 h-8 flex items-center justify-center rounded-md bg-violet-500/10 text-violet-400 text-sm">
+            ✓
+          </div>
+          <p className="text-sm text-zinc-300">{item}</p>
+        </div>
+      ))}
+
+    </div>
+
+    {/* Bottom SEO line */}
+    <p className="text-center text-xs text-zinc-500 mt-8 max-w-2xl mx-auto">
+      Explore popular AI tools like ChatGPT, Claude, Gemini, and advanced AI video generators — all in one place.
+    </p>
+
+  </div>
+</section>
         <TOOLFAQ />
       </main>
 

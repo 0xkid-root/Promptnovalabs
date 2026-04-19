@@ -20,7 +20,7 @@ export default function NewsPageClient() {
     (article) =>
       (selectedCategory === 'All Updates' || article.category === selectedCategory) &&
       article.title.toLowerCase().includes(searchQuery.toLowerCase())
-  )
+  ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   return (
     <div className="min-h-screen bg-background">

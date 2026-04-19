@@ -29,8 +29,8 @@ export function Footer() {
       title: 'Resources',
       links: [
         { label: 'Blog', href: '#' },
-        { label: 'Tag', href: '#' },
-        { label: 'Guides', href: '#' },
+        { label: 'Gemini prompts', href: '/gemini-prompts' },
+        { label: 'claude ai prompts', href: '/claude-ai-prompts' },
         { label: 'Amazing Newsletters', href: '#' },
       ],
     },
