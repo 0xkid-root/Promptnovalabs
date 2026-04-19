@@ -1259,6 +1259,292 @@ Users can discover trending topics, get personalized research recommendations, a
   overallScore: 4.7,
 
   conclusion: `SciSpace is one of the best AI research tools for students, academics, and professionals. With its powerful AI Copilot, massive research database, and publishing tools, it simplifies the entire research workflow and improves productivity significantly.`
+},
+{
+  id: 18,
+  name: 'Vimi AI Photo Animator',
+  slug: 'vimi-ai-photo-animator',
+  image: '/images/vimi-ai.png',
+
+  description: `Vimi AI Photo Animator is a mobile-first AI tool that transforms static photos into short animated videos with emotional storytelling and creative visual effects.
+
+Unlike traditional editing apps, Vimi focuses on simplicity by using ready-made AI templates. Users can upload a photo and instantly convert it into a dynamic scene with motion, lighting, and artistic styles applied automatically.
+
+The platform is especially popular among casual users, families, and social media creators who want to create engaging video content without editing skills. With categories like couple moments, pet animations, and cultural styles, Vimi makes it easy to turn everyday memories into shareable animated clips.
+
+Designed for speed and creativity, Vimi generates social-media-ready content optimized for platforms like Instagram Reels, TikTok, and YouTube Shorts.`,
+
+  category: 'AI Video & Image Editing',
+
+  tags: [
+    'AI Photo Animation',
+    'Image to Video AI',
+    'AI Video Generator',
+    'Social Media AI',
+    'Photo Editing AI',
+    'AI Animation Tool',
+    'Mobile AI App',
+    'Reels Video Creator',
+    'TikTok Video AI',
+    'AI Content Creation'
+  ],
+
+  rating: 4.0,
+  users: '100K+',
+
+  icon: '📸',
+  color: 'from-pink-500 to-purple-600',
+
+  website: 'https://vimi.art/',
+  pricing: 'Contact for Pricing',
+
+  features: [
+    'Convert static images into animated videos',
+    'AI-powered motion and visual effects',
+    'Pre-built creative templates and themes',
+    'Emotion-based animation styles (family, pets, couples)',
+    'Mobile-first design for fast content creation',
+    'Social media optimized output formats',
+    'Quick processing with minimal input required',
+    'Automatic lighting and scene enhancement'
+  ],
+
+  specifications: {
+    Platform: 'Android (Mobile App)',
+    Processing: 'Cloud-based AI',
+    Output: 'Short animated videos',
+    Format: 'MP4 / Social formats',
+    Input: 'Images (JPG / PNG)',
+    AspectRatio: 'Vertical & Square (Reels / Shorts)'
+  },
+
+  useCases: [
+    'Create animated social media posts',
+    'Turn family photos into memory videos',
+    'Generate romantic couple animations',
+    'Animate pet photos for fun content',
+    'Create festival and cultural themed visuals',
+    'Quick content creation for influencers'
+  ],
+
+  pros: [
+    'Very easy to use (no editing skills required)',
+    'Fast AI-powered animation generation',
+    'Great for social media content',
+    'Creative templates for different moods and styles',
+    'Perfect for casual users and beginners'
+  ],
+
+  cons: [
+    'Limited advanced customization options',
+    'No desktop version currently',
+    'Pricing details are not transparent',
+    'Less control compared to professional tools'
+  ],
+
+  pricingDetails: {
+    Free: 'Not clearly specified',
+    Paid: 'Contact for pricing / App-based purchases'
+  },
+
+  integrations: [
+    'Instagram',
+    'TikTok',
+    'YouTube Shorts'
+  ],
+
+  compatibility: [
+    'Android',
+    'Mobile Devices'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.3,
+    easeOfUse: 4.6,
+    features: 4.1,
+    performance: 4.2,
+    customization: 3.7,
+    security: 4.0,
+    support: 3.8,
+    costEfficiency: 4.1,
+    integrations: 3.5
+  },
+
+  overallScore: 4.0,
+
+  faqs: [
+    {
+      q: 'What is Vimi AI used for?',
+      a: 'Vimi is used to convert static photos into short animated videos using AI-powered templates and effects.'
+    },
+    {
+      q: 'Is Vimi free to use?',
+      a: 'Pricing details are not fully disclosed, but the app may include free features and in-app purchases.'
+    },
+    {
+      q: 'Can I create videos for Instagram Reels and TikTok?',
+      a: 'Yes, Vimi generates videos optimized for social media platforms like Reels, TikTok, and Shorts.'
+    },
+    {
+      q: 'Do I need editing skills to use Vimi?',
+      a: 'No, Vimi is designed for beginners and works using simple templates.'
+    },
+    {
+      q: 'Is Vimi available on desktop?',
+      a: 'Currently, Vimi is primarily available as a mobile app on Android.'
+    }
+  ],
+
+  conclusion: `Vimi AI Photo Animator is a simple yet creative AI tool for turning everyday photos into engaging animated videos. It is ideal for social media users, families, and creators who want quick results without learning complex editing. While it lacks advanced controls, its ease of use and emotional storytelling make it a great choice for casual content creation.`
+},
+{
+  id: 19,
+  name: 'RecCloud AI',
+  slug: 'reccloud-ai',
+  image: '/images/reccloud.png',
+
+  description: `RecCloud AI is a powerful all-in-one platform for audio and video processing, designed to help creators, educators, and businesses streamline content production using artificial intelligence.
+
+It combines transcription, translation, subtitle generation, dubbing, and video editing into a single cloud-based workspace, eliminating the need for multiple tools.
+
+With RecCloud, users can convert speech to text, generate summaries, translate videos into multiple languages, and create AI voiceovers effortlessly. Its intuitive interface and automation features make it ideal for YouTubers, marketers, course creators, and teams working with large volumes of media content.
+
+Whether you're repurposing long videos into short clips or creating multilingual content for global audiences, RecCloud delivers fast, accurate, and scalable AI-powered solutions.`,
+
+  category: 'AI Audio & Video Tools',
+
+  tags: [
+    'AI Transcription',
+    'Video Editing AI',
+    'Subtitle Generator',
+    'AI Translator',
+    'Text to Speech',
+    'AI Voiceover',
+    'Content Repurposing',
+    'YouTube Tools',
+    'AI Video Tools'
+  ],
+
+  rating: 4.3,
+  users: '300K+',
+
+  icon: '🎙️',
+  color: 'from-blue-500 to-cyan-600',
+
+  website: 'https://reccloud.com',
+  pricing: 'Freemium (Credit-based + Subscription)',
+
+  features: [
+    'AI speech-to-text transcription with summaries',
+    'Automatic subtitle generation and translation',
+    'Multi-language AI dubbing and voiceovers',
+    'Text-to-speech with natural voices',
+    'Video summarization and clip generator',
+    'Remove watermark, subtitles, and vocals',
+    'Screen recording and basic video editing tools',
+    'Supports YouTube and uploaded video processing',
+    'Cloud-based processing (no installation required)',
+    'Batch processing and multi-task support'
+  ],
+
+  specifications: {
+    Platform: 'Web-based (Cloud)',
+    Processing: 'AI Cloud Processing',
+    Input: 'Audio, Video, Text',
+    Output: 'Text, Subtitles, Audio, Video',
+    Languages: 'Multi-language support',
+    Storage: 'Cloud Storage Supported'
+  },
+
+  useCases: [
+    'YouTube content creation and editing',
+    'Online course transcription and subtitles',
+    'Podcast transcription and summaries',
+    'Marketing video repurposing',
+    'Multilingual content creation',
+    'Social media video editing',
+    'Meeting and webinar transcription'
+  ],
+
+  pros: [
+    'All-in-one AI toolkit for audio and video',
+    'Fast transcription and summarization',
+    'Supports multiple languages and dubbing',
+    'Cloud-based with no installation needed',
+    'Great for content repurposing workflows',
+    'User-friendly interface for beginners'
+  ],
+
+  cons: [
+    'Credit system can be confusing initially',
+    'Limited advanced editing compared to pro tools',
+    'Fewer integrations with external platforms',
+    'Subscription required for heavy usage'
+  ],
+
+  pricingDetails: {
+    Weekly: '$15/week (300 credits)',
+    Basic: '$48/year (3,000 credits)',
+    Pro: '$59/year (6,000 credits)',
+    Business: '$159/year (18,000 credits)',
+    Credits: '$240 (30,000 credits)',
+    Storage: '$49/year (100GB)'
+  },
+
+  integrations: [
+    'YouTube',
+    'Cloud Uploads',
+    'API Access'
+  ],
+
+  compatibility: [
+    'Web Browser',
+    'Desktop',
+    'Mobile Browser'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.3,
+    easeOfUse: 4.6,
+    features: 4.5,
+    performance: 4.4,
+    customization: 4.0,
+    security: 4.1,
+    support: 4.0,
+    costEfficiency: 4.6,
+    integrations: 3.9
+  },
+
+  overallScore: 4.3,
+
+  faqs: [
+    {
+      q: 'What is RecCloud AI used for?',
+      a: 'RecCloud is used for AI transcription, video translation, subtitle generation, voiceovers, and content repurposing.'
+    },
+    {
+      q: 'Is RecCloud free to use?',
+      a: 'Yes, it offers a free plan with limited credits, but advanced features require a paid subscription.'
+    },
+    {
+      q: 'Does RecCloud support multiple languages?',
+      a: 'Yes, it supports multiple languages for transcription, translation, and dubbing.'
+    },
+    {
+      q: 'Can I generate subtitles automatically?',
+      a: 'Yes, RecCloud can auto-generate subtitles and translate them into different languages.'
+    },
+    {
+      q: 'Is RecCloud good for YouTubers?',
+      a: 'Yes, it is ideal for YouTubers to create subtitles, summaries, clips, and voiceovers quickly.'
+    },
+    {
+      q: 'Does RecCloud require installation?',
+      a: 'No, it is a cloud-based tool that works directly in your browser.'
+    }
+  ],
+
+  conclusion: `RecCloud AI is a powerful and versatile platform for anyone working with audio and video content. Its ability to combine transcription, translation, dubbing, and editing into one tool makes it highly efficient for creators and teams. While it may not replace professional editing software, it excels as a fast, AI-powered assistant for everyday content workflows.`
 }
 
 ]
