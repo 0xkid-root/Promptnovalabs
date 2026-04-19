@@ -845,7 +845,711 @@ Whether you're a photographer restoring old images, a videographer fixing shaky 
 
   conclusion: `Topaz Labs is one of the best AI tools for high-quality image and video enhancement. It is especially suited for professionals and serious creators who need powerful, reliable, and privacy-focused editing tools.`
 },
+{
+  id: 15,
+  name: 'Wan 2.7 AI Video Generator',
+  slug: 'wan-2-7-ai-video-generator',
+  image: '/images/wan-ai-video.png',
+
+  description: `Wan 2.7 AI Video Generator is an advanced AI-powered platform that converts images and prompts into high-quality 1080P videos with realistic motion and cinematic effects.
+
+The platform supports multiple AI models including Wan 2.7, Kling AI, Sora AI, Veo 3.1, Seedance, and Flux 2, allowing users to experiment with different video generation styles and outputs.
+
+Users can upload images or write prompts, then control motion, style, and storytelling using advanced features like frame control, subject cloning, and voice reference integration. The 3x3 grid multi-image system enables complex video creation with smooth transitions.
+
+Designed for creators, marketers, and businesses, Wan 2.7 delivers fast, professional-grade videos optimized for social media, advertising, storytelling, and content creation.`,
+
+  category: 'AI Video Generation',
+ tags: [
+  'AI Video Generator',
+  'Wan 2.7',
+  'Kling AI',
+  'Sora AI',
+  'Veo AI',
+  'Image to Video AI',
+  'AI Video Tools',
+  'Cinematic AI Video',
+  'Content Creation AI',
+  'Marketing Video AI'
+],
+  rating: 4.7,
+  users: '200K+',
+
+  icon: '🎬',
+  color: 'from-purple-500 to-pink-600',
+
+  website: 'https://vidflux.ai/', // change if actual URL differs
+  pricing: 'Freemium (Credit-based)',
+
+  features: [
+    'Convert images into realistic 1080P videos',
+    'Upload photos or use text prompts for generation',
+    'Custom video duration (2–15 seconds)',
+    'Frame-level motion control (start & end frames)',
+    'Subject cloning for consistent characters',
+    'Voice reference integration for narration',
+    '3x3 grid multi-image video generation',
+    'Aspect ratio customization (social media ready)',
+    'Fast AI rendering with high realism',
+    'MP4 export ready for sharing'
+  ],
+
+  specifications: {
+    Platform: 'Web-based',
+    Processing: 'Cloud AI Generation',
+    Resolution: '1080P Full HD',
+    Duration: '2–15 seconds',
+    Output: 'MP4 Video',
+    Input: 'JPG / PNG / WEBP / Text Prompt'
+  },
+
+  useCases: [
+    'Social media content creation',
+    'E-commerce product videos',
+    'Marketing and advertising campaigns',
+    'AI storytelling and short films',
+    'Personal creative projects',
+    'Brand promotion videos'
+  ],
+
+  pros: [
+    'High-quality 1080P video output',
+    'Realistic motion and temporal consistency',
+    'Advanced controls (frame, duration, aspect ratio)',
+    'Supports voice reference and subject cloning',
+    'Fast video generation process',
+    'Beginner-friendly interface'
+  ],
+
+  cons: [
+    'Maximum video length limited to 15 seconds',
+    'Credit-based pricing can be expensive for heavy users',
+    'Requires internet connection (cloud-based)'
+  ],
+
+  pricingDetails: {
+    Free: 'Limited credits available',
+    Starter: 'Credit-based usage',
+    Pro: 'Higher credits for frequent creators'
+  },
+
+  integrations: [
+    'Social Media Platforms',
+    'Content Creation Workflows',
+    'Marketing Tools'
+  ],
+
+  compatibility: [
+    'Web Browser',
+    'Desktop',
+    'Mobile'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.7,
+    easeOfUse: 4.8,
+    features: 4.6,
+    performance: 4.7,
+    customization: 4.8,
+    security: 4.5,
+    support: 4.4,
+    costEfficiency: 4.2,
+    integrations: 4.3
+  },
+
+  overallScore: 4.7,
+
+  faqs: [
+    {
+      q: 'Can I upload any photo format to create videos?',
+      a: 'Yes, Wan 2.7 supports JPG, PNG, and WEBP image formats.'
+    },
+    {
+      q: 'What is the maximum video length?',
+      a: 'You can create videos between 2 and 15 seconds.'
+    },
+    {
+      q: 'Does it support 1080P resolution?',
+      a: 'Yes, all videos are generated in high-quality 1080P.'
+    },
+    {
+      q: 'Can I control motion in videos?',
+      a: 'Yes, you can define start and end frames for precise motion control.'
+    },
+    {
+      q: 'Does it support subject cloning?',
+      a: 'Yes, Wan 2.7 allows subject cloning and voice reference for consistency.'
+    },
+    {
+      q: 'Do I need editing skills?',
+      a: 'No, the platform is beginner-friendly and requires no technical skills.'
+    }
+  ],
+
+  conclusion: `Wan 2.7 AI Video Generator is one of the most advanced tools for converting images into cinematic videos. With its powerful AI features, realistic motion, and user-friendly interface, it is an excellent choice for creators, marketers, and businesses looking to produce high-quality video content quickly and efficiently.`
+},
+
+{
+  id: 16,
+  name: 'Promptizy',
+  slug: 'promptizy-ai-prompt-generator',
+  image: '/images/promptizy.png',
+
+  description: `Promptizy is an advanced AI prompt optimization tool designed to help users create high-quality, expert-level prompts for platforms like ChatGPT, Claude, Gemini, and more. It eliminates the need for manual prompt engineering by using proven frameworks and professional thinking models.
+
+The platform features 44 expert personas based on real-world methodologies such as IRAC for legal analysis and Porter’s Five Forces for business strategy. These personas guide AI systems to generate more structured, accurate, and context-aware responses.
+
+Promptizy also supports custom prompt formatting for over 11 AI tools, ensuring that each prompt is optimized for the specific model you are using. Whether you are writing marketing copy, analyzing data, or building products, Promptizy improves output quality instantly.
+
+With built-in prompt scoring, users can evaluate and refine their prompts using detailed feedback and expert rewrites. The platform also includes a large library of 250+ curated prompts and templates, helping beginners and professionals get started quickly.
+
+Additional features like Arena Mode allow users to compare AI responses side-by-side, while the Chrome extension enables prompt optimization directly on any website.
+
+Promptizy is ideal for creators, marketers, developers, and business professionals who want faster, smarter, and more reliable AI results without learning complex prompt engineering techniques.`,
+
+  category: 'AI Productivity Tools',
+
+  tags: [
+    'AI prompt generator',
+    'prompt engineering tool',
+    'ChatGPT prompts',
+    'Claude prompts',
+    'Gemini prompts',
+    'AI optimization',
+    'prompt templates',
+    'AI productivity',
+    'AI tools',
+    'prompt improvement'
+  ],
+
+  rating: 4.7,
+  users: '100K+',
+
+  icon: '🧠',
+  color: 'from-purple-500 to-indigo-600',
+
+  website: 'https://promptizy.com',
+  pricing: 'Freemium',
+
+  features: [
+    '44 expert personas based on real professional frameworks',
+    'Custom prompt formatting for 11+ AI tools',
+    'AI prompt scoring with detailed feedback',
+    'Automatic expert-level prompt rewrites',
+    '250+ curated prompts and 130+ templates',
+    'Arena Mode for comparing AI responses',
+    'Chrome extension for instant prompt optimization',
+    'Smart Tool Router to recommend best AI model',
+    'Supports ChatGPT, Claude, Gemini, Grok, Perplexity'
+  ],
+
+  specifications: {
+    Platform: 'Web + Chrome Extension',
+    AISupport: 'ChatGPT, Claude, Gemini, Grok, Perplexity',
+    Personas: '44 Expert Personas',
+    Templates: '250+ Prompts & 130+ Templates',
+    Mode: 'Prompt Optimization + Comparison',
+    Output: 'Optimized AI prompts'
+  },
+
+  useCases: [
+    'Writing high-converting marketing copy',
+    'Improving ChatGPT and Claude responses',
+    'Business strategy and analysis',
+    'Content creation and blogging',
+    'Email writing and outreach',
+    'Prompt engineering for beginners',
+    'AI research and comparison'
+  ],
+
+  pros: [
+    'No prompt engineering knowledge required',
+    'Uses real-world professional frameworks',
+    'Supports multiple AI platforms',
+    'Large library of prompts and templates',
+    'Improves prompt quality instantly',
+    'Arena Mode helps compare AI outputs'
+  ],
+
+  cons: [
+    'Free plan has limited daily usage',
+    'Advanced features require subscription',
+    'Too many options may confuse beginners initially'
+  ],
+
+  pricingDetails: {
+    Free: 'Limited to 5 prompts/day',
+    Pro: 'Advanced features, unlimited prompts (pricing varies)',
+    Enterprise: 'Custom pricing for teams'
+  },
+
+  integrations: [
+    'ChatGPT',
+    'Claude',
+    'Gemini',
+    'Perplexity',
+    'Grok',
+    'Chrome Browser'
+  ],
+  faqs: [
+  {
+    q: "Is Promptizy worth using for AI prompts?",
+    a: "Yes, Promptizy is worth using if you want better AI responses without learning prompt engineering. It helps create structured, high-quality prompts for ChatGPT, Claude, and Gemini using expert personas and proven frameworks."
+  },
+  {
+    q: "Is Promptizy free or paid?",
+    a: "Promptizy offers a free plan with limited daily usage. Paid plans unlock advanced features like unlimited prompts, expert personas, and deeper prompt optimization tools."
+  },
+  {
+    q: "Can Promptizy improve ChatGPT and Claude results?",
+    a: "Yes, Promptizy significantly improves results by optimizing prompts for different AI models. It formats prompts specifically for ChatGPT, Claude, and other tools to get more accurate and useful outputs."
+  },
+  {
+    q: "Who should use Promptizy?",
+    a: "Promptizy is ideal for marketers, developers, content creators, and business professionals who want high-quality AI outputs without spending time on prompt engineering."
+  },
+  {
+    q: "Is Promptizy better than writing prompts manually?",
+    a: "For most users, yes. Promptizy uses expert frameworks and structured formats, which usually produce better and more consistent results compared to manually written prompts."
+  },
+  {
+    q: "Does Promptizy work for beginners?",
+    a: "Yes, Promptizy is beginner-friendly. You don’t need any technical knowledge to use it. The tool guides you with templates and expert personas to create effective prompts easily."
+  }
+],
+
+  compatibility: [
+    'Web Browser',
+    'Chrome Extension',
+    'Desktop',
+    'Mobile (browser-based)'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.8,
+    easeOfUse: 4.5,
+    features: 4.7,
+    performance: 4.6,
+    customization: 4.6,
+    security: 4.5,
+    support: 4.4,
+    costEfficiency: 4.3,
+    integrations: 4.7
+  },
+
+  overallScore: 4.7,
+
+  conclusion: `Promptizy is one of the best AI prompt optimization tools available today. It is perfect for users who want expert-level AI responses without learning prompt engineering. With powerful features like personas, prompt scoring, and multi-AI support, it significantly improves productivity and output quality.`
+},
+{
+  id: 17,
+  name: 'SciSpace',
+  slug: 'scispace-ai-research-platform',
+  image: '/images/scispace.webp',
+
+  description: `SciSpace is an AI-powered research platform designed to help students, researchers, and professionals explore, understand, and publish scientific papers more efficiently. It provides access to a massive database of over 270 million research papers, journals, authors, and conference publications.
+
+The platform simplifies complex academic content using its AI Copilot, which can explain research papers in simple language, summarize key insights, and answer questions instantly. This makes it especially useful for students and beginners who struggle to understand technical papers.
+
+SciSpace also includes advanced tools such as a plagiarism checker, journal submission support, XML converters, and access to over 40,000 journal templates. These features streamline the entire research and publishing workflow from writing to submission.
+
+Users can discover trending topics, get personalized research recommendations, and explore academic content across multiple domains. Whether you are writing a thesis, publishing a paper, or conducting research, SciSpace helps you save time and improve productivity with AI-powered assistance.`,
+
+  category: 'AI Research Tools',
+
+  tags: [
+    'AI research tool',
+    'research paper finder',
+    'AI paper summarizer',
+    'academic research',
+    'plagiarism checker',
+    'journal submission',
+    'research assistant',
+    'AI copilot',
+    'scientific papers',
+    'research platform'
+  ],
+
+  rating: 4.7,
+  users: '1M+',
+
+  icon: '📚',
+  color: 'from-indigo-500 to-purple-600',
+
+  website: 'https://scispace.com',
+  pricing: 'Freemium',
+
+  features: [
+    'Access to 270M+ research papers and journals',
+    'AI Copilot for explaining and summarizing papers',
+    'Plagiarism checker for academic writing',
+    'Journal submission support and formatting',
+    '40,000+ journal and paper templates',
+    'XML and LaTeX conversion tools',
+    'Personalized research recommendations',
+    'Search across authors, topics, and conferences',
+    'Simplifies complex research papers instantly'
+  ],
+
+  specifications: {
+    Platform: 'Web-based',
+    Database: '270M+ research papers',
+    AIFeature: 'Paper explanation & summarization',
+    Templates: '40,000+ journal templates',
+    Tools: 'Plagiarism checker, XML converter',
+    Output: 'Summaries, insights, formatted papers'
+  },
+
+  useCases: [
+    'Understanding complex research papers',
+    'Writing academic papers and thesis',
+    'Publishing research in journals',
+    'Checking plagiarism in documents',
+    'Exploring scientific topics and trends',
+    'Summarizing academic content quickly',
+    'Student research and assignments'
+  ],
+
+  pros: [
+    'Massive research database (270M+ papers)',
+    'AI simplifies complex academic content',
+    'Helpful for students and researchers',
+    'All-in-one research and publishing tool',
+    'Large template library for journals',
+    'Saves time in research and writing'
+  ],
+
+  cons: [
+    'Some features locked behind paid plans',
+    'Advanced tools may require learning',
+    'Not all papers are free to access'
+  ],
+
+  pricingDetails: {
+    Free: 'Basic access with limited features',
+    Premium: 'Advanced AI tools and full access (pricing varies)',
+    Enterprise: 'Custom plans for institutions'
+  },
+
+  integrations: [
+    'LaTeX',
+    'Overleaf',
+    'Academic journals',
+    'Research databases'
+  ],
+
+  compatibility: [
+    'Web Browser',
+    'Desktop',
+    'Mobile browser'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.8,
+    easeOfUse: 4.6,
+    features: 4.7,
+    performance: 4.6,
+    customization: 4.3,
+    security: 4.5,
+    support: 4.4,
+    costEfficiency: 4.5,
+    integrations: 4.6
+  },
+
+  overallScore: 4.7,
+
+  conclusion: `SciSpace is one of the best AI research tools for students, academics, and professionals. With its powerful AI Copilot, massive research database, and publishing tools, it simplifies the entire research workflow and improves productivity significantly.`
+},
+{
+  id: 18,
+  name: 'Vimi AI Photo Animator',
+  slug: 'vimi-ai-photo-animator',
+  image: '/images/vimi-ai.png',
+
+  description: `Vimi AI Photo Animator is a mobile-first AI tool that transforms static photos into short animated videos with emotional storytelling and creative visual effects.
+
+Unlike traditional editing apps, Vimi focuses on simplicity by using ready-made AI templates. Users can upload a photo and instantly convert it into a dynamic scene with motion, lighting, and artistic styles applied automatically.
+
+The platform is especially popular among casual users, families, and social media creators who want to create engaging video content without editing skills. With categories like couple moments, pet animations, and cultural styles, Vimi makes it easy to turn everyday memories into shareable animated clips.
+
+Designed for speed and creativity, Vimi generates social-media-ready content optimized for platforms like Instagram Reels, TikTok, and YouTube Shorts.`,
+
+  category: 'AI Video & Image Editing',
+
+  tags: [
+    'AI Photo Animation',
+    'Image to Video AI',
+    'AI Video Generator',
+    'Social Media AI',
+    'Photo Editing AI',
+    'AI Animation Tool',
+    'Mobile AI App',
+    'Reels Video Creator',
+    'TikTok Video AI',
+    'AI Content Creation'
+  ],
+
+  rating: 4.0,
+  users: '100K+',
+
+  icon: '📸',
+  color: 'from-pink-500 to-purple-600',
+
+  website: 'https://vimi.art/',
+  pricing: 'Contact for Pricing',
+
+  features: [
+    'Convert static images into animated videos',
+    'AI-powered motion and visual effects',
+    'Pre-built creative templates and themes',
+    'Emotion-based animation styles (family, pets, couples)',
+    'Mobile-first design for fast content creation',
+    'Social media optimized output formats',
+    'Quick processing with minimal input required',
+    'Automatic lighting and scene enhancement'
+  ],
+
+  specifications: {
+    Platform: 'Android (Mobile App)',
+    Processing: 'Cloud-based AI',
+    Output: 'Short animated videos',
+    Format: 'MP4 / Social formats',
+    Input: 'Images (JPG / PNG)',
+    AspectRatio: 'Vertical & Square (Reels / Shorts)'
+  },
+
+  useCases: [
+    'Create animated social media posts',
+    'Turn family photos into memory videos',
+    'Generate romantic couple animations',
+    'Animate pet photos for fun content',
+    'Create festival and cultural themed visuals',
+    'Quick content creation for influencers'
+  ],
+
+  pros: [
+    'Very easy to use (no editing skills required)',
+    'Fast AI-powered animation generation',
+    'Great for social media content',
+    'Creative templates for different moods and styles',
+    'Perfect for casual users and beginners'
+  ],
+
+  cons: [
+    'Limited advanced customization options',
+    'No desktop version currently',
+    'Pricing details are not transparent',
+    'Less control compared to professional tools'
+  ],
+
+  pricingDetails: {
+    Free: 'Not clearly specified',
+    Paid: 'Contact for pricing / App-based purchases'
+  },
+
+  integrations: [
+    'Instagram',
+    'TikTok',
+    'YouTube Shorts'
+  ],
+
+  compatibility: [
+    'Android',
+    'Mobile Devices'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.3,
+    easeOfUse: 4.6,
+    features: 4.1,
+    performance: 4.2,
+    customization: 3.7,
+    security: 4.0,
+    support: 3.8,
+    costEfficiency: 4.1,
+    integrations: 3.5
+  },
+
+  overallScore: 4.0,
+
+  faqs: [
+    {
+      q: 'What is Vimi AI used for?',
+      a: 'Vimi is used to convert static photos into short animated videos using AI-powered templates and effects.'
+    },
+    {
+      q: 'Is Vimi free to use?',
+      a: 'Pricing details are not fully disclosed, but the app may include free features and in-app purchases.'
+    },
+    {
+      q: 'Can I create videos for Instagram Reels and TikTok?',
+      a: 'Yes, Vimi generates videos optimized for social media platforms like Reels, TikTok, and Shorts.'
+    },
+    {
+      q: 'Do I need editing skills to use Vimi?',
+      a: 'No, Vimi is designed for beginners and works using simple templates.'
+    },
+    {
+      q: 'Is Vimi available on desktop?',
+      a: 'Currently, Vimi is primarily available as a mobile app on Android.'
+    }
+  ],
+
+  conclusion: `Vimi AI Photo Animator is a simple yet creative AI tool for turning everyday photos into engaging animated videos. It is ideal for social media users, families, and creators who want quick results without learning complex editing. While it lacks advanced controls, its ease of use and emotional storytelling make it a great choice for casual content creation.`
+},
+{
+  id: 19,
+  name: 'RecCloud AI',
+  slug: 'reccloud-ai',
+  image: '/images/reccloud.png',
+
+  description: `RecCloud AI is a powerful all-in-one platform for audio and video processing, designed to help creators, educators, and businesses streamline content production using artificial intelligence.
+
+It combines transcription, translation, subtitle generation, dubbing, and video editing into a single cloud-based workspace, eliminating the need for multiple tools.
+
+With RecCloud, users can convert speech to text, generate summaries, translate videos into multiple languages, and create AI voiceovers effortlessly. Its intuitive interface and automation features make it ideal for YouTubers, marketers, course creators, and teams working with large volumes of media content.
+
+Whether you're repurposing long videos into short clips or creating multilingual content for global audiences, RecCloud delivers fast, accurate, and scalable AI-powered solutions.`,
+
+  category: 'AI Audio & Video Tools',
+
+  tags: [
+    'AI Transcription',
+    'Video Editing AI',
+    'Subtitle Generator',
+    'AI Translator',
+    'Text to Speech',
+    'AI Voiceover',
+    'Content Repurposing',
+    'YouTube Tools',
+    'AI Video Tools'
+  ],
+
+  rating: 4.3,
+  users: '300K+',
+
+  icon: '🎙️',
+  color: 'from-blue-500 to-cyan-600',
+
+  website: 'https://reccloud.com',
+  pricing: 'Freemium (Credit-based + Subscription)',
+
+  features: [
+    'AI speech-to-text transcription with summaries',
+    'Automatic subtitle generation and translation',
+    'Multi-language AI dubbing and voiceovers',
+    'Text-to-speech with natural voices',
+    'Video summarization and clip generator',
+    'Remove watermark, subtitles, and vocals',
+    'Screen recording and basic video editing tools',
+    'Supports YouTube and uploaded video processing',
+    'Cloud-based processing (no installation required)',
+    'Batch processing and multi-task support'
+  ],
+
+  specifications: {
+    Platform: 'Web-based (Cloud)',
+    Processing: 'AI Cloud Processing',
+    Input: 'Audio, Video, Text',
+    Output: 'Text, Subtitles, Audio, Video',
+    Languages: 'Multi-language support',
+    Storage: 'Cloud Storage Supported'
+  },
+
+  useCases: [
+    'YouTube content creation and editing',
+    'Online course transcription and subtitles',
+    'Podcast transcription and summaries',
+    'Marketing video repurposing',
+    'Multilingual content creation',
+    'Social media video editing',
+    'Meeting and webinar transcription'
+  ],
+
+  pros: [
+    'All-in-one AI toolkit for audio and video',
+    'Fast transcription and summarization',
+    'Supports multiple languages and dubbing',
+    'Cloud-based with no installation needed',
+    'Great for content repurposing workflows',
+    'User-friendly interface for beginners'
+  ],
+
+  cons: [
+    'Credit system can be confusing initially',
+    'Limited advanced editing compared to pro tools',
+    'Fewer integrations with external platforms',
+    'Subscription required for heavy usage'
+  ],
+
+  pricingDetails: {
+    Weekly: '$15/week (300 credits)',
+    Basic: '$48/year (3,000 credits)',
+    Pro: '$59/year (6,000 credits)',
+    Business: '$159/year (18,000 credits)',
+    Credits: '$240 (30,000 credits)',
+    Storage: '$49/year (100GB)'
+  },
+
+  integrations: [
+    'YouTube',
+    'Cloud Uploads',
+    'API Access'
+  ],
+
+  compatibility: [
+    'Web Browser',
+    'Desktop',
+    'Mobile Browser'
+  ],
+
+  ratingsBreakdown: {
+    accuracy: 4.3,
+    easeOfUse: 4.6,
+    features: 4.5,
+    performance: 4.4,
+    customization: 4.0,
+    security: 4.1,
+    support: 4.0,
+    costEfficiency: 4.6,
+    integrations: 3.9
+  },
+
+  overallScore: 4.3,
+
+  faqs: [
+    {
+      q: 'What is RecCloud AI used for?',
+      a: 'RecCloud is used for AI transcription, video translation, subtitle generation, voiceovers, and content repurposing.'
+    },
+    {
+      q: 'Is RecCloud free to use?',
+      a: 'Yes, it offers a free plan with limited credits, but advanced features require a paid subscription.'
+    },
+    {
+      q: 'Does RecCloud support multiple languages?',
+      a: 'Yes, it supports multiple languages for transcription, translation, and dubbing.'
+    },
+    {
+      q: 'Can I generate subtitles automatically?',
+      a: 'Yes, RecCloud can auto-generate subtitles and translate them into different languages.'
+    },
+    {
+      q: 'Is RecCloud good for YouTubers?',
+      a: 'Yes, it is ideal for YouTubers to create subtitles, summaries, clips, and voiceovers quickly.'
+    },
+    {
+      q: 'Does RecCloud require installation?',
+      a: 'No, it is a cloud-based tool that works directly in your browser.'
+    }
+  ],
+
+  conclusion: `RecCloud AI is a powerful and versatile platform for anyone working with audio and video content. Its ability to combine transcription, translation, dubbing, and editing into one tool makes it highly efficient for creators and teams. While it may not replace professional editing software, it excels as a fast, AI-powered assistant for everyday content workflows.`
+}
+
 ]
+
+
 
 export const categories = [
   'All Tools',

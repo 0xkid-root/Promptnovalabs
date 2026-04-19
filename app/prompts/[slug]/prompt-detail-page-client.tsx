@@ -5,12 +5,15 @@ import Link from "next/link";
 import { motion } from 'framer-motion'
 import { useParams } from "next/navigation";
 import { prompts } from "@/data/prompts";
+import type { PromptVariation } from "@/data/prompts";
 import {
   ArrowLeft,
   Heart,
   Copy,
   Check,
   ExternalLink,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 
 const fadeUp = {
@@ -48,6 +51,16 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
   const [copied, setCopied] = useState(false);
   const [liked, setLiked] = useState(false);
   const [likeCount, setLikeCount] = useState(prompt?.likes ?? 0);
+  const [currentVariationIndex, setCurrentVariationIndex] = useState(0);
+
+  // Determine if this prompt has variations
+  const hasVariations = !!(prompt?.variations && prompt.variations.length > 0);
+  const currentVariation = hasVariations && prompt?.variations ? prompt.variations[currentVariationIndex] : null;
+  
+  // Display image and prompt - use variation if available, otherwise use main prompt
+  const displayImage = currentVariation?.image || prompt?.image;
+  const displayPrompt = currentVariation?.prompt || prompt?.prompt;
+  const displayTitle = currentVariation?.title || prompt?.title;
 
   /* ── Not found ── */
   if (!prompt) {
@@ -67,7 +80,7 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
   }
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(prompt.prompt);
+    navigator.clipboard.writeText(displayPrompt || "");
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
   };
@@ -94,14 +107,36 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
 
             {/* Left - Image */}
-            <div className="flex items-center">
+            <div className="flex flex-col gap-4">
               <div className="relative rounded-2xl overflow-hidden bg-[#0a0a0a] w-full">
                 <img
-                  src={prompt.image}
-                  alt={prompt.title}
+                  src={displayImage || "/images/placeholder.png"}
+                  alt={displayTitle || prompt?.title}
                   className="w-full aspect-square object-cover"
                 />
               </div>
+
+              {/* Variations Tabs */}
+              {hasVariations && prompt.variations && (
+                <div className="flex flex-col gap-3">
+                  <p className="text-xs text-gray-500 uppercase tracking-wider font-semibold">Variations ({prompt.variations.length})</p>
+                  <div className="flex gap-2 overflow-x-auto pb-2">
+                    {prompt.variations.map((variation, idx) => (
+                      <button
+                        key={variation.id}
+                        onClick={() => setCurrentVariationIndex(idx)}
+                        className={`flex-shrink-0 px-3 py-2 rounded-lg text-xs font-medium whitespace-nowrap transition-all ${
+                          idx === currentVariationIndex
+                            ? "bg-purple-600 text-white border border-purple-500"
+                            : "bg-white/5 text-gray-400 border border-white/10 hover:border-purple-500"
+                        }`}
+                      >
+                        {variation.title}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Right - Content */}
@@ -118,12 +153,15 @@ export default function PromptDetailPageClient({ slug }: { slug: string }) {
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                   {prompt.title}
                 </h1>
+                {hasVariations && currentVariation && (
+                  <p className="text-sm text-purple-400">{currentVariation.title}</p>
+                )}
               </div>
 
               {/* Prompt description */}
               <div className="bg-white/5 border border-white/10 rounded-xl p-6">
                 <p className="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-3">Prompt</p>
-                <p className="text-gray-300 text-sm leading-relaxed">{prompt.prompt}</p>
+                <p className="text-gray-300 text-sm leading-relaxed">{displayPrompt}</p>
               </div>
 
               {/* Action buttons */}

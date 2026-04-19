@@ -536,4 +536,735 @@ If your focus is on quality rather than cost, Topaz Labs is a strong investment 
     "ai-image-enhancers",
   ],
 },
+
+{
+  id: 6,
+  slug: "google-gemini-neet-mock-test-2026",
+  date: "April 17, 2026",
+
+  title: "Google Gemini Launches Free NEET Mock Tests (2026) — Full Guide",
+  subtitle:
+    "Students can now take free NEET UG practice tests directly inside Gemini AI with instant results and analysis.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI News Analyst",
+
+  image: "/images/news/gemini-neet.png", // use your screenshot here
+
+  category: "AI News",
+  featured: true,
+
+  description:
+    "Google Gemini introduces free NEET mock tests for students in India. Learn how to use AI for NEET preparation with real exam-like practice tests.",
+
+  content: `
+Google has introduced a powerful new feature in Gemini — free NEET UG mock tests for students in India.
+
+This update allows students to take full-length practice tests directly inside the Gemini AI interface without using any external apps.
+
+It marks a major shift in how AI is transforming education.
+`,
+
+  sections: [
+    {
+      title: "What is Gemini NEET Mock Test Feature?",
+      content:
+        "Google Gemini now allows students to generate and attempt NEET practice tests directly inside chat by simply giving a prompt.",
+      points: [
+        "Full-length NEET mock tests",
+        "Covers Physics, Chemistry, Biology",
+        "Real exam-like questions",
+        "Instant AI-generated test",
+      ],
+    },
+
+    {
+      title: "How to Use Gemini for NEET Preparation",
+      content:
+        "Students can easily start a test using Gemini without any setup.",
+      points: [
+        "Open Gemini app",
+        "Type: 'I want to take a NEET mock test'",
+        "Start solving questions",
+        "Submit test and get results instantly",
+      ],
+    },
+
+    {
+      title: "Key Benefits of AI-Based Mock Tests",
+      content:
+        "Gemini provides advanced features that traditional mock tests cannot offer.",
+      points: [
+        "Instant performance analysis",
+        "Personalized feedback",
+        "Strength & weakness insights",
+        "Unlimited free tests",
+      ],
+    },
+
+    {
+      title: "Why This is a Big Change in Education",
+      content:
+        "This feature reduces dependency on paid coaching platforms and makes quality test preparation accessible for everyone.",
+      points: [
+        "No need for paid test series",
+        "Accessible to all students",
+        "AI-powered smart learning",
+        "Faster preparation",
+      ],
+    },
+
+    {
+      title: "Future of AI in Competitive Exams",
+      content:
+        "Google may expand this feature to other exams like JEE, UPSC, and international tests in the future.",
+    },
+  ],
+
+  quote:
+    "AI is not just assisting education anymore — it is becoming the platform itself.",
+  quoteAuthor: "AINovaLab Insight",
+
+  additionalContent: `
+This feature shows how AI tools like Gemini are evolving beyond chatbots into full learning platforms.
+
+Students who use AI-powered preparation tools will have a clear advantage in competitive exams in the coming years.
+`,
+
+  website: "https://gemini.google.com",
+
+  faqs: [
+    {
+      question: "Is Gemini NEET mock test free?",
+      answer: "Yes, Google Gemini offers NEET practice tests for free inside the app.",
+    },
+    {
+      question: "Can I use Gemini for NEET preparation?",
+      answer: "Yes, students can use Gemini to generate mock tests, practice questions, and improve performance.",
+    },
+    {
+      question: "Does Gemini give real exam-level questions?",
+      answer: "Gemini generates questions similar to NEET exam pattern, covering Physics, Chemistry, and Biology.",
+    },
+    {
+      question: "Is this better than coaching mock tests?",
+      answer: "Gemini provides instant feedback and unlimited practice, which makes it more flexible than traditional test series.",
+    },
+  ],
+
+  relatedSlugs: [
+    "topaz-labs-ai-review-2026",
+    "local-llm-rise",
+    "anthropic-claude-3-5-launch"
+  ],
+},
+{
+  id: 7,
+  slug: "how-to-use-gemini-for-neet-preparation",
+  date: "April 17, 2026",
+
+  title: "How to Use Google Gemini for NEET Preparation (2026 Guide) — Free AI Mock Tests",
+  subtitle:
+    "Step-by-step guide to using Gemini AI for NEET UG practice tests, mock exams, and smart preparation strategies.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI Tools Analyst",
+
+  image: "/images/news/gemini-neet-guide.png",
+
+  category: "AI Guides",
+  featured: true,
+
+  description:
+    "Learn how to use Google Gemini for NEET preparation with free AI mock tests. Step-by-step guide covering physics, chemistry, and biology practice using AI.",
+
+  content: `
+Google Gemini is now becoming one of the best AI tools for NEET preparation in 2026. 
+
+Students can generate AI-powered NEET mock tests, practice physics, chemistry, and biology questions, and get instant performance feedback — all for free.
+
+In this guide, we will show you how to use Gemini for NEET preparation step by step.
+`,
+
+  sections: [
+    {
+      title: "What is Gemini AI NEET Practice Test?",
+      content:
+        "Google Gemini provides AI-generated NEET UG practice tests that simulate real exam patterns.",
+      points: [
+        "AI-powered NEET mock test generator",
+        "Covers Physics, Chemistry, Biology",
+        "Real exam-level questions",
+        "Unlimited free tests",
+      ],
+    },
+
+    {
+      title: "How to Take NEET Mock Test in Gemini (Step-by-Step)",
+      content:
+        "Follow these steps to start your AI NEET mock test in Gemini.",
+      points: [
+        "Open Gemini (gemini.google.com)",
+        "Type: 'Create a NEET UG practice test'",
+        "Start solving questions instantly",
+        "Submit test for instant analysis",
+      ],
+    },
+
+    {
+      title: "Best Prompts for Gemini NEET Mock Test",
+      content:
+        "Use these prompts to generate better results in Gemini.",
+      points: [
+        "Create a full NEET mock test with 180 questions",
+        "Generate NEET physics numerical questions",
+        "Give me NEET biology MCQs with answers",
+        "Create chemistry organic reaction questions",
+      ],
+    },
+
+    {
+      title: "Why Gemini is the Best Free AI for NEET Preparation",
+      content:
+        "Gemini stands out as one of the best free AI tools for NEET UG 2026.",
+      points: [
+        "Completely free AI mock tests",
+        "Instant feedback and scoring",
+        "Personalized learning experience",
+        "Available anytime without coaching",
+      ],
+    },
+
+    {
+      title: "Can Gemini Help in NEET Exam Preparation?",
+      content:
+        "Yes, Gemini AI helps students improve accuracy, speed, and conceptual understanding.",
+      points: [
+        "Practice unlimited tests",
+        "Improve weak subjects",
+        "Learn from AI explanations",
+        "Track progress easily",
+      ],
+    },
+
+    {
+      title: "Gemini AI Physics, Chemistry & Biology Test",
+      content:
+        "Gemini can generate subject-specific NEET tests for targeted preparation.",
+      points: [
+        "Physics: Numerical & conceptual problems",
+        "Chemistry: Organic, inorganic, physical",
+        "Biology: NCERT-based MCQs",
+      ],
+    },
+  ],
+
+  quote:
+    "AI-powered preparation tools like Gemini are changing how students prepare for competitive exams.",
+  quoteAuthor: "AINovaLab",
+
+  additionalContent: `
+If you are serious about cracking NEET 2026, using AI tools like Gemini can give you a strong advantage over traditional preparation methods.
+
+The combination of free access, unlimited tests, and instant feedback makes it one of the most powerful tools available today.
+`,
+
+  website: "https://gemini.google.com",
+
+  faqs: [
+    {
+      question: "Is Google Gemini NEET mock test free?",
+      answer: "Yes, Gemini provides free AI-based NEET mock tests without any subscription."
+    },
+    {
+      question: "How to use Gemini for NEET preparation?",
+      answer: "Simply open Gemini and type a prompt like 'Create NEET mock test' to start practicing instantly."
+    },
+    {
+      question: "Is Gemini better than coaching test series?",
+      answer: "Gemini offers unlimited practice and instant feedback, making it more flexible than traditional coaching tests."
+    },
+    {
+      question: "Which is the best AI for NEET preparation?",
+      answer: "Google Gemini is currently one of the best free AI tools for NEET preparation in 2026."
+    }
+  ],
+
+  relatedSlugs: [
+    "google-gemini-neet-mock-test-2026",
+    "topaz-labs-ai-review-2026"
+  ]
+},
+{
+  id: 8,
+
+  slug: "wan-2-7-ai-video-generator-review-2026",
+
+  date: "April 20, 2026",
+
+  title: "Wan 2.7 AI Video Generator Review (2026): Features, Pricing, Pros & Alternatives",
+
+  subtitle:
+    "Complete guide to Wan 2.7 AI Video Generator — learn features, pricing, use cases, and comparison with Sora, Kling AI, and Veo.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI Tools Analyst",
+
+  image: "/images/wan-ai-video.png",
+
+  category: "AI Tools Review",
+  featured: true,
+
+  description:
+    "Wan 2.7 AI Video Generator review 2026. Learn features, pricing, pros and cons, and compare with Sora, Kling AI, and Veo AI video generators.",
+
+  content: `
+Wan 2.7 AI Video Generator is one of the most powerful AI video tools in 2026. It allows users to convert images and text prompts into high-quality 1080P videos with realistic motion and cinematic effects.
+
+With the rise of AI video tools like Sora, Kling AI, and Veo, Wan 2.7 stands out for its accessibility, speed, and advanced control features.
+
+In this detailed review, we will explore Wan 2.7 AI Video Generator features, pricing, pros & cons, and whether it is worth using in 2026.
+`,
+
+  sections: [
+    {
+      title: "What is Wan 2.7 AI Video Generator?",
+      content:
+        "Wan 2.7 AI Video Generator is an AI-powered platform that transforms images and prompts into cinematic videos using advanced machine learning models.",
+      points: [
+        "AI-powered image-to-video generation",
+        "Supports multiple models (Wan 2.7, Kling AI, Sora, Veo)",
+        "Creates realistic motion and transitions",
+        "Beginner-friendly interface"
+      ]
+    },
+
+    {
+      title: "Key Features of Wan 2.7 AI Video Generator",
+      content:
+        "Wan 2.7 offers powerful features for creators, marketers, and businesses.",
+      points: [
+        "Convert images into 1080P videos",
+        "Text-to-video AI generation",
+        "Frame-level motion control",
+        "Subject cloning for consistency",
+        "Voice reference integration",
+        "3x3 grid multi-image video creation",
+        "Aspect ratio customization (Reels, Shorts)",
+        "Fast rendering with cinematic quality"
+      ]
+    },
+
+    {
+      title: "How to Use Wan 2.7 AI Video Generator",
+      content:
+        "Follow these simple steps to generate AI videos using Wan 2.7.",
+      points: [
+        "Open the Wan 2.7 platform",
+        "Upload an image or enter a prompt",
+        "Customize motion and video settings",
+        "Generate and download your video",
+        "Share on social media or marketing platforms"
+      ]
+    },
+
+    {
+      title: "Wan 2.7 Pricing (2026)",
+      content:
+        "Wan 2.7 follows a credit-based pricing model suitable for both beginners and professionals.",
+      points: [
+        "Free plan with limited credits",
+        "Pay-as-you-go credit system",
+        "Premium plans for heavy users",
+        "Affordable for casual creators"
+      ]
+    },
+
+    {
+      title: "Wan 2.7 AI Video Generator Use Cases",
+      content:
+        "Wan 2.7 is widely used across industries.",
+      points: [
+        "Instagram Reels and YouTube Shorts",
+        "E-commerce product videos",
+        "Marketing and ad creatives",
+        "AI storytelling and short films",
+        "Brand promotion content"
+      ]
+    },
+
+    {
+      title: "Wan 2.7 vs Sora vs Kling AI vs Veo",
+      content:
+        "Here’s how Wan 2.7 compares with other AI video tools.",
+      points: [
+        "Wan 2.7: Easy to use and fast generation",
+        "Sora: Advanced but limited access",
+        "Kling AI: High realism but less control",
+        "Veo: Cinematic output but complex"
+      ]
+    },
+
+    {
+      title: "Pros and Cons of Wan 2.7",
+      content:
+        "Like any AI tool, Wan 2.7 has advantages and limitations.",
+      points: [
+        "Pros: High-quality output, fast generation, easy to use",
+        "Cons: 15-second limit, credit-based pricing, cloud dependency"
+      ]
+    },
+
+    {
+      title: "Is Wan 2.7 AI Video Generator Worth It?",
+      content:
+        "Wan 2.7 is a great tool for creators who want quick, high-quality AI videos without complex editing.",
+      points: [
+        "Perfect for content creators",
+        "Great for marketers and agencies",
+        "Saves time and effort",
+        "Best for short-form content"
+      ]
+    }
+  ],
+
+  quote:
+    "AI video generation tools like Wan 2.7 are transforming content creation in 2026.",
+  quoteAuthor: "AINovaLab",
+
+  additionalContent: `
+If you are looking for the best AI video generator in 2026, Wan 2.7 is definitely worth trying. It combines speed, quality, and ease of use, making it ideal for beginners and professionals alike.
+
+With increasing demand for video content on platforms like Instagram, YouTube, and TikTok, tools like Wan 2.7 can give you a competitive edge.
+`,
+
+  website: "https://vidflux.ai/",
+
+  faqs: [
+    {
+      question: "Is Wan 2.7 AI Video Generator free?",
+      answer: "Yes, Wan 2.7 offers a free plan with limited credits for video generation."
+    },
+    {
+      question: "What is the maximum video length in Wan 2.7?",
+      answer: "Videos can be generated between 2 and 15 seconds."
+    },
+    {
+      question: "Does Wan 2.7 support 1080P video?",
+      answer: "Yes, all videos are generated in high-quality 1080P resolution."
+    },
+    {
+      question: "Which is better: Wan 2.7 or Sora?",
+      answer: "Wan 2.7 is more accessible and easier to use, while Sora is more advanced but limited in availability."
+    },
+    {
+      question: "Can I use Wan 2.7 for Instagram Reels?",
+      answer: "Yes, Wan 2.7 supports vertical aspect ratios optimized for Reels and Shorts."
+    }
+  ],
+
+  relatedSlugs: [
+    "wan-2-7-ai-video-generator",
+    "kling-ai-video",
+    "sora-ai-video-generator",
+    "veo-ai-video",
+    "best-ai-video-generators-2026"
+  ]
+},
+{
+  id: 9,
+  slug: "reccloud-ai-tools-review-2026",
+
+  date: "April 20, 2026",
+
+  title: "RecCloud AI Review (2026) — All-in-One Tool for Transcription, Subtitles & Video Translation",
+  subtitle:
+    "Explore how RecCloud AI helps creators with speech-to-text, subtitles, translation, and video editing in one powerful platform.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI Tools Analyst",
+
+  image: "/images/reccloud.png",
+
+  category: "AI Tools Review",
+  featured: true,
+
+  description:
+    "RecCloud AI review 2026: Learn about speech-to-text, text-to-speech, subtitle generator, video translator, watermark remover, and clip maker features in one platform.",
+
+  content: `
+RecCloud AI is one of the fastest-growing all-in-one AI tools for audio and video processing in 2026.
+
+Instead of switching between multiple tools for transcription, subtitles, translation, and editing, RecCloud brings everything into a single cloud-based platform.
+
+This makes it an ideal solution for creators, YouTubers, educators, marketers, and businesses looking to automate content workflows and save time.
+`,
+
+  sections: [
+    {
+      title: "What is RecCloud AI?",
+      content:
+        "RecCloud is a cloud-based AI platform that provides multiple tools for audio and video processing, including transcription, translation, subtitles, and editing.",
+      points: [
+        "AI speech-to-text for audio and video",
+        "AI subtitle generator with auto sync",
+        "AI video translator for global content",
+        "AI text-to-speech voice generation",
+      ],
+    },
+
+    {
+      title: "Key Features of RecCloud AI",
+      content:
+        "RecCloud offers a complete suite of AI tools designed for modern content creators.",
+      points: [
+        "AI Speech-to-Text: Convert videos and audio into text instantly",
+        "AI Text-to-Speech: Generate natural voiceovers",
+        "AI Video Translator: Translate videos into multiple languages",
+        "AI Subtitle Generator: Create subtitles automatically",
+        "AI Watermark Remover: Clean unwanted branding",
+        "AI Video Clip Maker: Turn long videos into short clips",
+      ],
+    },
+
+    {
+      title: "Why RecCloud is Trending in 2026",
+      content:
+        "RecCloud is gaining popularity because it replaces multiple tools with one AI-powered platform.",
+      points: [
+        "All-in-one AI workflow",
+        "Cloud-based (no installation needed)",
+        "Fast processing with automation",
+        "Perfect for global content creators",
+      ],
+    },
+
+    {
+      title: "Who Should Use RecCloud?",
+      content:
+        "RecCloud is suitable for multiple types of users.",
+      points: [
+        "YouTubers creating subtitles and clips",
+        "Educators generating transcripts",
+        "Marketers translating videos",
+        "Podcasters converting audio to text",
+      ],
+    },
+
+    {
+      title: "Pros and Cons of RecCloud AI",
+      content:
+        "Here are the advantages and limitations of RecCloud.",
+      points: [
+        "Pros: All-in-one platform, beginner-friendly, fast processing",
+        "Cons: Credit-based pricing, limited advanced editing features",
+      ],
+    },
+
+    {
+      title: "Is RecCloud Worth It in 2026?",
+      content:
+        "RecCloud is a powerful choice for users who want to automate content workflows using AI.",
+      points: [
+        "Saves time with automation",
+        "Reduces need for multiple tools",
+        "Ideal for creators and teams",
+      ],
+    }
+  ],
+
+  quote:
+    "RecCloud simplifies content creation by combining transcription, translation, and video editing into one AI-powered platform.",
+  quoteAuthor: "AINovaLab",
+
+  additionalContent: `
+If you are working with video or audio content regularly, RecCloud can significantly improve your workflow.
+
+From generating subtitles to translating videos and creating clips, everything can be done in minutes using AI.
+
+This makes RecCloud one of the best AI productivity tools for creators in 2026.
+`,
+
+  website: "https://reccloud.com",
+
+  faqs: [
+    {
+      question: "What is RecCloud AI used for?",
+      answer: "RecCloud is used for transcription, subtitles, translation, text-to-speech, and video editing using AI."
+    },
+    {
+      question: "Is RecCloud free?",
+      answer: "RecCloud offers a free plan with limited credits, but advanced features require a paid subscription."
+    },
+    {
+      question: "Can RecCloud generate subtitles automatically?",
+      answer: "Yes, RecCloud can automatically generate and sync subtitles for videos."
+    },
+    {
+      question: "Does RecCloud support video translation?",
+      answer: "Yes, RecCloud supports multi-language video translation and dubbing."
+    },
+    {
+      question: "Is RecCloud good for YouTubers?",
+      answer: "Yes, it is ideal for YouTubers to create subtitles, clips, and translations quickly."
+    }
+  ],
+
+  relatedSlugs: [
+    "best-ai-video-tools-2026",
+    "wan-2-7-ai-video-generator",
+    "top-ai-transcription-tools"
+  ]
+},
+
+{
+  id: 8,
+  slug: "vimi-ai-photo-to-video-generator-2026",
+  date: "April 20, 2026",
+
+  title: "Vimi AI Turns Photos into Animated Videos (2026) — Create Living Moments in Seconds",
+  subtitle:
+    "Vimi AI lets users transform photos into animated videos using AI templates, styles, and effects — perfect for social media and storytelling.",
+
+  author: "Gaurav Kumar",
+  authorRole: "AI Tools Analyst",
+
+  image: "/images/vimi-ai.png",
+
+  category: "AI Tools",
+  featured: true,
+
+  description:
+    "Vimi AI is a powerful photo-to-video generator that converts images into animated videos using AI templates. Learn features, use cases, and how it works in 2026.",
+
+  content: `
+Vimi AI is one of the fastest-growing AI tools in 2026 that turns static photos into animated videos with just a few clicks.
+
+Instead of using complex editing software, users can simply upload a photo, choose a style, and let AI generate a dynamic video with motion, effects, and storytelling.
+
+This tool is especially popular among content creators, couples, families, and social media users who want to create engaging visual content quickly.
+`,
+
+  sections: [
+    {
+      title: "What is Vimi AI?",
+      content:
+        "Vimi is an AI-powered photo-to-video generator that converts images into short animated clips using templates and styles.",
+      points: [
+        "AI converts images into animated videos",
+        "No editing skills required",
+        "Template-based workflow",
+        "Mobile-first experience",
+      ],
+    },
+
+    {
+      title: "Key Features of Vimi AI",
+      content:
+        "Vimi offers a variety of creative features designed for fast and engaging content creation.",
+      points: [
+        "Photo-to-video AI animation",
+        "Text-to-video generation",
+        "Ready-made templates (3D, couple, pets, festive)",
+        "AI visual effects and transitions",
+        "Social media optimized output",
+      ],
+    },
+
+    {
+      title: "How to Use Vimi AI (Step-by-Step)",
+      content:
+        "You can create videos in seconds using Vimi AI.",
+      points: [
+        "Open Vimi app or website",
+        "Upload your photo",
+        "Choose a style or template",
+        "Click generate",
+        "Download and share video",
+      ],
+    },
+
+    {
+      title: "Best Use Cases of Vimi AI",
+      content:
+        "Vimi is widely used for fun, creative, and emotional content creation.",
+      points: [
+        "Instagram Reels & TikTok videos",
+        "Couple and wedding animations",
+        "Pet animations",
+        "Family memory videos",
+        "Creative storytelling content",
+      ],
+    },
+
+    {
+      title: "Why Vimi is Trending in 2026",
+      content:
+        "Vimi is becoming popular because of its simplicity and emotional storytelling approach.",
+      points: [
+        "No editing skills required",
+        "Fast AI generation",
+        "Template-based creativity",
+        "Perfect for social media",
+      ],
+    },
+
+    {
+      title: "Is Vimi Better Than Traditional Editing Tools?",
+      content:
+        "Vimi is not meant to replace professional tools but offers a faster alternative.",
+      points: [
+        "Faster than video editing software",
+        "Easier for beginners",
+        "Limited advanced controls",
+        "Best for quick content creation",
+      ],
+    },
+  ],
+
+  quote:
+    "AI tools like Vimi are making content creation faster, easier, and more accessible for everyone.",
+  quoteAuthor: "AINovaLab",
+
+  additionalContent: `
+If you are looking for an easy way to create engaging videos without editing skills, Vimi AI is a great option.
+
+It focuses more on emotions, storytelling, and quick results rather than technical complexity — making it perfect for modern content creators.
+`,
+
+  website: "https://vimi.art",
+
+  faqs: [
+    {
+      question: "What is Vimi AI?",
+      answer: "Vimi AI is a photo-to-video generator that converts images into animated videos using AI templates and effects."
+    },
+    {
+      question: "Is Vimi free to use?",
+      answer: "Vimi offers free features, but some premium styles and effects may require a paid plan."
+    },
+    {
+      question: "Do I need editing skills to use Vimi?",
+      answer: "No, Vimi is designed for beginners with a simple template-based workflow."
+    },
+    {
+      question: "Can I create videos for Instagram and TikTok?",
+      answer: "Yes, Vimi videos are optimized for social media platforms like Instagram Reels and TikTok."
+    },
+    {
+      question: "What types of videos can I create?",
+      answer: "You can create couple videos, pet animations, family memories, and creative short clips."
+    },
+    {
+      question: "Is Vimi available on mobile?",
+      answer: "Yes, Vimi is primarily designed as a mobile app for quick content creation."
+    }
+  ],
+
+  relatedSlugs: [
+    "wan-2-7-ai-video-generator-2026",
+    "best-ai-video-generators-2026",
+    "kling-ai-video-generator-review"
+  ]
+}
 ];

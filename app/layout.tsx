@@ -7,6 +7,7 @@ import './globals.css'
 // IMPORT HEADER FOOTER HERE
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { Toaster } from '@/components/ui/sonner'
 
 
 const geist = Geist({ subsets: ['latin'] })
@@ -98,6 +99,7 @@ export default function RootLayout({
         <Footer />
 
         <Analytics />
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   )

@@ -48,9 +48,12 @@ export default function PromptsPageClient() {
     const matchCat = activeCategory === "All" || tags.includes(activeCategory);
     const q = search.toLowerCase();
 
+    // Get the prompt text - use root prompt or first variation's prompt
+    const promptText = p.prompt || (p.variations && p.variations.length > 0 ? p.variations[0].prompt : '');
+
     const matchSearch =
       p.title.toLowerCase().includes(q) ||
-      p.prompt.toLowerCase().includes(q) ||
+      promptText.toLowerCase().includes(q) ||
       tags.some((tag) => tag.toLowerCase().includes(q));
 
     return matchCat && matchSearch;
@@ -162,12 +165,12 @@ export default function PromptsPageClient() {
                         WebkitBoxOrient: 'vertical',
                       }}
                     >
-                      {p.prompt}
+                      {p.prompt || (p.variations && p.variations.length > 0 ? p.variations[0].prompt : 'No prompt available')}
                     </p>
 
                     {/* Footer */}
                     <div className="flex items-center justify-between pt-3 border-t border-[#1a1a1a]">
-                      <CopyButton text={p.prompt} />
+                      <CopyButton text={p.prompt || (p.variations && p.variations.length > 0 ? p.variations[0].prompt : '')} />
 
                       <div className="w-8 h-8 rounded-lg bg-[#1a1a1a] hover:bg-purple-600/20 hover:border-purple-600/50 border border-[#2a2a2a] flex items-center justify-center transition-all duration-200 group-hover:translate-x-1">
                         <ChevronRight

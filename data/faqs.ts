@@ -1,72 +1,118 @@
 export const faqs = [
   {
     id: 1,
-    question: 'What is AINovaLab?',
+    question: "What is AINovaLab?",
     answer:
-      'AINovaLab is a platform where you can discover the best AI tools, copy ready-to-use prompts, and stay updated with the latest AI trends.',
-    tag: 'General',
+      "AINovaLab is a curated platform where you can discover the best AI tools for productivity, content creation, image generation, research, and more. We help users find, compare, and use AI tools efficiently.",
+    tag: "General"
   },
   {
     id: 2,
-    question: 'Are the AI tools listed on AINovaLab free?',
+    question: "Are all AI tools listed here free to use?",
     answer:
-      'Many AI tools listed are free or offer free trials. Some tools may require a subscription depending on their features.',
-    tag: 'Pricing',
+      "Not all tools are completely free. Some offer free plans with limited features, while others require a paid subscription. We clearly mention pricing details on each tool page.",
+    tag: "Pricing"
   },
   {
     id: 3,
-    question: 'How do I use AI prompts from this website?',
+    question: "How do I choose the best AI tool for my needs?",
     answer:
-      'Simply copy the prompt, paste it into your preferred AI tool (like ChatGPT or image generators), and customize it based on your needs.',
-    tag: 'Prompts',
+      "You can explore tools based on categories, features, and use cases. Each tool page includes detailed descriptions, pros, cons, and use cases to help you make the right decision.",
+    tag: "Guide"
   },
   {
     id: 4,
-    question: 'How often are new AI tools added?',
+    question: "Do these AI tools work with ChatGPT, Claude, or Gemini?",
     answer:
-      'We update our platform daily with the latest AI tools, prompts, and use cases to keep you ahead in the AI space.',
-    tag: 'Updates',
+      "Many tools listed on AINovaLab support popular AI platforms like ChatGPT, Claude, and Gemini. Check the integrations section on each tool page for compatibility details.",
+    tag: "Compatibility"
   },
   {
     id: 5,
-    question: 'Can I submit my own AI tool?',
+    question: "Are the AI tools safe to use?",
     answer:
-      'Yes! You can submit your AI tool through our submission page. We review and list quality tools for our users.',
-    tag: 'Community',
+      "Yes, we only list trusted and widely used AI tools. However, always review each tool’s privacy policy before uploading sensitive data.",
+    tag: "Security"
   },
   {
     id: 6,
-    question: 'Do I need an account to use AINovaLab?',
+    question: "Can beginners use these AI tools?",
     answer:
-      'No, you can browse tools and use prompts without creating an account. Future features may include user accounts.',
-    tag: 'Access',
+      "Yes, most tools featured on AINovaLab are beginner-friendly and designed with simple interfaces. Many also include templates and guides to help new users get started easily.",
+    tag: "Beginner"
   },
   {
     id: 7,
-    question: 'Who can use AINovaLab?',
+    question: "How often are new AI tools added?",
     answer:
-      'Anyone! Creators, developers, students, marketers, and businesses can use AINovaLab to improve productivity using AI.',
-    tag: 'General',
+      "We regularly update our platform with new and trending AI tools to ensure you always have access to the latest technology and innovations.",
+    tag: "Updates"
   },
   {
     id: 8,
-    question: 'Are the prompts tested?',
+    question: "Can I submit my own AI tool to AINovaLab?",
     answer:
-      'Yes, most prompts are tested and optimized to deliver high-quality results across different AI tools.',
-    tag: 'Prompts',
+      "Yes, you can submit your AI tool through our submission form. Our team reviews each submission before listing it on the platform.",
+    tag: "Submit"
   },
   {
     id: 9,
-    question: 'How can AI tools help me?',
+    question: "What categories of AI tools are available?",
     answer:
-      'AI tools can help you create content, generate images, automate tasks, write code, and save hours of work.',
-    tag: 'General',
+      "We cover multiple categories including AI image generation, video tools, prompt generators, research tools, marketing tools, coding assistants, and more.",
+    tag: "Categories"
   },
   {
     id: 10,
-    question: 'Is AINovaLab updated with latest AI news?',
+    question: "What is the best AI tool available right now?",
     answer:
-      'Yes, we regularly publish AI news, tool updates, and trends to keep you informed and ahead of the curve.',
-    tag: 'Updates',
+      "The best AI tool depends on your use case. For example, ChatGPT and Claude are great for writing, Midjourney for images, and tools like Promptizy for prompt optimization.",
+    tag: "Trending"
+  }
+];
+
+
+export const toolFaqs = [
+  {
+    id: 1,
+    question: "What are AI tools and how do they work?",
+    answer:
+      "AI tools use machine learning and large language models to automate tasks like content creation, image generation, video editing, and data analysis. They help users generate high-quality results quickly without manual effort.",
+    tag: "General",
   },
-]
+  {
+    id: 2,
+    question: "Are the AI tools on AINovaLab free to use?",
+    answer:
+      "Many AI tools listed on AINovaLab offer free plans or trials. Some advanced tools may require paid subscriptions for premium features and higher usage limits.",
+    tag: "Pricing",
+  },
+  {
+    id: 3,
+    question: "Which AI tools are best for beginners?",
+    answer:
+      "Tools like ChatGPT, Gemini, and Promptizy are beginner-friendly and require no technical knowledge. They provide easy interfaces and pre-built templates for fast results.",
+    tag: "Beginner",
+  },
+  {
+    id: 4,
+    question: "How do I choose the best AI tool for my needs?",
+    answer:
+      "You can choose based on your goal—content writing, image generation, or video creation. Each tool page on AINovaLab includes features, pros, cons, and use cases to help you decide.",
+    tag: "Guide",
+  },
+  {
+    id: 5,
+    question: "Are AI tools safe to use?",
+    answer:
+      "Most AI tools are safe when used responsibly. Always review privacy policies, especially when uploading sensitive data or files.",
+    tag: "Security",
+  },
+  {
+    id: 6,
+    question: "Can I use AI tools for commercial purposes?",
+    answer:
+      "Yes, many AI tools allow commercial use, but it depends on their terms of service. Always check licensing before using outputs for business or monetization.",
+    tag: "Usage",
+  },
+];
